@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+/* 연혁 페이지 스타일 */
+
+/* 재단 헤더 스타일 */
+.title-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.foundation-logo {
+    width: 80px;
+    height: 80px;
+    background: #c9a96e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.foundation-info {
+    flex: 1;
+}
+
+.foundation-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.foundation-subtitle {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* 연혁 탭 스타일 */
+.history-tabs {
+    display: flex;
+    border-bottom: 2px solid #e5e7eb;
+    margin-bottom: 2rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.history-tab {
+    background: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #6b7280;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    border-bottom: 3px solid transparent;
+    flex-shrink: 0;
+}
+
+.history-tab:hover {
+    color: #F7B825;
+}
+
+.history-tab.active {
+    color: #F7B825;
+    border-bottom-color: #F7B825;
+    font-weight: 700;
+}
+
+/* 연혁 탭 내용 */
+.history-tab-content {
+    display: none;
+}
+
+.history-tab-content.active {
+    display: block;
+}
+
+.history-section {
+    margin-bottom: 3rem;
+}
+
+.h_year {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #F7B825;
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.h_year::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #F7B825;
+    border-radius: 2px;
+}
+
+.history-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.history-items::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, #F7B825, #f3d078);
+    z-index: 1;
+}
+
+.history-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 40px;
+}
+
+.history-item::before {
+    content: '';
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #F7B825;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(247, 184, 37, 0.3);
+    z-index: 2;
+}
+
+.history-item.quarter_line::before {
+    background: #e74c3c;
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.3);
+}
+
+.h_date {
+    background: #f8fafc;
+    color: #374151;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    white-space: nowrap;
+    flex-shrink: 0;
+    min-width: 80px;
+    text-align: center;
+}
+
+.h_con {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.6;
+    padding-top: 0.5rem;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .foundation-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.25rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.7rem;
+    }
+    
+    .history-tabs {
+        margin-bottom: 1.5rem;
+    }
+    
+    .history-tab {
+        padding: 0.75rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    .h_year {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .history-item {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+        padding-left: 30px;
+    }
+    
+    .history-items::before {
+        left: 15px;
+    }
+    
+    .history-item::before {
+        left: 9px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 10px;
+        height: 10px;
+    }
+    
+    .h_date {
+        align-self: flex-start;
+        margin-left: 0;
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
+    
+    .h_con {
+        margin-left: 0;
+        padding-top: 0;
+        font-size: 0.85rem;
+    }
+}
+
+/* 태블릿 반응형 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .foundation-info h2 {
+        font-size: 1.4rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .history-tab {
+        padding: 0.9rem 1.25rem;
+    }
+    
+    .h_year {
+        font-size: 1.75rem;
+    }
+}
+
+/* PC 반응형 */
+@media (min-width: 1025px) {
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .title-bar {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .foundation-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 2rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .history-tabs {
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    
+    .history-tab {
+        padding: 1.25rem 2rem;
+        font-size: 1.1rem;
+    }
+    
+    .h_year {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .history-item {
+        margin-bottom: 2rem;
+    }
+    
+    .h_date {
+        min-width: 100px;
+        font-size: 0.9rem;
+        padding: 0.6rem 0.9rem;
+    }
+    
+    .h_con {
+        font-size: 1rem;
+    }
+}

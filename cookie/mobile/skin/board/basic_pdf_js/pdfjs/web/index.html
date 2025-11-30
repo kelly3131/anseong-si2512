@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>pdf 뷰어 테스트</title>
+</head>
+<body>
+	<iframe width="500" height="600" src="./viewer.html?file=http://aq23r1gt.iwinv.net/_work/pdfjs/web/compressed.tracemonkey-pldi-09.pdf"></iframe>
+	<div id="example1" style="width:500px; height:600px; float:left; border:1px solid rgba(0,0,0,.1);"></div>
+	<script src="./pdfobject.js"></script>
+	<script>PDFObject.embed("./compressed.tracemonkey-pldi-09.pdf", "#example1");</script>
+	<iframe width="500" height="600" src="./compressed.tracemonkey-pldi-09.pdf"></iframe>
+</body>
+</html>

@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+/* 이용안내 페이지 스타일 */
+
+/* 재단 헤더 스타일 */
+.title-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.foundation-logo {
+    width: 80px;
+    height: 80px;
+    background: #c9a96e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.foundation-info {
+    flex: 1;
+}
+
+.foundation-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.foundation-subtitle {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* 섹션 제목 스타일 */
+.section-title-with-icon {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #F7B825;
+    position: relative;
+}
+
+.section-title-with-icon::before {
+    content: '📋';
+    margin-right: 0.5rem;
+}
+
+/* 정보 섹션 */
+.info-section {
+    margin-bottom: 2.5rem;
+}
+
+.info-box {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.target-info {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.6;
+    margin: 0;
+    text-align: center;
+}
+
+.highlight {
+    background: linear-gradient(120deg, #F7B825 0%, #F7B825 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 88%;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    color: #6b7280;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* 이용시간 스타일 */
+.time-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.time-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.time-item:hover {
+    transform: translateY(-2px);
+}
+
+.time-item.closed {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+
+.time-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #F7B825;
+    margin-bottom: 0.75rem;
+}
+
+.time-item.closed .time-label {
+    color: #dc2626;
+}
+
+.time-value {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.days {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.hours {
+    font-size: 0.875rem;
+    color: #6b7280;
+}
+
+/* 이용방법 스타일 */
+.method-box {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.required-items h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+.item-icon {
+    font-size: 2rem;
+}
+
+.item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+/* 준수사항 스타일 */
+.rules-container {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rules-list {
+    margin-bottom: 1.5rem;
+}
+
+.rule-item {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+}
+
+.rule-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.rule-number {
+    background: #F7B825;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.rule-content {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #374151;
+    line-height: 1.5;
+    padding-top: 0.25rem;
+}
+
+.warning-notice {
+    background: #fef3c7;
+    border: 1px solid #fbbf24;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.warning-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.warning-notice p {
+    font-size: 0.9rem;
+    color: #92400e;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .foundation-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.25rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.7rem;
+    }
+    
+    .section-title-with-icon {
+        font-size: 1.1rem;
+    }
+    
+    .time-info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .items-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rule-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .rule-number {
+        align-self: center;
+    }
+    
+    .warning-notice {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .sub-text {
+        display: inline;
+        margin-top: 0;
+        margin-left: 0.5rem;
+    }
+}
+
+/* 태블릿 반응형 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .foundation-info h2 {
+        font-size: 1.4rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.8rem;
+    }
+    
+    .section-title-with-icon {
+        font-size: 1.2rem;
+    }
+}
+
+/* PC 반응형 */
+@media (min-width: 1025px) {
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .title-bar {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .foundation-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 2rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title-with-icon {
+        font-size: 1.5rem;
+    }
+    
+    .info-box,
+    .method-box,
+    .rules-container {
+        padding: 2rem;
+    }
+    
+    .time-item {
+        padding: 2rem;
+    }
+}

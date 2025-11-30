@@ -1,0 +1,343 @@
+@charset "utf-8";
+
+/* 재단 헤더 스타일 - 스크린샷의 로고와 제목 영역 */
+.title-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.foundation-logo {
+    width: 80px;
+    height: 80px;
+    background: #c9a96e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.foundation-info {
+    flex: 1;
+}
+
+.foundation-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.foundation-subtitle {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* 소개 텍스트 영역 */
+.intro-section {
+    margin-bottom: 2rem;
+}
+
+.intro-section p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* 관장 인사말 섹션 */
+.president-section {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.president-photo {
+    width: 120px;
+    height: 150px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.president-content {
+    flex: 1;
+}
+
+.president-quote {
+    margin-bottom: 1.5rem;
+}
+
+.president-quote p {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3b82f6;
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.president-message p {
+    font-size: 0.875rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+/* 운영목표 그리드 */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.mission-item {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.mission-icon {
+    width: 60px;
+    height: 60px;
+    background: #3b82f6;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.mission-icon.buddha-icon {
+    background: #3b82f6;
+}
+
+.mission-icon.monk-icon {
+    background: #10b981;
+}
+
+.mission-icon.temple-icon {
+    background: #8b5cf6;
+}
+
+.mission-icon.welfare-icon {
+    background: #22c55e;
+}
+
+.mission-item h4 {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* 복지서비스 철학 섹션 */
+.business-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.business-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    position: relative;
+}
+
+.business-number {
+    position: absolute;
+    top: -12px;
+    left: 1.5rem;
+    width: 24px;
+    height: 24px;
+    background: #3b82f6;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.business-item h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.business-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.business-item li {
+    font-size: 0.8rem;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.business-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #3b82f6;
+    font-weight: 600;
+}
+
+/* 섹션 제목 스타일 */
+.section-title-with-icon {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3b82f6;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .foundation-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.25rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.7rem;
+    }
+    
+    .president-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .president-photo {
+        width: 100px;
+        height: 120px;
+    }
+    
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .mission-item {
+        padding: 1rem;
+    }
+    
+    .mission-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .business-item {
+        padding: 1rem;
+    }
+    
+    .intro-section p {
+        font-size: 0.8rem;
+    }
+}
+
+/* 태블릿 반응형 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.4rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.8rem;
+    }
+}
+
+/* PC 반응형 */
+@media (min-width: 1025px) {
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .title-bar {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .foundation-logo {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .foundation-info h2 {
+        font-size: 2rem;
+    }
+    
+    .foundation-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .mission-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .business-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .president-section {
+        gap: 2rem;
+    }
+    
+    .president-photo {
+        width: 150px;
+        height: 180px;
+    }
+    
+    .intro-section p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .president-message p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}

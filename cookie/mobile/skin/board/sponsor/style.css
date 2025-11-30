@@ -1,0 +1,924 @@
+@charset "utf-8";
+
+/* m1_s1 스타일 기반 반응형 스폰서 게시판 스타일 */
+
+/* 공통 article 스타일 */
+#bo_list, #bo_v, #bo_w, #bo_vc {
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+/* 헤더 스타일 - m1_s1 방식으로 숨김 */
+#bo_list header h1,
+#bo_v header h1,
+#bo_w header h1,
+#bo_vc header h2 {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+/* 컨텐츠 영역 */
+#bo_list_con,
+#bo_v_con,
+#bo_w_con,
+#bo_vc_con {
+    padding: 10px 0;
+}
+
+/* 댓글 스타일 */
+#bo_vc_w {
+    margin: 10px 0;
+    padding: 10px;
+    border-top: 1px solid #e9e9e9;
+    border-bottom: 1px solid #e9e9e9;
+}
+
+#bo_vc_w header h2 {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+#bo_vc_w_con {
+    padding: 10px 0;
+}
+
+/* 댓글 시스템 스타일 */
+#bo_vc {
+    margin-top: 30px;
+}
+
+#bo_vc_con {
+    border-top: 2px solid #333;
+}
+
+.bo_vc_hdinfo {
+    font-size: 12px;
+    color: #666;
+    margin-left: 10px;
+}
+
+.comment_profile_img {
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.comment_profile_img img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.cmt_contents {
+    margin: 15px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 4px;
+    line-height: 1.6;
+}
+
+.bo_vl_opt {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.cmt_opt {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    color: #666;
+}
+
+.bo_vl_act {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.bo_vl_act li {
+    list-style: none;
+}
+
+.bo_vl_act a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+
+.bo_vl_act a:hover {
+    background: #f5f5f5;
+}
+
+/* 댓글 작성 폼 */
+.bo_vc_w {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 4px;
+}
+
+.bo_vc_w textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: vertical;
+}
+
+.bo_vc_w textarea:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+.bo_vc_w_wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 15px;
+}
+
+.bo_vc_w_info {
+    display: flex;
+    gap: 10px;
+}
+
+.bo_vc_w_info input {
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.btn_confirm {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bo_chk {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.bo_chk input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.btn_submit {
+    padding: 10px 20px;
+    background: #337ab7;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn_submit:hover {
+    background: #286090;
+}
+
+#char_cnt {
+    float: right;
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* 기본 네비게이션 */
+#nav {
+    padding: 20px 0;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav_wr {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 컨테이너 */
+.inner.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 게시판 상단 이미지 */
+.bo_top_img {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bo_top_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+}
+
+/* 폼 스타일 */
+.step-body {
+    margin: 20px 0;
+}
+
+/* 기본 라벨 스타일은 위에서 재정의됨 */
+
+.content-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+}
+
+.row {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.row:last-child {
+    border-bottom: none;
+}
+
+.col.w25 {
+    width: 25%;
+    font-weight: bold;
+    color: #333;
+    min-width: 150px;
+}
+
+.col.w75 {
+    width: 75%;
+    padding-left: 20px;
+}
+
+.frm_input,
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.frm_input:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #5cb85c;
+    outline: none;
+    box-shadow: 0 0 3px rgba(92, 184, 92, 0.3);
+}
+
+.frm_input[readonly],
+input[type="text"][readonly],
+input[type="email"][readonly],
+input[type="tel"][readonly] {
+    background-color: #f9f9f9;
+    color: #666;
+    cursor: not-allowed;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #e5e5e5;
+}
+
+.btn_b01 {
+    background: #5cb85c;
+    color: #fff;
+    border-color: #4cae4c;
+}
+
+.btn_b01:hover {
+    background: #449d44;
+}
+
+.btn_b02 {
+    background: #337ab7;
+    color: #fff;
+    border-color: #2e6da4;
+}
+
+.btn_b02:hover {
+    background: #286090;
+}
+
+/* 댓글 버튼 */
+.cmt_btn {
+    text-align: left;
+    width: 100%;
+    background: none;
+    border: 0;
+    color: #000;
+    font-weight: bold;
+    margin: 20px 0 0px;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    background: #f8f9fa;
+}
+
+.cmt_btn:hover {
+    background: #e9ecef;
+}
+
+/* 테이블 스타일 */
+.tbl_head01 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.tbl_head01 th,
+.tbl_head01 td {
+    padding: 12px 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.tbl_head01 th {
+    background: #f5f5f5;
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+}
+
+/* 게시판 목록 스타일 */
+.bo_notice {
+    background: #f7f7f7;
+}
+
+.td_num {
+    text-align: center;
+    width: 80px;
+}
+
+.td_datetime {
+    text-align: center;
+    width: 120px;
+}
+
+.td_chk {
+    text-align: center;
+    width: 30px;
+}
+
+.td_name {
+    text-align: center;
+    width: 100px;
+}
+
+/* 기존 버튼 그룹 스타일은 위에서 재정의됨 */
+
+/* 페이지네이션 */
+.pg_wrap {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.pg {
+    display: inline-block;
+}
+
+.pg a {
+    padding: 8px 12px;
+    margin: 0 2px;
+    border: 1px solid #ddd;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+}
+
+.pg a:hover {
+    background: #f5f5f5;
+}
+
+.pg .sound_only {
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+/* PC 스타일 (기본) */
+@media (min-width: 1024px) {
+    .inner.container {
+        padding: 0 40px;
+    }
+    
+    .bo_top_img {
+        height: 300px;
+    }
+    
+    .row {
+        padding: 20px 0;
+    }
+    
+    .col.w25 {
+        min-width: 200px;
+    }
+    
+    .col.w75 {
+        padding-left: 30px;
+    }
+}
+
+/* 태블릿 스타일 */
+@media (max-width: 1023px) and (min-width: 768px) {
+    .inner.container {
+        padding: 0 30px;
+    }
+    
+    .bo_top_img {
+        height: 250px;
+    }
+    
+    .row {
+        padding: 15px 0;
+    }
+    
+    .col.w25 {
+        min-width: 120px;
+    }
+}
+
+/* 모바일 스타일 */
+@media (max-width: 767px) {
+    .inner.container {
+        padding: 0 15px;
+    }
+    
+    .nav_wr {
+        padding: 0 15px;
+    }
+    
+    .bo_top_img {
+        height: 150px;
+        margin-bottom: 15px;
+    }
+    
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+    
+    .col.w25,
+    .col.w75 {
+        width: 100%;
+        min-width: auto;
+        padding-left: 0;
+    }
+    
+    .col.w25 {
+        margin-bottom: 5px;
+    }
+    
+    .content-title {
+        font-size: 16px;
+    }
+    
+    .btn {
+        padding: 8px 15px;
+        font-size: 13px;
+        margin: 3px;
+    }
+    
+    .bo_v_top {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .bo_v_left {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .bo_v_right {
+        text-align: center;
+    }
+    
+    /* 테이블 반응형 */
+    .tbl_head01 {
+        overflow-x: auto;
+    }
+    
+    .tbl_head01 table {
+        min-width: 600px;
+    }
+    
+    .tbl_head01 th,
+    .tbl_head01 td {
+        padding: 8px 6px;
+        font-size: 13px;
+    }
+    
+    .cmt_btn {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    .comment_profile_img img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .cmt_contents {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .bo_vc_w {
+        padding: 15px;
+    }
+    
+    .bo_vc_w_wr {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+    
+    .bo_vc_w_info {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .bo_vc_w_info input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .btn_confirm {
+        justify-content: space-between;
+    }
+    
+    .bo_vl_act {
+        right: auto;
+        left: 0;
+    }
+    
+    #char_cnt {
+        float: none;
+        text-align: right;
+        margin-bottom: 10px;
+    }
+    
+    .bo_v_top {
+        margin-top: 20px;
+        padding-top: 15px;
+        gap: 10px;
+    }
+    
+    .bo_v_left,
+    .bo_v_right {
+        gap: 8px;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+        padding: 12px 15px;
+        font-size: 15px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    .write_div .btn_confirm .btn,
+    .submit-body .btn {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+    }
+    
+    .btn_b02 {
+        order: -1; /* 주요 버튼을 위로 */
+    }
+}
+
+@media (max-width: 480px) {
+    .inner.container {
+        padding: 0 10px;
+    }
+    
+    .nav_wr {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    
+    .frm_input {
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+    
+    .bo_vc_w {
+        margin: 15px -10px 0;
+        border-radius: 0;
+    }
+    
+    .cmt_contents {
+        margin: 10px 0;
+        padding: 8px;
+        font-size: 13px;
+    }
+    
+    .btn_confirm {
+        flex-direction: column;
+        gap: 10px;
+        align-items: stretch;
+    }
+    
+    .btn_submit {
+        width: 100%;
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    .bo_v_top {
+        margin-top: 15px;
+        padding: 15px 0;
+    }
+    
+    .btn {
+        padding: 15px 20px;
+        font-size: 16px;
+        font-weight: 500;
+        min-height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* 접근성을 위한 스타일 */
+.sound_only {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+
+/* 인쇄용 스타일 */
+@media print {
+    .btn, .bo_v_top, #nav {
+        display: none;
+    }
+    
+    .bo_top_img {
+        display: none;
+    }
+    
+    .row {
+        padding: 10px 0;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/* 라디오 버튼과 체크박스 스타일 */
+input[type="radio"],
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    border-radius: 50%;
+}
+
+input[type="checkbox"] {
+    border-radius: 3px;
+}
+
+/* 라디오 버튼 그룹 스타일 */
+.step-body label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+    line-height: 1.4;
+    height: auto;
+}
+
+.step-body label input[type="radio"],
+.step-body label input[type="checkbox"] {
+    margin-right: 6px;
+    flex-shrink: 0;
+}
+
+/* 전화번호 입력 필드 */
+.tel_input_group {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.tel_input_group select,
+.tel_input_group input {
+    flex: 1;
+}
+
+.tel_input_group span {
+    padding: 0 5px;
+    color: #666;
+}
+
+/* 주소 입력 필드 */
+.addr_input_group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.addr_input_group input {
+    width: 100%;
+}
+
+/* 전화번호 입력 스타일 개선 */
+.phone_input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.phone_input select {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.phone_input input[type="text"] {
+    width: 80px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.phone_input .separator {
+    color: #666;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* 우편번호 검색 스타일 */
+.addr_search {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.addr_search input[type="text"] {
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.addr_search .btn {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+/* 금액 입력 스타일 */
+.amount_input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.amount_input input {
+    flex: 1;
+}
+
+.amount_input .unit {
+    color: #666;
+    font-weight: bold;
+}
+
+/* 체크박스와 라디오 그룹 개선 */
+.radio_group,
+.checkbox_group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 10px 0;
+}
+
+.radio_group label,
+.checkbox_group label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* 버튼 세로 정렬 스타일 */
+.bo_v_top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.bo_v_left {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bo_v_left li {
+    display: block;
+}
+
+.bo_v_right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 글쓰기 폼 버튼 영역 */
+.write_div .btn_confirm,
+.submit-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+.write_div .btn_confirm .btn,
+.submit-body .btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 20px;
+    font-size: 16px;
+    margin: 0;
+}
