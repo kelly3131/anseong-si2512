@@ -312,8 +312,9 @@ a.btn_admin:focus, a.btn_admin:hover  {color:#fff;}
 .tbl_head02 td {padding:5px 3px;border-top:1px solid #e9e9e9;border-bottom:1px solid #e9e9e9;line-height:1.4em;word-break:break-all}
 
 /* 기본리스트 */
-.list_01{padding:0 10px;}
-.list_01 li{display: flex;background:#fff;border-radius:3px;padding:10px 20px;border-bottom:1px solid #eee;}
+.list_01{position:relative;padding:0 10px;}
+.list_01 li{display: flex;align-items:center;background:#fff;border-radius:3px;padding:10px 20px;border-bottom:1px solid #eee;}
+.list_01 .all_chk{position:absolute;top:10px;left:30px;}
 @media (max-width: 969px){
     .list_01 li {
         display: block;
@@ -344,6 +345,20 @@ a.btn_admin:focus, a.btn_admin:hover  {color:#fff;}
 .list_01_head > ul > li:nth-child(4) { /* 날짜 */
     flex: 0.5; 
 }
+.btn_bo_user {
+    padding-top: 10px;
+}
+.btn_bo_user > li{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+@media (min-width: 970px){
+    .btn_bo_user {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+ }
 @media (max-width: 969px){
    #bo_list .list_01_head > ul > li:nth-child(2), #bo_list .list_01_head > ul > li:nth-child(4) { 
         display: none;
@@ -361,7 +376,12 @@ textarea:focus, .frm_input:focus{outline:none;border:1px solid #025389}
 .form_01 .frm_file {display:block;margin-bottom:5px;width:100%}
 .form_01 select{height:40px;border-radius:3px;background-color:#fff}
 .form_01 .frm_info{font-size:0.92em;color:#0073C2;text-align:left;margin:3px 0 10px;display:block;line-height:1.3em}
-
+@media (min-width: 970px){
+    #bo_v {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+ }
 #bo_vc, .bo_vc_w {
     display: none !important
 }

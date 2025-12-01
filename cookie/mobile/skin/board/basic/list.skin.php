@@ -74,6 +74,14 @@ if (G5_IS_MOBILE) {
     <input type="hidden" name="sw" value="">
 
     <div class="board_list">
+        <div class="list_01_head">
+            <ul>
+                <li>제목</li>
+                <li>글쓴이</li>
+                <li>작성일</li>
+                <li>조회</li>
+            </ul>
+        </div>
         <?php if ($is_checkbox) { ?>
         <div class="all_chk">
             <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
@@ -140,7 +148,7 @@ if (G5_IS_MOBILE) {
             <?php if ($is_checkbox) { ?>
             <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value" class="btn btn_b01">선택삭제</button></li>
             <li><button type="submit" name="btn_submit" value="선택복사" onclick="document.pressed=this.value" class="btn btn_b01">선택복사</button></li>
-            <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value" class="btn btn_b01">선택이동</button></li>
+            <li><button type="submit" name="btn_submit" value="동" onclick="document.pressed=this.value" class="btn btn_b01">선택이동</button></li>
             <?php } ?>
         </ul>
         <?php if ($rss_href || $write_href) { ?>

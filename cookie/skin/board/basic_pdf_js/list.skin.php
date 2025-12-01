@@ -25,7 +25,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </nav>
     <?php } ?>
     <!-- } 게시판 카테고리 끝 -->
-    
+    <div class="list_01_head">
+        <ul>
+            <li>제목</li>
+            <li>글쓴이</li>
+            <li>작성일</li>
+            <li>조회</li>
+        </ul>
+    </div>
     <form name="fboardlist" id="fboardlist" action="<?php echo G5_BBS_URL; ?>/board_list_update.php" onsubmit="return fboardlist_submit(this);" method="post">
     
     <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">

@@ -70,6 +70,7 @@
 #bo_list td:nth-of-type(2) {text-align:center}
 
 /* 게시판 목록 공통 */
+
 #bo_list {}
 #bo_list li {background:#fff}
 #bo_list li.bo_notice {background:#fff9ea}
@@ -78,10 +79,7 @@
 .bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx ul {margin:0;padding:0;list-style:none}
 #bo_list_total {margin:10px;text-align:center;padding:10px;text-align:center;background:#e3e7ec;color:#8b8b8b;border-radius:3px}
-.btn_bo_user > li{
-    display: flex;
-    justify-content: flex-end;
-}
+
 @media (min-width: 970px){
     #bo_sch, #bo_list_total {
         margin:20px auto;
@@ -145,8 +143,8 @@
 #bo_v_sns li span {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 
 .bo_cate_link {display:inline-block;background:#e2eaf6;padding:0 5px;line-height:20px;border-radius:5px;font-weight:bold;font-size:11px;color:#0073C2 !important;text-decoration:none;/*font-size:0.92em*/} /* 글제목줄 분류스타일 */
-.bo_cate_ico {margin-bottom:5px}
-.bo_cnt {display:block;flex:13;font-size:1.083em;font-weight:bold;line-height:1.4em}
+.bo_cate_ico {margin-right:5px;white-space: nowrap;}
+.bo_cnt {display:flex;flex:13;font-size:1.083em;font-weight:bold;line-height:1.4em}
 .bo_cnt i {color:#8d96c2;font-size:12px}
 .bo_cnt .fa-heart {color:#F15D16}
 .bo_chk {display:inline-block;float:left;margin-right:5px}
@@ -158,7 +156,7 @@
 .chk_box input[type="checkbox"] + label span {position:absolute;top:0;left:0;width:15px;height:15px;display:block;background:#fff;border:1px solid #d0d4df;border-radius:3px}
 .chk_box input[type="checkbox"]:checked + label {color:#000}
 .chk_box input[type="checkbox"]:checked + label span {background:url(./img/chk.png) no-repeat 50% 50% #0073C2;border-color:#0073C2;border-radius:3px}
-.all_chk.chk_box input[type="checkbox"] + label span {top:18px;left:15px}
+/* .all_chk.chk_box input[type="checkbox"] + label span {top:18px;left:15px} */
 
 .bo_cmt {background:#e9eff5;color:#0073C2;font-size:0.925em;height:16px;padding:0 5px;border-radius:2px;vertical-align:top;min-width:16px}
 
