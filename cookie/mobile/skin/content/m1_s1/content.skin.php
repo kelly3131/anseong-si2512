@@ -106,7 +106,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                     </div>
                     <div class="business-item">
                         <div class="business-icon">
-                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/icon2.svg" alt="" />
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/icon1.svg" alt="" />
                         </div>
                         <h4>사회적평등</h4>
                         <ul>
@@ -116,7 +116,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                     </div>
                     <div class="business-item">
                         <div class="business-icon">
-                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/icon3.svg" alt="" />
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/icon1.svg" alt="" />
                         </div>
                         <h4>행복추구</h4>
                         <ul>

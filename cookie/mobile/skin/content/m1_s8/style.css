@@ -35,7 +35,7 @@
 .directions-list li {
     padding: 12px 0;
     border-bottom: 1px solid #f1f3f4;
-    font-size: 14px;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -77,6 +77,7 @@
 .contact-value {
     flex: 1;
     color: #2c3e50;
+    font-size: 1.1rem;
 }
 
 .contact-value a {
@@ -120,7 +121,7 @@
     background: #fff;
     border-radius: 6px;
     border: 1px solid #e9ecef;
-    font-size: 14px;
+    font-size: 1.1rem;
     line-height: 1.6;
 }
 
@@ -145,13 +146,13 @@
 .bus-stop strong {
     display: block;
     margin-bottom: 8px;
-    font-size: 14px;
+    font-size: 1.1rem;
     color: #28a745;
     font-weight: 600;
 }
 
 .bus-numbers {
-    font-size: 13px;
+    font-size: 1rem;
     line-height: 1.5;
     color: #495057;
     background: #f1f3f4;

@@ -87,7 +87,7 @@
 }
 
 .sub-text {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #6b7280;
     display: block;
     margin-top: 0.5rem;
@@ -137,7 +137,7 @@
 }
 
 .days {
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 600;
     color: #1f2937;
 }
@@ -185,7 +185,7 @@
 }
 
 .item span {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     font-weight: 500;
     color: #374151;
 }
@@ -233,7 +233,7 @@
 
 .rule-content {
     flex: 1;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #374151;
     line-height: 1.5;
     padding-top: 0.25rem;

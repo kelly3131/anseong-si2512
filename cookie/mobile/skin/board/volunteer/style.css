@@ -932,7 +932,7 @@ input[type="tel"][readonly] {
 .new-field-label {
     font-weight: 600;
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 5px;

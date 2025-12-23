@@ -28,7 +28,7 @@
     padding: 15px 10px;
     text-align: center;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 1.1rem;
     border-right: 1px solid #2c3e50;
 }
 
@@ -41,7 +41,7 @@
     text-align: center;
     border-bottom: 1px solid #ecf0f1;
     border-right: 1px solid #ecf0f1;
-    font-size: 13px;
+    font-size: 1.1rem;
     line-height: 1.5;
     vertical-align: middle;
 }

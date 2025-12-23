@@ -167,6 +167,7 @@
     font-weight: 500 !important;
     white-space: nowrap !important;
     border-top: none !important;
+    font-size: 1rem;
 }
 
 .organ_table1 td {
@@ -176,6 +177,7 @@
     background: #fff !important;
     white-space: nowrap !important;
     border-top: none !important;
+    font-size: 1rem;
 }
 
 .organ_table1 th:first-child,

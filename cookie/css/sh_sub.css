@@ -136,7 +136,7 @@
     
     .main-tab {
         padding: 12px 18px;
-        font-size: 15px;
+        font-size: 1rem;
     }
 }
 
@@ -157,7 +157,7 @@
     
     .main-tab {
         padding: 14px 20px;
-        font-size: 16px;
+        font-size: 1rem;
         border-radius: 8px 8px 0 0;
     }
     
@@ -215,7 +215,7 @@
     white-space: nowrap;
     padding: 0.625rem 1.25rem;
     border-radius: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 500;
     background-color: #fff;
     color: #4b5563;
@@ -308,7 +308,7 @@
 }
 
 .content-title p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     color: #6b7280;
     padding-left: 1.5rem;
 }
@@ -363,7 +363,7 @@
 }
 
 .info-section h3 {
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     font-weight: 700;
     color: #1f2937;
     margin-bottom: 1rem;
@@ -372,7 +372,7 @@
 }
 
 .info-section p {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 0.5rem;
@@ -382,7 +382,7 @@
 .info-section ol {
     margin-left: 1rem;
     color: #4b5563;
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     line-height: 1.6;
 }
 
@@ -391,7 +391,7 @@
 }
 
 .business-detail h4 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #374151;
     margin: 1.5rem 0 0.75rem 0;
@@ -419,7 +419,7 @@
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
@@ -606,6 +606,57 @@
     width: 100%;
     height: 0;
 }
+
+
+/* 기본 테이블 스타일 */
+.table-scroll-wrapper {
+    overflow-x: auto;
+    border: 1px solid #ddd ;
+    margin: 20px 0 ;
+}
+
+.basic_table {
+    width: 100% ;
+    min-width: 700px ;
+    border-collapse: collapse ;
+    background: #fff ;
+    font-size: 13px ;
+}
+
+/* 헤더 스타일 - thead에만 배경색 */
+.basic_table thead {
+    border-bottom: 1px solid #ddd;
+}
+.basic_table thead th {
+    background: #f8f8f8 ;
+    color: #333 ;
+    padding: 12px 8px ;
+    border: 1px solid #ddd ;
+    text-align: center ;
+    font-weight: 500 ;
+    font-size: 1.1rem;
+    white-space: nowrap ;
+    border-top: none ;
+    border-bottom: 1px solid #ddd ;
+}
+
+/* 모든 셀 기본 스타일 - tbody는 모두 흰색 배경 */
+.basic_table td {
+    padding: 10px 8px ;
+    border: 1px solid #ddd ;
+    font-size: 1.1rem;
+    text-align: center ;
+    background: #fff ;
+    border-top: none ;
+    vertical-align: middle ;
+}
+
+
+
+
+
+
+
 
 /* PC 화면 (768px 이상) - 가로 정렬 */
 @media (min-width: 768px) {

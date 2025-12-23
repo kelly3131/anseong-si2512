@@ -171,10 +171,10 @@
 
 .h_con {
     flex: 1;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #4b5563;
     line-height: 1.6;
-    padding-top: 0.5rem;
+    padding-top: 0.3rem;
 }
 
 /* 모바일 반응형 */
@@ -316,6 +316,6 @@
     }
     
     .h_con {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 }
