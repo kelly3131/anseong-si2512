@@ -55,7 +55,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                             <p>사회와 이웃을 위한 자비행의 길은 향기로운 세상을 향한 길입니다. 불교사회복지가 활짝 꽃피워 이 땅 위의 모든 분들에게 법향이 전해지기를 진심으로 기대 합니다.</p>
                             <p>불교사회복지재단의 도약에 적극적인 동참과 참여를 당부드립니다. 감사합니다.</p>
                             
-                            <p><strong>대한불교조계종사회복지재단 이사장 진 우</strong></p>
+                            <p><strong>대한불교조계종사회복지재단 이사장 진 우 합장</strong></p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 
             <div class="info-section">
                 <h3 class="section-title-with-icon">설립목적</h3>
-                <div class="mission-grid">
+                <!-- <div class="mission-grid">
                     <div class="mission-item">
                         <div class="mission-icon">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/m1_s1_img1.png" alt="" />
@@ -88,8 +88,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                         </div>
                         <h4>불국정도 구현을 지향한<br>문화복지 사회건설</h4>
                     </div>
-                </div>
-            </div>
+                </div> -->
+            </div
 
             <div class="info-section">
                 <h3 class="section-title-with-icon">설립이념</h3>

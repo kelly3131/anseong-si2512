@@ -97,12 +97,14 @@ if(!empty($menu_group)) {
                         </ul>
                     </li>
                     <li>
-                        <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1">사업안내</a>
+                        <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_1">사업안내</a>
                         <ul class="sh_lnb_s">
                             <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_1">운영지원팀</a>
                                 <ul class="sh_lnb_3d">
-                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_1">건강한아침천원식당사업</a></li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_2">인재육성사업</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_1">인재육성사업</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_2">운영사업(사무, 자산관리)</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_3">운영사업(회계)</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_4">시설안전관리</a></li>
                                 </ul>
                             </li>
                             <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s2_1">문화건강팀</a>
