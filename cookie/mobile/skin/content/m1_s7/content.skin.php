@@ -24,9 +24,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 <div class="content-wrapper">
     <div class="content-title">
         <div class="title-bar">
-            <div class="foundation-logo">
-                <!-- 로고 이미지 영역 -->
-            </div>
             <div class="foundation-info">
                 <h2 class="title-with-icon">시설안내</h2>
                 <p class="foundation-subtitle">안성시노인복지관 층별 시설 안내</p>

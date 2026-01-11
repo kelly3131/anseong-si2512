@@ -24,9 +24,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 <div class="content-wrapper">
     <div class="content-title">
         <div class="title-bar">
-            <div class="foundation-logo">
-                <!-- 로고 이미지 영역 -->
-            </div>
             <div class="foundation-info">
                 <h2 class="title-with-icon">조직도</h2>
                 <p class="foundation-subtitle">안성시노인복지관 조직 구성</p>
@@ -964,15 +961,13 @@ function show_history(num) {
         return;
     }
     
-    // 모바일 스크롤 방지를 위한 처리
-    const scrollY = window.scrollY;
-    document.body.style.position = 'fixed';
-    document.body.style.top = `-${scrollY}px`;
-    document.body.style.width = '100%';
-    document.body.style.overflow = 'hidden';
-    
-    // 현재 스크롤 위치 저장
+    // 현재 스크롤 위치 저장 (화면 이동 방지)
+    const scrollY = window.pageYOffset || document.documentElement.scrollTop;
     popupElement.dataset.scrollY = scrollY;
+    
+    // HTML과 BODY에 클래스 추가 (CSS로 스크롤만 막음)
+    document.documentElement.classList.add('popup-open');
+    document.body.classList.add('popup-open');
     
     titleElement.textContent = data.title;
     contentElement.innerHTML = data.content;
@@ -1035,19 +1030,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function closePopup() {
         if (popupWrap) {
-            // 저장된 스크롤 위치 복원
-            const scrollY = popupWrap.dataset.scrollY || 0;
-            
             popupWrap.style.display = 'none';
             
-            // 모바일 스크롤 방지 해제
-            document.body.style.position = '';
-            document.body.style.top = '';
-            document.body.style.width = '';
-            document.body.style.overflow = '';
-            
-            // 원래 스크롤 위치로 복원
-            window.scrollTo(0, parseInt(scrollY));
+            // HTML과 BODY에서 클래스 제거 (스크롤 복원)
+            document.documentElement.classList.remove('popup-open');
+            document.body.classList.remove('popup-open');
         }
     }
     

@@ -24,9 +24,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 <div class="content-wrapper">
     <div class="content-title">
         <div class="title-bar">
-            <div class="foundation-logo">
-                <!-- 로고 이미지 영역 -->
-            </div>
             <div class="foundation-info">
                 <h2 class="title-with-icon">오시는길</h2>
                 <p class="foundation-subtitle">안성시노인복지관 찾아오시는 길</p>
