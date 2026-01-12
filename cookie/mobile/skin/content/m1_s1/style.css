@@ -42,7 +42,6 @@
 }
 
 .intro-section p {
-    font-size: 0.875rem;
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 1rem;
@@ -201,6 +200,9 @@
     font-weight: 600;
 }
 
+.text-right {
+    text-align: right;
+}
 /* 모바일 반응형 */
 @media (max-width: 768px) {
     .title-bar {
@@ -227,10 +229,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 1.25rem;
     }
-    .intro-section p {
-        font-size: 0.8rem;
-    }
-    
     .business-item {
         padding: 1rem;
     }
@@ -293,11 +291,6 @@
     .president-photo {
         width: 150px;
         height: 180px;
-    }
-    
-    .intro-section p {
-        font-size: 1.2rem;
-        line-height: 1.7;
     }
     
     .president-message p {

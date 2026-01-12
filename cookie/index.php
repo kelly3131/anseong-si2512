@@ -99,7 +99,8 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                     </div>
                                     <div class="right">
                                         <div class="ko_tit">    
-                                            <p class="p"><span>민원 해결</span>을 도와드립니다.</p>
+                                            <!-- <p class="p"><span>민원 해결</span>을 도와드립니다.</p> -->
+                                            <p class="p">무엇을 도와드릴까요?</p>
                                             여러분의 민원업무를 친절하게 해결 해 드리겠습니다.
                                         </div>
                                         <div class="call_num">
