@@ -8,6 +8,9 @@ if ($is_checkbox) $colspan++;
 if ($is_good) $colspan++;
 if ($is_nogood) $colspan++;
 
+// 게시물 번호 카운팅 - 전체 게시물에서 현재 페이지의 순번 계산
+$num = $total_count - ($page - 1) * $config['cf_page_rows'];
+
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
@@ -27,6 +30,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <!-- } 게시판 카테고리 끝 -->
     <div class="list_01_head">
         <ul>
+            <li>번호</li>
             <li>제목</li>
             <li>글쓴이</li>
             <li>작성일</li>
@@ -121,7 +125,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             else if ($wr_id == $list[$i]['wr_id'])
                 echo "<span class=\"bo_current\">열람중</span>";
             else
-                echo $list[$i]['num'];
+                echo $num--;
              ?>
             </td>
 

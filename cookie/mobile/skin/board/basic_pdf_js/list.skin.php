@@ -6,6 +6,9 @@ $colspan = 2;
 
 if ($is_checkbox) $colspan++;
 
+// 게시물 번호 카운팅 - 전체 게시물에서 현재 페이지의 순번 계산
+$num = $total_count - ($page - 1) * $config['cf_page_rows'];
+
 // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
 add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0);
 ?>
@@ -36,6 +39,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <div class="list_01">
         <div class="list_01_head">
             <ul>
+                <li>번호</li>
                 <li>제목</li>
                 <li>글쓴이</li>
                 <li>작성일</li>
@@ -64,13 +68,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 </div>
                 <?php } ?>
 
+                <div class="bo_num">
+                <?php
+                if ($list[$i]['is_notice']) // 공지사항
+                    echo '<strong class="notice_icon">공지</strong>';
+                else if ($wr_id == $list[$i]['wr_id'])
+                    echo "<span class=\"bo_current\">열람중</span>";
+                else
+                    echo $num--;
+                ?>
+                </div>
+
                 <div class="bo_cnt">
-                	<?php if ($list[$i]['is_notice'] || ($is_category && $list[$i]['ca_name'])) { ?>
+                	<?php if ($is_category && $list[$i]['ca_name']) { ?>
                 	<div class="bo_cate_ico">
-                		<?php if ($list[$i]['is_notice']) { ?><strong class="notice_icon">공지</strong><?php } ?>
-	                    <?php if ($is_category && $list[$i]['ca_name']) { ?>       
 	                    <a href="<?php echo $list[$i]['ca_name_href'] ?>" class="bo_cate_link"><?php echo $list[$i]['ca_name']; ?></a>
-	                    <?php } ?>
                     </div>
                     <?php } ?> 
                     

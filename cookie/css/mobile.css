@@ -337,18 +337,25 @@ a.btn_admin:focus, a.btn_admin:hover  {color:#fff;}
     text-align: center;
     word-break: keep-all;
 }
-.list_01_head > ul > li:nth-child(1) { /* 제목 */
+.bo_num {
+    padding-right:10px;
+    padding-bottom:5px;
+}
+.list_01_head > ul > li:nth-child(1) { /* 번호 */
+    flex: 0.5; 
+}
+.list_01_head > ul > li:nth-child(2) { /* 제목 */
     flex: 12; 
 }
 
-.list_01_head > ul > li:nth-child(2) { /* 글쓴이 */
+.list_01_head > ul > li:nth-child(3) { /* 글쓴이 */
     flex: 0.5; 
 }
 
-.list_01_head > ul > li:nth-child(3) { /* 날짜 */
+.list_01_head > ul > li:nth-child(4) { /* 날짜 */
     flex: 0.5; 
 }
-.list_01_head > ul > li:nth-child(4) { /* 날짜 */
+.list_01_head > ul > li:nth-child(5) { /* 날짜 */
     flex: 0.5; 
 }
 .btn_bo_user {
