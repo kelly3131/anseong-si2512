@@ -92,16 +92,15 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                             <div class="top_box">
                                 <div class="box_inner">
                                     <div class="left pl"><p class="text32 text_bold color_black">안성시노인복지관은,</p>
-                                        <p class="text16 text_normal">안성시노인복지관은 대한불교조계종사회복지재단의 설립이념과 사회복지 철학을 바탕으로 지역사회를 위한 자비실천을 하고 있습니다.</p>
-                                        <p class="text16 text_normal">안성시노인복지관은 어르신 중심의 사회복지서비스를 제공하고, 지역사회의 자원연계를 통해 어르신들이 건강하고 행복한 노년 생활을 지원하며, 더불어 사는 풍요로운 안성시민을 위한 안성맞춤 노인복지서비스 실천에 정성을 다하겠습니다.</p>
-                                        <p class="text16 text_normal">안성시노인복지관은 언제나 활기차고 즐거운 어르신이 주인공이 되는 따뜻한 지역공동체를 만들어가기 위해 세대통합 및 어르신 맞춤돌봄서비스는 물론 복지생태계 구축으로 안성맞춤 노인복지를 구현하겠습니다.</p>
+                                        <p class="text20 text_normal">안성시노인복지관은 대한불교조계종사회복지재단의 설립이념과 사회복지 철학을 바탕으로 지역사회를 위한 자비실천을 하고 있습니다.</p>
+                                        <p class="text20 text_normal">안성시노인복지관은 어르신 중심의 사회복지서비스를 제공하고, 지역사회의 자원연계를 통해 어르신들이 건강하고 행복한 노년 생활을 지원하며, 더불어 사는 풍요로운 안성시민을 위한 안성맞춤 노인복지서비스 실천에 정성을 다하겠습니다.</p>
+                                        <p class="text20 text_normal">안성시노인복지관은 언제나 활기차고 즐거운 어르신이 주인공이 되는 따뜻한 지역공동체를 만들어가기 위해 세대통합 및 어르신 맞춤돌봄서비스는 물론 복지생태계 구축으로 안성맞춤 노인복지를 구현하겠습니다.</p>
                                         <div class="more"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1">복지관 소개 <i data-feather="chevron-right"></i></a></div>
                                     </div>
                                     <div class="right">
                                         <div class="ko_tit">    
                                             <!-- <p class="p"><span>민원 해결</span>을 도와드립니다.</p> -->
                                             <p class="p">무엇을 도와드릴까요?</p>
-                                            여러분의 민원업무를 친절하게 해결 해 드리겠습니다.
                                         </div>
                                         <div class="call_num">
                                             <div class="call_left">
@@ -130,23 +129,23 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                             <div class="bot_box">
                                 <ul>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s6""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon01.png" alt="아이콘01"></a></div>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s6"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon01.png" alt="아이콘01"></a></div>
                                         <p>이용안내</p>
                                     </li>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=notice""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon02.png" alt="아이콘02"></a></div>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=notice"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon02.png" alt="아이콘02"></a></div>
                                         <p>공지사항</p>
                                     </li>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/write.php?bo_table=sponsor""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon03.png" alt="아이콘03"></a></div>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/write.php?bo_table=sponsor"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon03.png" alt="아이콘03"></a></div>
                                         <p>후원신청</p>
                                     </li>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=schedule""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon04.png" alt="아이콘04"></a></div>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=schedule"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon04.png" alt="아이콘04"></a></div>
                                         <p>이달의 행사</p>
                                     </li>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
                                         <p>복지관 소개</p>
                                     </li>
                                 </ul>
@@ -168,7 +167,7 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                                 <li rel="tab3">소식지</li>
                                                 <li rel="tab4">언론보도</li>
                                             </ul>
-                                            <a href="" class="more"><span class="sound_only">복지관 소식</span><i data-feather="plus"></i></a>
+                                            <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=notice" class="more"><span class="sound_only">복지관 소식</span><i data-feather="plus"></i></a>
                                         </div>
                                     </div>
                                     <div id="tabs">
@@ -240,7 +239,7 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                 <div class="r_box">
                                     <div class="tit">
                                         <p>웹진</p>  
-                                        <a href="" class="more"><span class="sound_only">웹진</span><i data-feather="plus"></i></a>
+                                        <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds" class="more"><span class="sound_only">웹진</span><i data-feather="plus"></i></a>
                                     </div>
                                     <div class="pop_up">
                                         <div class="arrow_box">
@@ -252,18 +251,18 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                         <div class="swiper-container pop_silder">
                                             <ul class="swiper-wrapper">
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img01.png" alt="웹진"></div>
+                                                    <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds&wr_id=76">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine01.png" alt="웹진12월"></div>
                                                     </a>
                                                 </li>
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img02.png" alt="웹진"></div>
+                                                    <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds&wr_id=74">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine02.png" alt="웹진11월"></div>
                                                     </a>
                                                 </li>
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img03.png" alt="웹진"></div>
+                                                    <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds&wr_id=72">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine03.png" alt="웹진10월"></div>
                                                     </a>
                                                 </li>
                                             </ul>

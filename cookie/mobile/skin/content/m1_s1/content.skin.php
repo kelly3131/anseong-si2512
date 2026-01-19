@@ -35,7 +35,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h2 class="title-with-icon" style="font-size:1.7vw">이사장 인사말</h2>
+                <h2 class="title-with-icon2">이사장 인사말</h2>
                 <div class="president-section">
                     <div class="president-photo">
                         <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/picture.png" alt="이사장 사진" />
@@ -62,37 +62,37 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">설립목적</h3>
-                <!-- <div class="mission-grid">
+                <h2 class="title-with-icon2">설립목적</h2>
+                <div class="mission-grid">
                     <div class="mission-item">
                         <div class="mission-icon">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/m1_s1_img1.png" alt="" />
                         </div>
-                        <h4>부처님의 자비와 구제중생의원력으로<br>불교계 인적/물적 복지자원 개발/활용</h4>
+                        <!-- <h4>부처님의 자비와 구제중생의원력으로<br>불교계 인적/물적 복지자원 개발/활용</h4> -->
                     </div>
                     <div class="mission-item">
                         <div class="mission-icon">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/m1_s1_img2.png" alt="" />
                         </div>
-                        <h4>국민복지 지원/진흥에 이바지</h4>
+                        <!-- <h4>국민복지 지원/진흥에 이바지</h4> -->
                     </div>
                     <div class="mission-item">
                         <div class="mission-icon">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/m1_s1_img3.png" alt="" />
                         </div>
-                        <h4>복지분야의 제반조사/연구/홍보</h4>
+                        <!-- <h4>복지분야의 제반조사/연구/홍보</h4> -->
                     </div>
                     <div class="mission-item">
                         <div class="mission-icon">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/m1_s1_img4.png" alt="" />
                         </div>
-                        <h4>불국정도 구현을 지향한<br>문화복지 사회건설</h4>
+                        <!-- <h4>불국정도 구현을 지향한<br>문화복지 사회건설</h4> -->
                     </div>
-                </div> -->
+                </div>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">설립이념</h3>
+                <h2 class="title-with-icon2">설립이념</h2>
                 <div class="business-grid">
                     <div class="business-item">
                         <div class="business-icon">

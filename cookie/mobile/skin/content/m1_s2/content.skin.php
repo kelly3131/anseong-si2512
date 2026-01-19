@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <div class="foundation-info">
                 <h2 class="title-with-icon">안성시노인복지관</h2>
-                <p class="foundation-subtitle">나눔으로 함께⬩소통하는 우리⬩향기나는 세상</p>
+                <!-- <p class="foundation-subtitle">나눔으로 함께⬩소통하는 우리⬩향기나는 세상</p> -->
             </div>
         </div>
     </div>

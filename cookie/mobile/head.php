@@ -180,15 +180,7 @@ if(!empty($menu_group)) {
                                     <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=calendar">아침 천원식당</a></li>
                                 </ul>
                             </li>
-                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds">자료실</a> </li>
-                            <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">복지관소식</a>
-                                <ul class="sh_lnb_3d">
-                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">운영위원회공개</a></li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=sponsor2">후원공개</a></li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=financial">예산공개</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=bodo">언론보도</a> </li>
+                            
                             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=review">자유게시판</a> </li>
                         </ul>
                     </li>
@@ -196,7 +188,17 @@ if(!empty($menu_group)) {
                         <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=photo">복지관이야기</a>
                         <ul class="sh_lnb_s">
                             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=photo">복지관 이야기</a> </li>
+                            <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">복지관소식</a>
+                                <ul class="sh_lnb_3d">
+                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">운영위원회공개</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=sponsor2">후원공개</a></li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=financial">예산공개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds">자료실</a> </li>
+                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=bodo">언론보도</a> </li>
                         </ul>
+                        
                     </li>
                 </ul>
                
@@ -307,15 +309,6 @@ if(!empty($menu_group)) {
                                             <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=calendar">아침 천원식당</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds">자료실</a></li>
-                                    <li class="has-mobile-submenu"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">복지관소식</a>
-                                        <ul class="m_3dmenu">
-                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=운영위원회">운영위원회공개</a></li>
-                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=후원공개">후원공개</a></li>
-                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=예산공개">예산공개</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=bodo">언론보도</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=review">자유게시판</a></li>
                                 </ul>
                             </li>
@@ -323,6 +316,16 @@ if(!empty($menu_group)) {
                                 <button class="m_bmenu" type="button">복지관이야기</button>
                                 <ul class="m_smenu">
                                     <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=photo">복지관 이야기</a></li>
+                                    <li class="has-mobile-submenu"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news">복지관소식</a>
+                                        <ul class="m_3dmenu">
+                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=운영위원회">운영위원회공개</a></li>
+                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=후원공개">후원공개</a></li>
+                                            <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=news&sca=예산공개">예산공개</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=pds">자료실</a></li>
+                                    
+                                    <li><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=bodo">언론보도</a></li>
                                 </ul>
                             </li>
                         </ul> 

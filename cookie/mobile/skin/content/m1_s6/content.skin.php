@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <div class="foundation-info">
                 <h2 class="title-with-icon">이용안내</h2>
-                <p class="foundation-subtitle">안성시노인복지관 이용 방법 및 안내</p>
+                <!-- <p class="foundation-subtitle">안성시노인복지관 이용 방법 및 안내</p> -->
             </div>
         </div>
     </div>
@@ -35,7 +35,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="usage-content">
             <!-- 이용대상 -->
             <div class="info-section">
-                <h3 class="section-title-with-icon">이용대상</h3>
+                <h3 class="section-title-with-icon2">이용대상</h3>
                 <div class="info-box">
                     <p class="target-info">
                         <span class="highlight">만 60세 이상</span>의 이용 희망 어르신 및 이용자의 
@@ -47,7 +47,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 
             <!-- 이용시간 -->
             <div class="info-section">
-                <h3 class="section-title-with-icon">이용시간</h3>
+                <h3 class="section-title-with-icon2">이용시간</h3>
                 <div class="time-info-grid">
                     <div class="time-item">
                         <div class="time-label">평일 운영</div>
@@ -68,7 +68,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 
             <!-- 이용방법 -->
             <div class="info-section">
-                <h3 class="section-title-with-icon">이용방법</h3>
+                <h3 class="section-title-with-icon2">이용방법</h3>
                 <div class="method-box">
                     <div class="required-items">
                         <h4>준비물</h4>
@@ -88,7 +88,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 
             <!-- 준수사항 -->
             <div class="info-section">
-                <h3 class="section-title-with-icon">준수사항</h3>
+                <h3 class="section-title-with-icon2">준수사항</h3>
                 <div class="rules-container">
                     <div class="rules-list">
                         <div class="rule-item">

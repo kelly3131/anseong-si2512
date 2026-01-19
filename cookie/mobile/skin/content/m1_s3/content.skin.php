@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <div class="foundation-info">
                 <h2 class="title-with-icon">미션 및 비전</h2>
-                <p class="foundation-subtitle">안성시노인복지관의 사명과 미래 목표</p>
+                <!-- <p class="foundation-subtitle">안성시노인복지관의 사명과 미래 목표</p> -->
             </div>
         </div>
     </div>
@@ -34,14 +34,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon mission-title">MISSION</h3>
+                <h3 class="section-title-with-icon2 mission-title">MISSION</h3>
                 <div class="mission-statement">
                     <p class="mission-text">나눔과 소통으로 행복을 디자인하는 안성맞춤 노인복지 실현</p>
                 </div>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon vision-title">VISION</h3>
+                <h3 class="section-title-with-icon2 vision-title">VISION</h3>
                 <div class="vision-grid">
                     <div class="vision-item">
                         <div class="vision-number">01</div>

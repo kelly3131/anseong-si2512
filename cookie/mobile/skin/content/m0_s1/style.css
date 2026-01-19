@@ -1,5 +1,5 @@
 @charset "utf-8";
-
+#container_title {background-color:#ebf7d2}
 /* 재단 헤더 스타일 - 스크린샷의 로고와 제목 영역 */
 .title-bar {
     display: flex;

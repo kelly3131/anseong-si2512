@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <div class="foundation-info">
                 <h2 class="title-with-icon">시설안내</h2>
-                <p class="foundation-subtitle">안성시노인복지관 층별 시설 안내</p>
+                <!-- <p class="foundation-subtitle">안성시노인복지관 층별 시설 안내</p> -->
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">시설현황</h3>
+                <h3 class="section-title-with-icon2">시설현황</h3>
                 <ul>
                     <li>- 대지 면적 : 2.513㎡</li>
                     <li>- 연  면  적 : 2,643,74㎡</li>
@@ -44,7 +44,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">층별 현황</h3>
+                <h3 class="section-title-with-icon2">층별 현황</h3>
                 <div class="floor-table">
                     <table>
                         <thead>

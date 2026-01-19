@@ -86,7 +86,7 @@
 .main-tab {
     display: block;
     padding: 12px 16px;
-    font-size: 14px;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #6b7280;
     text-decoration: none;
@@ -107,7 +107,8 @@
 }
 
 /* 모바일용 탭 메뉴 반응형 */
-@media (max-width: 768px) {    .main-tabs-wrapper {
+@media (max-width: 768px) {    
+    .main-tabs-wrapper {
         margin-bottom: 0;
         padding: 0 8px;
     }
@@ -136,7 +137,6 @@
     
     .main-tab {
         padding: 12px 18px;
-        font-size: 1rem;
     }
 }
 
@@ -157,7 +157,6 @@
     
     .main-tab {
         padding: 14px 20px;
-        font-size: 1rem;
         border-radius: 8px 8px 0 0;
     }
     
@@ -274,12 +273,27 @@
 }
 
 /* 제목 아이콘 공통 클래스 - CSS로 처리 */
+.title-with-icon, .title-with-icon2 {
+    font-size: 1.6rem;
+}
 .title-with-icon::before {
     content: '';
     display: inline-block;
     width: 24px;
     height: 24px;
     background-image: url('../img/mobile/sub/icon_sub_title.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+.title-with-icon2::before {
+    content: '';
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    background-image: url('../img/mobile/sub/three_wheeled.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -300,6 +314,18 @@
     width: 20px;
     height: 20px;
     background-image: url('../img/mobile/sub/icon_sub_section_title.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+.section-title-with-icon2::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../img/mobile/sub/icon_sub_title.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -363,8 +389,8 @@
 }
 
 .info-section h3 {
-    font-size: 1.3rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 500;
     color: #1f2937;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -651,13 +677,6 @@
     vertical-align: middle ;
 }
 
-
-
-
-
-
-
-
 /* PC 화면 (768px 이상) - 가로 정렬 */
 @media (min-width: 768px) {
     .procedure-container {
@@ -922,5 +941,396 @@
     .equipment-item,
     .feature-item {
         padding: 15px;
+    }
+}
+
+/* =========================== 추가 스타일 (from style.css) */
+
+/* 재단 헤더 스타일 */
+.foundation-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.foundation-info {
+    flex: 1;
+}
+
+.foundation-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 0.25rem 0;
+}
+
+.foundation-subtitle {
+    font-size: 0.75rem;
+    color: #6b7280;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin: 0;
+}
+
+/* 소개 텍스트 영역 */
+.intro-section {
+    margin-bottom: 2rem;
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.intro-section p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+.intro-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* 이사장 인사말 섹션 */
+.president-section {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.president-photo {
+    width: 120px;
+    height: 150px;
+    background: #f3f4f6;
+    border-radius: 8px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #9ca3af;
+    font-size: 0.875rem;
+}
+
+.president-content {
+    flex: 1;
+}
+
+.president-quote {
+    margin-bottom: 1.5rem;
+}
+
+.president-quote p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fbbf24;
+    margin: 0.25rem 0;
+    line-height: 1.4;
+}
+
+.president-message p {
+    font-size: 1.2rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}
+
+/* 설립목적 그리드 */
+.mission-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+
+.mission-icon {
+    border-radius: 1.5rem 1.5rem 0 0; 
+    overflow: hidden;
+}
+
+.mission-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mission-item h4 {
+    padding: 0.5rem;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+/* 설립이념 섹션 */
+.business-content.m1_s1 {
+    padding-left: 1.5rem;
+    padding-top: 0;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+}
+.business-grid {
+    display: grid;
+    gap: 1.5rem;
+    margin: 1rem 0;
+}
+
+.business-item {
+    background: #f8f9fa;
+    border: none;
+    border-radius: 20px;
+    padding: 0 1.5rem 1.5rem 1.5rem
+}
+
+.business-number {
+    display: none;
+}
+
+.business-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.business-icon img {
+    padding: 13px;
+    background: #fbbf24;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 58px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.business-item h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0 0 1.5rem 0;
+    padding-right: 80px;
+    line-height: 1.3;
+}
+
+.business-item ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.business-item li {
+    font-size: 1.2rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    padding-left: 1rem;
+    position: relative;
+}
+
+.business-item li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .title-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.75rem;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.25rem;
+    }
+    
+    .president-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .president-photo {
+        width: 100px;
+        height: 120px;
+    }
+     .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    .business-item {
+        padding: 1rem;
+    }
+}
+
+/* 태블릿 반응형 */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+    
+    .foundation-info h2 {
+        font-size: 1.4rem;
+    }
+}
+
+/* PC 반응형 */
+@media (min-width: 1025px) {
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .title-bar {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* =========================== 규정 및 약관 스타일 (info1, info2) */
+.boho {
+    padding: 0 0.5rem;
+}
+
+.boho h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #374151;
+}
+
+/* 규정 개요 박스 */
+.info1 {
+    background-color: #f8f9fa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #374151;
+    word-break: keep-all;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.info1 span {
+    display: block;
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* 규정 상세 내용 */
+.info2 {
+    margin-top: 2rem;
+}
+
+.info2 h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #111;
+    margin: 2.5rem 0 1rem;
+    padding-left: 0.75rem;
+    border-left: 4px solid #F7B825; /* 포인트 색상 */
+    line-height: 1.3;
+}
+
+.info2 ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.info2 > ul > li {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #4b5563;
+}
+
+/* 중첩 리스트 스타일 */
+.info2 ul ul {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 8px;
+    border: 1px solid #f3f4f6;
+}
+
+.info2 ul ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+    font-size: 0.95rem;
+    color: #666;
+}
+
+.info2 ul ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* 약관 테이블 스타일 */
+.table2 {
+    width: 100%;
+    margin: 1rem 0;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    table-layout: fixed;
+}
+
+.table2 th {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    font-weight: 600;
+    padding: 0.875rem;
+    border: 1px solid #e5e7eb;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.table2 td {
+    padding: 0.875rem;
+    border: 1px solid #e5e7eb;
+    color: #4b5563;
+    line-height: 1.5;
+    vertical-align: middle;
+}
+
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .boho h2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .info1 {
+        padding: 1.25rem;
+        font-size: 0.938rem;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+    }
+    
+    .info2 h3 {
+        font-size: 1.1rem;
+        margin-top: 2rem;
+    }
+    
+    .info2 > ul > li {
+        font-size: 0.938rem;
+    }
+    
+    .table2 th, .table2 td {
+        padding: 0.625rem 0.5rem;
+        font-size: 0.85rem;
     }
 }

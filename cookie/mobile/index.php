@@ -239,7 +239,7 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                 <div class="r_box">
                                     <div class="tit">
                                         <p>웹진</p>  
-                                        <a href="" class="more"><span class="sound_only">웹진</span><i data-feather="plus"></i></a>
+                                        <a href="https://anseongnoin.or.kr/bbs/board.php?bo_table=pds" class="more"><span class="sound_only">웹진</span><i data-feather="plus"></i></a>
                                     </div>
                                     <div class="pop_up">
                                         <div class="arrow_box">
@@ -251,18 +251,18 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                         <div class="swiper-container pop_silder">
                                             <ul class="swiper-wrapper">
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img01.png" alt="웹진"></div>
+                                                    <a href="https://anseongnoin.or.kr/bbs/board.php?bo_table=pds&wr_id=76">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine01.png" alt="웹진12월"></div>
                                                     </a>
                                                 </li>
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img02.png" alt="웹진"></div>
+                                                    <a href="https://anseongnoin.or.kr/bbs/board.php?bo_table=pds&wr_id=74">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine02.png" alt="웹진11월"></div>
                                                     </a>
                                                 </li>
                                                 <li class="swiper-slide item">
-                                                    <a href="">
-                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/img03.png" alt="웹진"></div>
+                                                    <a href="https://anseongnoin.or.kr/bbs/board.php?bo_table=pds&wr_id=72">
+                                                        <div class="img"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc02/webzine03.png" alt="웹진10월"></div>
                                                     </a>
                                                 </li>
                                             </ul>
@@ -382,6 +382,13 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                         </script>
                     </section>
                     <!-- inc04 [e] -->
+                     <select class="" onchange="if(this.value) window.open(this.value);">
+                        <option value="">Family Site</option>
+                        <option value="" target="_blank"></option>
+                        <option value="" target="_blank"></option>
+                        <option value="" target="_blank"></option>
+                        <option value="" target="_blank"></option>
+                    </select>
                 </section> 
                 <!-- sh_section [e] -->
             </div>

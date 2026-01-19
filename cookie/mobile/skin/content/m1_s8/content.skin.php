@@ -26,7 +26,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <div class="foundation-info">
                 <h2 class="title-with-icon">오시는길</h2>
-                <p class="foundation-subtitle">안성시노인복지관 찾아오시는 길</p>
+                <!-- <p class="foundation-subtitle">안성시노인복지관 찾아오시는 길</p> -->
             </div>
         </div>
     </div>
@@ -47,7 +47,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">오시는 길</h3>
+                <h3 class="section-title-with-icon2">오시는 길</h3>
                 
                 <div class="transport-section">
                     <h4 class="transport-title">🚗 자가용 이용</h4>
@@ -91,7 +91,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">연락처 정보</h3>
+                <h3 class="section-title-with-icon2">연락처 정보</h3>
                 <div class="contact-details">
                     <div class="contact-item">
                         <span class="contact-label">주소:</span>
