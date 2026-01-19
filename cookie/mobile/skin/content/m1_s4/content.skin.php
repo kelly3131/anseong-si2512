@@ -35,14 +35,87 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="history-content">
             <!-- 연혁 탭 메뉴 -->
             <div class="history-tabs">
-                <button class="history-tab active" data-tab="tab1">2024 ~ 2021</button>
+                <button class="history-tab active" data-tab="tab0">2025</button>
+                <button class="history-tab" data-tab="tab1">2024 ~ 2021</button>
                 <button class="history-tab" data-tab="tab2">2020 ~ 2019</button>
                 <button class="history-tab" data-tab="tab3">2018 ~ 2015</button>
                 <button class="history-tab" data-tab="tab4">2014 ~ 2008</button>
             </div>
 
             <!-- 연혁 탭 내용 -->
-            <div class="history-tab-content active" id="tab1">
+            <div class="history-tab-content active" id="tab0">
+                <div class="history-section">
+                    <div class="h_year">2025</div>
+                    <ul class="history-items">
+                        <li class="history-item">
+                            <div class="h_date">01.24</div>
+                            <div class="h_con">경기비발디 나눔사업-혹한기 겨울나기 물품지원</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">01.31</div>
+                            <div class="h_con">경기비발디 나눔사업-2025년 설명절 음식 지원사업</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">02.27</div>
+                            <div class="h_con">2024년 사회복지시설 평가 A등급</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">03.02</div>
+                            <div class="h_con">안성시노인복지관 신임 관장 가섭스님 임명</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">03.10</div>
+                            <div class="h_con">2025년 노인자원봉사 활성화 지원사업 선배시민 자원봉사단 공모 선정</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">03.19</div>
+                            <div class="h_con">안성시 어르신 문화체육 이음터사업 업무협약(크리아트 미술학원, 이너피스 요가원)</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">03.20</div>
+                            <div class="h_con">2025년 어르신 인생노트 ‘사(死)는 의미’ 선정</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">03.25</div>
+                            <div class="h_con">반려식물과 함께하는 우울예방 집단상담 “나와 친구하자” 선정</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">05.08</div>
+                            <div class="h_con">어버이날 기념행사 ‘부모愛 감사해孝’</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">05.19</div>
+                            <div class="h_con">2025년 사회복지시설 환경개선 사업 선정(경기복지재단)</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">06.05</div>
+                            <div class="h_con">경기비발디 나눔사업-혹서기 지원사업</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">07.10</div>
+                            <div class="h_con">복지정보 소외계층 지원 강화를 위한 복지정보안내도우미 업무협약 체결</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">07.24</div>
+                            <div class="h_con">안성시 돌봄통합 협력체계 구축 협약 체결<br>(국민건강보험공단 안성지사, 안성성모병원, 안성시여성단체협의회)</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">10.17</div>
+                            <div class="h_con">2025년 안성맞춤 시니어예술제 ‘함께한 시간, 빛나는 순간’</div>
+                        </li>
+                        <li class="history-item">
+                            <div class="h_date">10.20</div>
+                            <div class="h_con">노인위기 상담과 생명존중문화 확산을 위한 업무협약 체결<br>(대한불교조계종사회복지재단 산하 24개 노인복지관 및 불교상담개발원)</div>
+                        </li>
+                        <li class="history-item quarter_line">
+                            <div class="h_date">12.19</div>
+                            <div class="h_con">2025년도 자원봉사자·후원자 총회 ‘안성맞춤, 함께 가는 길’</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="history-tab-content" id="tab1">
                 <div class="history-section">
                     <div class="h_year">2024</div>
                     <ul class="history-items">
