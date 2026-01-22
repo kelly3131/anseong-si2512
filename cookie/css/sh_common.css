@@ -180,6 +180,10 @@ footer .ft_inner .ft_policy {
 .pd_x30{padding:0 30px}
 .pd_x30{padding:0 30px}
 .mt40{margin-top:40px}
+
+.txt_l {text-align:left}
+.txt_r {text-align:right}
+.txt_c {text-align:center}  
 /* 반응형 [s] */
 @media (hover:hover){
 #shGnb .sh_nav > li > a:hover{color:var(--primary)}

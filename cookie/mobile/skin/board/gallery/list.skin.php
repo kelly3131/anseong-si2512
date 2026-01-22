@@ -112,9 +112,9 @@ function get_attached_file_name($bo_table, $wr_id)
     <?php echo $page ?> 페이지
 </div>
 
-<div id="nav">
+<!-- <div id="nav">
     <div class="nav_wr"><a href="<?php echo G5_URL ?>"><i class="fa fa-home"></i> HOME</a> &gt; <?php echo ($board['bo_mobile_subject'] ? $board['bo_mobile_subject'] : $board['bo_subject']); ?> </div>
-</div>
+</div> -->
 
 <?php if ($is_category) { ?>
 <nav id="bo_cate">

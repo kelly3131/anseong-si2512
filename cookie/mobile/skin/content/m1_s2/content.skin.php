@@ -25,7 +25,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-title">
         <div class="title-bar">
             <div class="foundation-info">
-                <h2 class="title-with-icon">안성시노인복지관</h2>
+                <!-- <h2 class="title-with-icon">안성시노인복지관</h2> -->
                 <!-- <p class="foundation-subtitle">나눔으로 함께⬩소통하는 우리⬩향기나는 세상</p> -->
             </div>
         </div>
@@ -42,9 +42,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 
                 <p>안성시노인복지관은 이용어르신과 종사자의 권익과 복지후생을 최우선으로 서로를 존중하고 배려하는 윤리경영은 물론 친환경 운영을 통해 미래비전을 만들어가겠습니다.</p>
                 
-                <p>안성시노인복지관이 안성시 노인복지의 중심으로 성장할 수 있도록 지속적인 관심과 후원 부탁드리며, 이용어르신과 종사자, 자원봉사자 및 후원자 그리고 유관기관 관계자 여러분과 함께 나눔으로 함께하며 소통으로 우리가 되어 향기로운 세상을 빚어 가겠습니다. 감사합니다.</p>
+                <p>안성시노인복지관이 안성시 노인복지의 중심으로 성장할 수 있도록 지속적인 관심과 후원 부탁드리며, 이용어르신과 종사자, 자원봉사자 및 후원자 그리고 유관기관 관계자 여러분과 함께 나눔으로 소통하며 향기로운 세상을 빚어 가겠습니다. 감사합니다.</p>
                 
-                <p><strong>안성시노인복지관장 가섭 모심</strong></p>
+                <p class="txt_r"><strong>안성시노인복지관장 가섭 모심</strong></p>
             </div>
         </div>
     </div>

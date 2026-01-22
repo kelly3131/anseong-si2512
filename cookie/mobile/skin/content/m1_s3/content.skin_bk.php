@@ -31,13 +31,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         </div>
     </div>
 
-      <div class="content-card">
+    <div class="content-card">
         <!-- 핵심가치 -->
         <div class="section">
             <h2 class="section-title">핵심가치</h2>
             <div class="core-values">
                 <div class="core-value-item">나눔으로 함께</div>
+                <div class="core-value-item" style="font-size: 1.5em; color: #F7B825;">•</div>
                 <div class="core-value-item">소통하는 우리</div>
+                <div class="core-value-item" style="font-size: 1.5em; color: #F7B825;">•</div>
                 <div class="core-value-item">향기로운 세상</div>
             </div>
         </div>
@@ -46,41 +48,41 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="illustration">
             <svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
                 <!-- 배경 원들 -->
-                <circle cx="150" cy="150" r="80" fill="#FFF8E1" opacity="0.7"/>
-                <circle cx="300" cy="150" r="80" fill="#E8F5E9" opacity="0.7"/>
-                <circle cx="450" cy="150" r="80" fill="#FBE9E7" opacity="0.7"/>
+                <circle cx="150" cy="150" r="80" fill="#FFF8E1" opacity="0.6"/>
+                <circle cx="300" cy="150" r="80" fill="#FFECB3" opacity="0.6"/>
+                <circle cx="450" cy="150" r="80" fill="#FFE082" opacity="0.6"/>
                 
                 <!-- 나눔 (하트 모양) -->
                 <g transform="translate(150, 120)">
                     <path d="M0,20 C0,10 -10,0 -20,0 C-30,0 -35,10 -35,20 C-35,40 0,60 0,60 C0,60 35,40 35,20 C35,10 30,0 20,0 C10,0 0,10 0,20 Z" fill="#F7B825"/>
-                    <text x="0" y="80" text-anchor="middle" fill="#F7B825" font-size="16" font-weight="bold">나눔</text>
+                    <text x="0" y="80" text-anchor="middle" fill="#F7B825" font-size="18" font-weight="bold">나눔</text>
                 </g>
                 
                 <!-- 소통 (대화 말풍선) -->
                 <g transform="translate(300, 130)">
-                    <ellipse cx="0" cy="0" rx="35" ry="28" fill="#4A9B8C"/>
+                    <ellipse cx="0" cy="0" rx="35" ry="28" fill="#F7B825"/>
                     <ellipse cx="-10" cy="5" rx="30" ry="23" fill="white"/>
-                    <circle cx="-20" cy="0" r="4" fill="#4A9B8C"/>
-                    <circle cx="-10" cy="0" r="4" fill="#4A9B8C"/>
-                    <circle cx="0" cy="0" r="4" fill="#4A9B8C"/>
-                    <text x="0" y="60" text-anchor="middle" fill="#4A9B8C" font-size="16" font-weight="bold">소통</text>
+                    <circle cx="-20" cy="0" r="4" fill="#F7B825"/>
+                    <circle cx="-10" cy="0" r="4" fill="#F7B825"/>
+                    <circle cx="0" cy="0" r="4" fill="#F7B825"/>
+                    <text x="0" y="60" text-anchor="middle" fill="#F7B825" font-size="18" font-weight="bold">소통</text>
                 </g>
                 
                 <!-- 향기 (꽃) -->
                 <g transform="translate(450, 130)">
                     <circle cx="0" cy="0" r="8" fill="#FFD54F"/>
-                    <ellipse cx="0" cy="-18" rx="10" ry="15" fill="#E67E5A" transform="rotate(0)"/>
-                    <ellipse cx="15" cy="-9" rx="10" ry="15" fill="#E67E5A" transform="rotate(72)"/>
-                    <ellipse cx="9" cy="14" rx="10" ry="15" fill="#E67E5A" transform="rotate(144)"/>
-                    <ellipse cx="-9" cy="14" rx="10" ry="15" fill="#E67E5A" transform="rotate(216)"/>
-                    <ellipse cx="-15" cy="-9" rx="10" ry="15" fill="#E67E5A" transform="rotate(288)"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="15" fill="#F7B825" transform="rotate(0)"/>
+                    <ellipse cx="15" cy="-9" rx="10" ry="15" fill="#F7B825" transform="rotate(72)"/>
+                    <ellipse cx="9" cy="14" rx="10" ry="15" fill="#F7B825" transform="rotate(144)"/>
+                    <ellipse cx="-9" cy="14" rx="10" ry="15" fill="#F7B825" transform="rotate(216)"/>
+                    <ellipse cx="-15" cy="-9" rx="10" ry="15" fill="#F7B825" transform="rotate(288)"/>
                     <rect x="-3" y="10" width="6" height="30" fill="#8BC34A" rx="3"/>
-                    <text x="0" y="65" text-anchor="middle" fill="#E67E5A" font-size="16" font-weight="bold">향기</text>
+                    <text x="0" y="65" text-anchor="middle" fill="#F7B825" font-size="18" font-weight="bold">향기</text>
                 </g>
                 
                 <!-- 연결선 -->
-                <line x1="180" y1="150" x2="270" y2="150" stroke="#4A9B8C" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
-                <line x1="330" y1="150" x2="420" y2="150" stroke="#E67E5A" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
+                <line x1="180" y1="150" x2="270" y2="150" stroke="#F7B825" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+                <line x1="330" y1="150" x2="420" y2="150" stroke="#F7B825" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
             </svg>
         </div>
 
@@ -109,7 +111,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <h2 class="section-title">비전</h2>
             
             <div class="vision-item">
-                <div class="vision-title">나눔으로 함께하는 복지관</div>
+                <div class="vision-title">1. 나눔으로 함께하는 복지관</div>
                 <ul class="vision-content">
                     <li>지역사회 다양한 복지 자원연계를 통한 나눔문화 확산</li>
                     <li>나눔 활동을 통한 지역사회 기부문화 형성과 참여 실천</li>
@@ -117,7 +119,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="vision-item">
-                <div class="vision-title">소통하는 우리들의 복지관</div>
+                <div class="vision-title">2. 소통하는 우리들의 복지관</div>
                 <ul class="vision-content">
                     <li>지역복지 네트워크 형성을 통한 함께 성장하는 복지공동체 구현</li>
                     <li>세대통합을 실현할 수 있는 문화복지 구현</li>
@@ -126,7 +128,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="vision-item">
-                <div class="vision-title">향기로운 세상을 여는 복지관</div>
+                <div class="vision-title">3. 향기로운 세상을 여는 복지관</div>
                 <ul class="vision-content">
                     <li>대상자 안성맞춤 복지프로그램 제공 및 당사자 통합 사례관리</li>
                     <li>안성맞춤 돌봄 생태계 구현을 통한 지역사회 안전망 구축</li>

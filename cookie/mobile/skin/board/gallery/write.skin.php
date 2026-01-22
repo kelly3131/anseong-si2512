@@ -15,9 +15,9 @@ if (G5_IS_MOBILE) {
 } 
 ?>
 
-<div id="nav">
+<!-- <div id="nav">
     <div class="nav_wr"><a href="<?php echo G5_URL ?>"><i class="fa fa-home"></i> HOME</a> &gt; <?php echo ($board['bo_mobile_subject'] ? $board['bo_mobile_subject'] : $board['bo_subject']); ?> </div>
-</div>
+</div> -->
 
 <section id="bo_w">
     <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">

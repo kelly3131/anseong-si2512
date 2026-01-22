@@ -209,9 +209,6 @@
     border-radius: 5px !important;
 }
 
-/* 기존 스타일 제거됨 */
-}
-
 .staff-statistics table.organ_table1 td:last-child,
 table.organ_table1 td:last-child {
     font-weight: bold !important;
@@ -667,5 +664,764 @@ table.organ_table1 tbody tr:nth-child(3) td:last-child {
     
     .organ_pop_txt .staff-info-section h4 {
         font-size: 14px !important;
+    }
+}
+
+/* ===========================조직도 스타일 */
+
+/* 조직도 전체 래퍼 */
+.organ-chart-wrapper {
+    width: 100%;
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.org-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 900px;
+}
+
+/* 조직도 행 */
+.org-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+}
+
+/* 조직도 제목 */
+.org-label {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #666;
+    font-weight: 500;
+    background: #f5f5f5;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* 조직도 박스 기본 스타일 */
+.org-box {
+    padding: 14px 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    min-width: 130px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 2;
+}
+
+.org-box:hover {
+    border-color: #F7B825;
+    box-shadow: 0 4px 12px rgba(247, 184, 37, 0.2);
+    transform: translateY(-2px);
+}
+
+.org-box.org-ceo {
+    background: linear-gradient(135deg, #62b37c 0%, #4a9366 100%);
+    border-color: #62b37c;
+    color: #ffffff;
+    min-width: 160px;
+}
+
+.org-box.org-ceo:hover {
+    border-color: #F7B825;
+    box-shadow: 0 4px 12px rgba(247, 184, 37, 0.3);
+}
+
+.org-box.org-committee {
+    background: #828282;
+    border-color: #828282;
+    color: #ffffff;
+    min-width: 110px;
+}
+
+.org-box.org-committee:hover {
+    background: #6b6b6b;
+    border-color: #F7B825;
+}
+
+.org-box.org-director {
+    background: #ffffff;
+    border-color: #ddd;
+    color: #333;
+    min-width: 120px;
+    font-weight: 600;
+}
+
+.org-box.org-director:hover {
+    background: #f9f9f9;
+    border-color: #F7B825;
+}
+
+.org-box.org-dept-head {
+    background: #3c8cd2;
+    border-color: #3c8cd2;
+    color: #ffffff;
+    min-width: 120px;
+}
+
+.org-box.org-dept-head:hover {
+    background: #2a6aaa;
+    border-color: #F7B825;
+}
+
+.org-box.org-team {
+    background: #34b5a8;
+    border-color: #34b5a8;
+    color: #ffffff;
+    min-width: 110px;
+}
+
+.org-box.org-team:hover {
+    background: #269a91;
+    border-color: #F7B825;
+}
+
+.org-name {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    letter-spacing: -0.3px;
+}
+
+.org-sub {
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.9;
+    letter-spacing: -0.2px;
+}
+
+/* ========== 연결선 시스템 ========== */
+
+/* 세로 연결선 (부모에서 아래로) */
+.org-vline {
+    width: 2px;
+    height: 25px;
+    background: #ccc;
+    margin: 0 auto;
+}
+
+/* 컬럼 박스 - 세로 연결선과 박스를 함께 묶음 */
+.org-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========== 2단계: 위원회 + 실무총괄 구조 ========== */
+.org-level2-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 관장에서 내려오는 세로선 (실무총괄까지) */
+.org-level2-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: calc(100% + 25px);
+    background: #ccc;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* 위원회 행 */
+.org-committee-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    position: relative;
+    margin-top: 25px;
+    z-index: 1;
+}
+
+/* 위원회 가로 연결선 */
+.org-committee-row::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #ccc;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* 위원회 박스 배경 */
+.org-committee-row > .org-col {
+    position: relative;
+    z-index: 2;
+}
+
+/* 실무총괄 행 */
+.org-director-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 실무총괄 위로 세로선 */
+.org-director-row::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background: #ccc;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* ========== 3단계+4단계: 과장과 팀 복합 구조 ========== */
+
+/* 복합 레이어 래퍼 */
+.org-level34-wrapper {
+    position: relative;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+/* 실무총괄에서 내려오는 세로선 (가로선까지) */
+.org-level34-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 137px;
+    background: #ccc;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* 과장 행 */
+.org-manager-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+/* 총무과장 (왼쪽) */
+.org-manager-left {
+    position: relative;
+}
+
+/* 총무과장 아래로 세로선 */
+.org-manager-left::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background: #ccc;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* 복지과장 (오른쪽) */
+.org-manager-right {
+    position: relative;
+}
+
+/* 복지과장 아래로 세로선 */
+.org-manager-right::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background: #ccc;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* 팀 행 */
+.org-team-row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    position: relative;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+/* 팀 가로선 - 전체 팀 연결 */
+.org-team-row::before {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: #ccc;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 130px);
+    max-width: 800px;
+    z-index: 0;
+}
+
+/* 팀 각 컬럼 위쪽 세로선 */
+.org-team-row > .org-col {
+    position: relative;
+}
+
+.org-team-row > .org-col::before {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 25px;
+    background: #ccc;
+    margin: 0 auto;
+    margin-top: -25px;
+}
+
+/* 부서 정보 테이블 */
+.org-detail-section {
+    width: 100%;
+    margin-top: 40px;
+    padding: 30px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+    animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.org-info-header {
+    padding: 0 20px 15px 20px;
+    border-bottom: 2px solid #F7B825;
+    margin-bottom: 20px;
+}
+
+.org-info-header h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.org-info-table-wrapper {
+    padding: 0 20px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 부서 상세 테이블 스타일 */
+.staff-info-section {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.staff-info-section h4 {
+    color: #F7B825;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F7B825;
+}
+
+.staff-table-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.staff-detail-table {
+    width: 100%;
+    min-width: 500px;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 14px;
+}
+
+.staff-detail-table thead {
+    background: #f8f8f8;
+}
+
+.staff-detail-table th {
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    border: 1px solid #ddd;
+    border-top: none;
+    font-size: 20px;
+    white-space: nowrap;
+    background: #f8f8f8;
+}
+
+.staff-detail-table td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 20px;
+    color: #555;
+}
+
+.staff-detail-table th:first-child,
+.staff-detail-table td:first-child {
+    border-left: none;
+}
+
+.staff-detail-table th:last-child,
+.staff-detail-table td:last-child {
+    border-right: none;
+}
+
+.staff-detail-table tr:last-child td {
+    border-bottom: none;
+}
+
+.staff-detail-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.org-detail-table {
+    width: 100%;
+    min-width: 600px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.org-detail-table thead {
+    background: #f0f0f0;
+}
+
+.org-detail-table th {
+    padding: 14px 12px;
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.org-detail-table td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 13px;
+    color: #666;
+}
+
+.org-detail-table tbody tr:hover {
+    background: #f9f9f9;
+}
+
+.org-detail-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* 모바일 반응형 (767px 이하) - 조직도 세로 배치 */
+@media (max-width: 767px) {
+    .organ-chart-wrapper {
+        padding: 20px 15px;
+        overflow-x: visible;
+    }
+
+    .org-chart {
+        min-width: auto;
+        width: 100%;
+    }
+
+    /* 모바일에서 모든 연결선 숨기기 */
+    .org-vline,
+    .org-level2-wrapper::before,
+    .org-committee-row::before,
+    .org-director-row::before,
+    .org-level3-container::before,
+    .org-level3-container::after,
+    .org-level3-container > .org-col::before,
+    .org-level4-container::before,
+    .org-level4-container > .org-col::before,
+    .org-level34-wrapper::before,
+    .org-manager-left::after,
+    .org-manager-right::after,
+    .org-team-row::before,
+    .org-team-row > .org-col::before {
+        display: none !important;
+    }
+
+    /* 1단계 - CEO */
+    .org-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .org-label {
+        position: static;
+        transform: none;
+        margin-bottom: 10px;
+    }
+
+    /* 2단계 - 세로 배치 */
+    .org-level2-wrapper {
+        margin-top: 15px;
+    }
+
+    .org-committee-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .org-director-row {
+        margin-top: 10px;
+    }
+
+    /* 3단계+4단계 - 세로 배치 */
+    .org-level34-wrapper {
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+
+    .org-manager-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .org-team-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    /* 3단계 - 세로 배치 (구버전 호환) */
+    .org-level3-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding-top: 15px;
+        margin-top: 15px;
+    }
+
+    /* 4단계 - 세로 배치 (구버전 호환) */
+    .org-level4-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+    /* 모바일 박스 스타일 */
+    .org-box {
+        padding: 12px 20px;
+        min-width: 200px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .org-box.org-ceo {
+        min-width: 220px;
+        max-width: 280px;
+    }
+
+    .org-box.org-committee,
+    .org-box.org-director {
+        min-width: 180px;
+        max-width: 230px;
+    }
+
+    .org-box.org-dept-head {
+        min-width: 200px;
+        max-width: 250px;
+    }
+
+    .org-box.org-team {
+        min-width: 180px;
+        max-width: 230px;
+    }
+
+    .org-name {
+        font-size: 13px;
+    }
+
+    .org-sub {
+        font-size: 11px;
+    }
+
+    /* 모바일 테이블 스타일 */
+    .org-detail-table {
+        min-width: 500px;
+        font-size: 12px;
+    }
+
+    .org-detail-table th,
+    .org-detail-table td {
+        padding: 10px 8px;
+    }
+
+    .org-info-header {
+        padding: 0 15px 12px 15px;
+    }
+
+    .org-info-table-wrapper {
+        padding: 0 15px;
+    }
+
+    .staff-detail-table {
+        min-width: 450px;
+        font-size: 12px;
+    }
+
+    .staff-detail-table th,
+    .staff-detail-table td {
+        padding: 10px 8px;
+        font-size: 12px;
+    }
+
+    .staff-info-section h4 {
+        font-size: 14px;
+    }
+}
+
+/* 태블릿 반응형 (768px ~ 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .organ-chart-wrapper {
+        padding: 25px 15px;
+    }
+
+    .org-chart {
+        min-width: 750px;
+    }
+
+    .org-box {
+        padding: 12px 16px;
+        min-width: 110px;
+    }
+
+    .org-box.org-ceo {
+        min-width: 140px;
+    }
+
+    .org-level3-container {
+        gap: 50px;
+    }
+
+    .org-level3-container::before {
+        width: 280px;
+    }
+
+    /* 태블릿 3+4단계 조정 */
+    .org-manager-row {
+        max-width: 700px;
+    }
+
+    .org-team-row {
+        gap: 10px;
+    }
+
+    .org-team-row::before {
+        max-width: 650px;
+    }
+
+    .org-detail-table {
+        min-width: 550px;
+    }
+}
+
+/* PC 반응형 (1025px 이상) */
+@media (min-width: 1025px) {
+    .organ-chart-wrapper {
+        padding: 35px 25px;
+    }
+
+    .org-chart {
+        min-width: 950px;
+    }
+
+    .org-box {
+        padding: 15px 22px;
+        min-width: 140px;
+    }
+
+    .org-box.org-ceo {
+        min-width: 170px;
+    }
+
+    .org-level2-container {
+        gap: 40px;
+    }
+
+    .org-level3-container {
+        gap: 100px;
+    }
+
+    .org-level3-container::before {
+        width: 400px;
+    }
+
+    .org-level4-container {
+        gap: 20px;
+    }
+
+    /* PC 3+4단계 조정 */
+    .org-manager-row {
+        max-width: 900px;
+    }
+
+    .org-team-row {
+        gap: 20px;
+    }
+
+    .org-team-row::before {
+        max-width: 850px;
+    }
+
+    .org-detail-table {
+        min-width: 700px;
     }
 }

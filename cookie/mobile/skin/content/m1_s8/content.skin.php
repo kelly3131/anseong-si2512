@@ -47,7 +47,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon2">오시는 길</h3>
+                <!-- <h3 class="section-title-with-icon2">오시는 길</h3> -->
                 
                 <div class="transport-section">
                     <h4 class="transport-title">🚗 자가용 이용</h4>

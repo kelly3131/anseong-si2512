@@ -17,13 +17,13 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
   echo '</div>';
 }
 ?>
-
+<!-- 
 <nav id="nav">
   <div class="nav_wr">
     <a href="<?php echo G5_URL ?>"><i class="fa fa-home"></i> HOME</a> &gt; 
     <?php echo $board['bo_subject']; ?>
   </div>
-</nav>
+</nav> -->
 
 <div class="inner container">
   <article id="bo_w" class="bo_w_<?php echo $bo_table; ?>">

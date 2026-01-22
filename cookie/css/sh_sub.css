@@ -398,7 +398,7 @@
 }
 
 .info-section p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 0.5rem;
@@ -984,6 +984,7 @@
     color: #4b5563;
     line-height: 1.6;
     margin-bottom: 1rem;
+    font-size: 1.2rem;
 }
 .intro-section p:last-child {
     margin-bottom: 0;

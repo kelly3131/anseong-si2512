@@ -87,7 +87,7 @@
 }
 
 .sub-text {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #6b7280;
     display: block;
     margin-top: 0.5rem;
@@ -120,7 +120,7 @@
 }
 
 .time-label {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #F7B825;
     margin-bottom: 0.75rem;
@@ -137,13 +137,13 @@
 }
 
 .days {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 600;
     color: #1f2937;
 }
 
 .hours {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
     color: #6b7280;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .required-items h4 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     color: #1f2937;
     margin: 0 0 1rem 0;
@@ -185,7 +185,7 @@
 }
 
 .item span {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #374151;
 }

@@ -1,291 +1,453 @@
 @charset "utf-8";
 
-/* 미션 및 비전 페이지 스타일 */
-
-/* 재단 헤더 스타일 */
-.title-bar {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
+/* 색상 변수 정의 */
+:root {
+    --primary-gold: #F7B825;
+    --secondary-coral: #E67E5A;
+    --accent-teal: #4A9B8C;
+    --accent-purple: #8B7BB3;
+    --accent-blue: #5B9BD5;
+    --text-dark: #2c3e50;
+    --text-medium: #555;
+    --text-light: #777;
+    --bg-warm: #FFFBF5;
 }
 
-.foundation-logo {
-    width: 80px;
-    height: 80px;
-    background: #c9a96e;
+body {
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.8;
+    color: var(--text-dark);
+    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(247, 184, 37, 0.1);
+}
+
+.header h1 {
+    font-size: 2.2em;
+    color: var(--primary-gold);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.section {
+    background: white;
+    margin-bottom: 30px;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    /* border-left: 5px solid var(--primary-gold); */
+}
+/* 
+.section:nth-child(2) {
+    border-left-color: var(--secondary-coral);
+}
+
+.section:nth-child(3) {
+    border-left-color: var(--accent-teal);
+}
+
+.section:nth-child(4) {
+    border-left-color: var(--accent-purple);
+}
+
+.section:nth-child(5) {
+    border-left-color: var(--accent-blue);
+} */
+
+.section-title {
+    font-size: 1.4em;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.section-title::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background: var(--primary-gold);
     border-radius: 50%;
+    margin-right: 12px;
+}
+
+.core-values {
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-}
-
-.foundation-info {
-    flex: 1;
-}
-
-.foundation-info h2 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 0.25rem 0;
-}
-
-.foundation-subtitle {
-    font-size: 0.75rem;
-    color: #6b7280;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    margin: 0;
-}
-
-/* 미션 스타일 */
-.mission-title {
-    background: #F7B825;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    margin: 2rem 0 1rem 0;
-    border-bottom: none;
-}
-
-.vision-title {
-    background: #F7B825;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.75rem;
-    border-radius: 8px;
-    margin: 2rem 0 1rem 0;
-    border-bottom: none;
-}
-
-.mission-statement {
-    background: #fff;
-    border: 1px solid #e5e7eb;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 25px;
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFF3E0 100%);
     border-radius: 12px;
-    padding: 2rem;
+}
+
+.core-value-item {
     text-align: center;
-    margin: 1rem 0;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.mission-text {
-    font-size: 1.25rem;
+    font-size: 1.1em;
     font-weight: 600;
-    color: #1f2937;
-    margin: 0;
-    line-height: 1.5;
+    color: var(--text-dark);
+    padding: 12px 20px;
+    background: white;
+    border-radius: 25px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
-/* 비전 그리드 */
-.vision-grid {
+.core-value-item:nth-child(1) {
+    border-bottom: 3px solid var(--primary-gold);
+}
+
+.core-value-item:nth-child(3) {
+    border-bottom: 3px solid var(--accent-teal);
+}
+
+.core-value-item:nth-child(5) {
+    border-bottom: 3px solid var(--secondary-coral);
+}
+
+.philosophy-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.philosophy-item {
+    padding: 20px 15px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 0.95em;
+    font-weight: 600;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.philosophy-item:nth-child(1) {
+    background: linear-gradient(135deg, var(--primary-gold) 0%, #f5a623 100%);
+}
+
+.philosophy-item:nth-child(2) {
+    background: linear-gradient(135deg, var(--secondary-coral) 0%, #d4694a 100%);
+}
+
+.philosophy-item:nth-child(3) {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, #3a8b7c 100%);
+}
+
+.philosophy-item:nth-child(4) {
+    background: linear-gradient(135deg, var(--accent-purple) 0%, #7b6ba3 100%);
+}
+
+.philosophy-item:nth-child(5) {
+    background: linear-gradient(135deg, var(--accent-blue) 0%, #4a8bc5 100%);
+}
+
+.philosophy-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.mission-box {
+    background: linear-gradient(135deg, var(--accent-teal) 0%, #3a8b7c 100%);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 700;
+    box-shadow: 0 4px 16px rgba(74, 155, 140, 0.3);
 }
 
 .vision-item {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: var(--bg-warm);
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-gold);
+}
+
+.vision-item:nth-child(2) {
+    border-left-color: var(--accent-teal);
+}
+
+.vision-item:nth-child(3) {
+    border-left-color: var(--secondary-coral);
+}
+
+.vision-title {
+    font-size: 1.1em;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.vision-item:nth-child(2) .vision-title::before {
+    content: "01";
+    background: var(--primary-gold);
+    color: white;
+    font-size: 0.7em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.vision-item:nth-child(3) .vision-title::before {
+    content: "02";
+    background: var(--accent-teal);
+    color: white;
+    font-size: 0.7em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.vision-item:nth-child(4) .vision-title::before {
+    content: "03";
+    background: var(--secondary-coral);
+    color: white;
+    font-size: 0.7em;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.vision-content {
+    padding-left: 15px;
+}
+
+.vision-content li {
+    margin-bottom: 8px;
+    color: var(--text-medium);
+    list-style-type: none;
     position: relative;
+    padding-left: 18px;
+    font-size: 0.92em;
+    line-height: 1.6;
 }
 
-.vision-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
-}
-
-.vision-number {
+.vision-content li::before {
+    content: "✓";
+    color: var(--accent-teal);
+    font-weight: bold;
     position: absolute;
-    top: -10px;
-    left: 20px;
-    width: 30px;
-    height: 30px;
-    background: #F7B825;
+    left: 0;
+    font-size: 0.85em;
+}
+
+.policy-list {
+    counter-reset: policy-counter;
+}
+
+.policy-item {
+    counter-increment: policy-counter;
+    margin-bottom: 12px;
+    padding: 16px 16px 16px 55px;
+    background: var(--bg-warm);
+    border-radius: 8px;
+    position: relative;
+    font-size: 0.92em;
+    color: var(--text-medium);
+    line-height: 1.5;
+}
+
+.policy-item::before {
+    content: counter(policy-counter);
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    background: var(--accent-blue);
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.875rem;
     font-weight: 700;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    font-size: 0.85em;
 }
 
-.vision-content {
-    flex: 1;
+.policy-item:nth-child(2)::before {
+    background: var(--accent-teal);
 }
 
-.vision-content {
-    padding-top: 0.5rem;
+.policy-item:nth-child(3)::before {
+    background: var(--secondary-coral);
 }
 
-.vision-content h4 {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 0 0 1rem 0;
-    line-height: 1.3;
+.policy-item:nth-child(4)::before {
+    background: var(--accent-purple);
 }
 
-.vision-content p {
-    font-size: 0.875rem;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
+.policy-item:nth-child(5)::before {
+    background: var(--primary-gold);
 }
 
-/* 섹션 제목 스타일 */
-.section-title-with-icon {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #1f2937;
-    margin: 2rem 0 1rem 0;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #F7B825;
+.talent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.talent-card {
+    padding: 22px 18px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
     text-align: center;
 }
 
-/* 소개 텍스트 영역 */
-.intro-section {
-    margin-bottom: 2rem;
+.talent-card:nth-child(1) {
+    background: linear-gradient(135deg, #FFF8E1 0%, #FFECB3 100%);
+    border-top: 4px solid var(--primary-gold);
 }
 
-.intro-section p {
-    font-size: 0.875rem;
-    color: #4b5563;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+.talent-card:nth-child(2) {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-top: 4px solid var(--accent-teal);
 }
 
-/* 모바일 반응형 */
+.talent-card:nth-child(3) {
+    background: linear-gradient(135deg, #FBE9E7 0%, #FFCCBC 100%);
+    border-top: 4px solid var(--secondary-coral);
+}
+
+.talent-card:nth-child(4) {
+    background: linear-gradient(135deg, #EDE7F6 0%, #D1C4E9 100%);
+    border-top: 4px solid var(--accent-purple);
+}
+
+.talent-card:hover {
+    transform: translateY(-3px);
+}
+
+.talent-title {
+    font-size: 1.15em;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.talent-card:nth-child(1) .talent-title {
+    color: var(--primary-gold);
+}
+
+.talent-card:nth-child(2) .talent-title {
+    color: var(--accent-teal);
+}
+
+.talent-card:nth-child(3) .talent-title {
+    color: var(--secondary-coral);
+}
+
+.talent-card:nth-child(4) .talent-title {
+    color: var(--accent-purple);
+}
+
+.talent-desc {
+    color: var(--text-medium);
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+
+.illustration {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.illustration svg {
+    max-width: 100%;
+    height: auto;
+}
+
 @media (max-width: 768px) {
-    .title-bar {
+    .header h1 {
+        font-size: 1.6em;
+    }
+
+    .section {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.2em;
+    }
+
+    .core-values {
         flex-direction: column;
-        text-align: center;
-        gap: 0.75rem;
+        gap: 10px;
+        padding: 20px;
     }
-    
-    .foundation-logo {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .foundation-info h2 {
-        font-size: 1.25rem;
-    }
-    
-    .foundation-subtitle {
-        font-size: 0.7rem;
-    }
-    
-    .vision-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .vision-item {
-        padding: 1rem;
-    }
-    
-    .vision-number {
-        width: 25px;
-        height: 25px;
-        font-size: 0.75rem;
-        top: -8px;
-        left: 15px;
-    }
-    
-    .mission-statement {
-        padding: 1.5rem;
-    }
-    
-    .mission-text {
-        font-size: 1rem;
-    }
-    
-    .mission-title,
-    .vision-title {
-        font-size: 1.25rem;
-        padding: 0.6rem;
-    }
-}
 
-/* 태블릿 반응형 */
-@media (min-width: 769px) and (max-width: 1024px) {
-    .vision-grid {
+    .core-value-item {
+        font-size: 1em;
+    }
+
+    .philosophy-grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1.25rem;
+        gap: 10px;
     }
-    
-    .foundation-info h2 {
-        font-size: 1.4rem;
-    }
-    
-    .foundation-subtitle {
-        font-size: 0.8rem;
-    }
-}
 
-/* PC 반응형 */
-@media (min-width: 1025px) {
-    .content-wrapper {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
+    .philosophy-item {
+        padding: 15px 10px;
+        font-size: 0.85em;
     }
-    
-    .title-bar {
-        gap: 2rem;
-        margin-bottom: 2rem;
+
+    .mission-box {
+        padding: 22px;
+        font-size: 1.1em;
     }
-    
-    .foundation-logo {
-        width: 100px;
-        height: 100px;
-    }
-    
-    .foundation-info h2 {
-        font-size: 2rem;
-    }
-    
-    .foundation-subtitle {
-        font-size: 0.9rem;
-    }
-    
-    .vision-grid {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2rem;
-    }
-    
+
     .vision-item {
-        padding: 2rem;
+        padding: 15px;
     }
-    
-    .mission-statement {
-        padding: 3rem;
+
+    .vision-title {
+        font-size: 1em;
     }
-    
-    .mission-text {
-        font-size: 1.5rem;
+
+    .vision-content li {
+        font-size: 0.85em;
     }
-    
-    .vision-number {
-        width: 35px;
-        height: 35px;
-        font-size: 1rem;
-        top: -12px;
-        left: 25px;
+
+    .policy-item {
+        padding: 14px 14px 14px 50px;
+        font-size: 0.85em;
+    }
+
+    .talent-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .talent-card {
+        padding: 18px 12px;
+    }
+
+    .talent-title {
+        font-size: 1em;
+    }
+
+    .talent-desc {
+        font-size: 0.82em;
     }
 }

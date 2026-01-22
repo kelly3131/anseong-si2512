@@ -433,4 +433,4 @@ $(document).ready(function(){
 <div id="wrapper">
 
     <div id="container">
-    <?php if (!defined("_INDEX_")) { ?><h2 id="container_title" class="top" title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></h2><?php } ?>
+    <?php if (!defined("_INDEX_")) { ?><h2 id="container_title" class="top m1_s1" title="<?php echo get_text($g5['title']); ?>"><?php echo get_head_title($g5['title']); ?></h2><?php } ?>

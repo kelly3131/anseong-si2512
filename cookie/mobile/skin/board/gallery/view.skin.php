@@ -23,9 +23,9 @@ if($v_img_count) {
 }
  ?>
   
-<div id="nav">
+<!-- <div id="nav">
     <div class="nav_wr"><a href="<?php echo G5_URL ?>"><i class="fa fa-home"></i> HOME</a> &gt; <?php echo ($board['bo_mobile_subject'] ? $board['bo_mobile_subject'] : $board['bo_subject']); ?> </div>
-</div>
+</div> -->
 
 
 <article id="bo_v">
