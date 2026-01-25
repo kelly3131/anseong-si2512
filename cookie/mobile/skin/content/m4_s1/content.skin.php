@@ -32,7 +32,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div> -->
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">자원봉사 활동의 목적</h3>
+                <h3 class="section-title-with-icon2">자원봉사 활동의 목적</h3>
                 <ul>
                     <li>지역사회의 유용한 인력을 활용함으로써 지역사회교류 및 일체감을 조성합니다.</li>
                     <li>지속적인 활동으로 심신의 건강을 유지합니다.</li>
@@ -41,7 +41,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">대상</h3>
+                <h3 class="section-title-with-icon2">대상</h3>
                 <ul>
                     <li><strong>일반 자원봉사 :</strong> 학생, 주부, 직장인 등 개인 및 단체 누구나 가능</li>
                     <li><strong>어르신 자원봉사 :</strong> 어르신 개인 및 단체 누구나 가능</li>
@@ -49,7 +49,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">신청절차</h3>
+                <h3 class="section-title-with-icon2">신청절차</h3>
                 <ol>
                     <li>홈페이지를 통하여 봉사활동 참여 신청을 한 후 전화로 방문일시를 합의합니다.</li>
                     <li>약속된 시간에 본 회관을 방문, 복지관 소개 및 라운딩을 한 후에 활동분야에 대한 적합성 판정을 거친 후 해당분야 담당자와 구체적 봉사활동을 협의합니다.</li>
@@ -58,7 +58,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">참여분야</h3>
+                <h3 class="section-title-with-icon2">참여분야</h3>
                 <div class="table-scroll-wrapper">
                     <table class="basic_table">
                         <thead>

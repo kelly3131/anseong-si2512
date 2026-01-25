@@ -89,7 +89,7 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                     <!-- inc01 [s] -->
                     <section id="section01">
                         <article id="inc01">
-                            <div class="top_box">
+                            <div class="top_box"> 
                                 <div class="box_inner">
                                     <div class="left pl"><p class="text32 text_bold color_black">안성시노인복지관은,</p>
                                         <p class="text20 text_normal">안성시노인복지관은 대한불교조계종사회복지재단의 설립이념과 사회복지 철학을 바탕으로 지역사회를 위한 자비실천을 하고 있습니다.</p>

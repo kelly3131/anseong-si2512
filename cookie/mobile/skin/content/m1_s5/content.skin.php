@@ -34,7 +34,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon2">조직도</h3>
+                <!-- <h3 class="section-title-with-icon2">조직도</h3> -->
                 
                 <!-- 반응형 조직도 -->
                 <div class="organ-chart-wrapper">
