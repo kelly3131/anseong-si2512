@@ -148,6 +148,10 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                         <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
                                         <p>복지관 소개</p>
                                     </li>
+                                    <li>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=calendar3"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
+                                        <p>식단</p>
+                                    </li>
                                 </ul>
                             </div>
                         </article>

@@ -209,8 +209,8 @@
     border-radius: 5px !important;
 }
 
-.staff-statistics table.organ_table1 td:last-child,
-table.organ_table1 td:last-child {
+
+table.organ_table1 td.total {
     font-weight: bold !important;
     background: #fff3cd !important;
     color: #856404 !important;
@@ -1087,7 +1087,7 @@ table.organ_table1 tbody tr:nth-child(3) td:last-child {
     color: #333;
     border: 1px solid #ddd;
     border-top: none;
-    font-size: 20px;
+    font-size: 18px;
     white-space: nowrap;
     background: #f8f8f8;
 }
@@ -1096,8 +1096,9 @@ table.organ_table1 tbody tr:nth-child(3) td:last-child {
     padding: 12px;
     text-align: center;
     border: 1px solid #ddd;
-    font-size: 20px;
+    font-size: 18px;
     color: #555;
+    vertical-align: middle;
 }
 
 .staff-detail-table th:first-child,
