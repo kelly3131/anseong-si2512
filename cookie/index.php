@@ -129,28 +129,29 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                             <div class="bot_box">
                                 <ul>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s6"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon01.png" alt="아이콘01"></a></div>
-                                        <p>이용안내</p>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
+                                        <p>복지관 소개</p>
                                     </li>
                                     <li>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=photo""><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon01.png" alt="아이콘01"></a></div>
+                                        <p>복지관 이야기</p>
+                                    </li>
+                                    <!-- <li>
                                         <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=notice"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon02.png" alt="아이콘02"></a></div>
                                         <p>공지사항</p>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/write.php?bo_table=sponsor"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon03.png" alt="아이콘03"></a></div>
                                         <p>후원신청</p>
                                     </li>
                                     <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=schedule"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon04.png" alt="아이콘04"></a></div>
-                                        <p>이달의 행사</p>
+                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=volunteer"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon04.png" alt="아이콘04"></a></div>
+                                        <p>자원봉사신청</p>
                                     </li>
-                                    <li>
-                                        <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon05.png" alt="아이콘05"></a></div>
-                                        <p>복지관 소개</p>
-                                    </li>
+                                    
                                     <li>
                                         <div class="img_box"><a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=calendar3"><img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/inc01/bt_icon06.png" alt="아이콘06"></a></div>
-                                        <p>식단</p>
+                                        <p>이달의 식단</p>
                                     </li>
                                 </ul>
                             </div>
@@ -168,8 +169,8 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                             <ul class="late_tabs">
                                                 <li class="on" rel="tab1">공지사항</li>
                                                 <li rel="tab2">자료실</li>
-                                                <li rel="tab3">소식지</li>
-                                                <li rel="tab4">언론보도</li>
+                                                <!-- <li rel="tab3">소식지</li> -->
+                                                <li rel="tab3">언론보도</li>
                                             </ul>
                                             <a href="<?php echo G5_BBS_URL ?>/board.php?bo_table=notice" class="more"><span class="sound_only">복지관 소식</span><i data-feather="plus"></i></a>
                                         </div>
@@ -227,12 +228,12 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                                     <?php get_latest_posts('pds', '자료실'); ?>
                                                 </div>
                                             </div>
-                                            <div id="tab3" class="late_cont">
+                                            <!-- <div id="tab3" class="late_cont">
                                                 <div class="late">
                                                     <?php get_latest_posts('news', '소식지'); ?>
                                                 </div>
-                                            </div>
-                                            <div id="tab4" class="late_cont">
+                                            </div> -->
+                                            <div id="tab3" class="late_cont">
                                                 <div class="late">
                                                     <?php get_latest_posts('bodo', '언론보도'); ?>
                                                 </div>

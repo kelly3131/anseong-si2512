@@ -520,6 +520,9 @@
     width: 200px;
     height: 45px;
 }
+footer .ft_inner .ft_support {
+    flex-direction: column;
+}
 }
 @media (max-width:480px){
 #inc04 .inner .tit{padding-bottom:30px}

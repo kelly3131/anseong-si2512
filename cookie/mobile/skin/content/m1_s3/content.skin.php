@@ -126,7 +126,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="vision-item">
-                <div class="vision-title">향기로운 세상을 여는 복지관</div>
+                <div class="vision-title">행복한 세상을 여는 복지관</div>
                 <ul class="vision-content">
                     <li>대상자 안성맞춤 복지프로그램 제공 및 당사자 통합 사례관리</li>
                     <li>안성맞춤 돌봄 생태계 구현을 통한 지역사회 안전망 구축</li>
