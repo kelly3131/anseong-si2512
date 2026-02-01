@@ -38,7 +38,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <div class="core-values">
                 <div class="core-value-item">나눔으로 함께</div>
                 <div class="core-value-item">소통하는 우리</div>
-                <div class="core-value-item">향기로운 세상</div>
+                <div class="core-value-item">행복한 세상</div>
             </div>
         </div>
 
@@ -48,39 +48,58 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 <!-- 배경 원들 -->
                 <circle cx="150" cy="150" r="80" fill="#FFF8E1" opacity="0.7"/>
                 <circle cx="300" cy="150" r="80" fill="#E8F5E9" opacity="0.7"/>
-                <circle cx="450" cy="150" r="80" fill="#FBE9E7" opacity="0.7"/>
+                <circle cx="450" cy="150" r="80" fill="#F5E8D9" opacity="0.7"/>
                 
                 <!-- 나눔 (하트 모양) -->
-                <g transform="translate(150, 120)">
-                    <path d="M0,20 C0,10 -10,0 -20,0 C-30,0 -35,10 -35,20 C-35,40 0,60 0,60 C0,60 35,40 35,20 C35,10 30,0 20,0 C10,0 0,10 0,20 Z" fill="#F7B825"/>
-                    <text x="0" y="80" text-anchor="middle" fill="#F7B825" font-size="16" font-weight="bold">나눔</text>
+                <g transform="translate(150, 130)">
+                    <path d="M0,0 C0,-10 -10,-20 -20,-20 C-30,-20 -35,-10 -35,0 C-35,20 0,40 0,40 C0,40 35,20 35,0 C35,-10 30,-20 20,-20 C10,-20 0,-10 0,0 Z" fill="#F7B825"/>
+                    <text x="0" y="78" text-anchor="middle" fill="#F7B825" font-size="16" font-weight="bold">나눔</text>
                 </g>
                 
-                <!-- 소통 (대화 말풍선) -->
-                <g transform="translate(300, 130)">
-                    <ellipse cx="0" cy="0" rx="35" ry="28" fill="#4A9B8C"/>
-                    <ellipse cx="-10" cy="5" rx="30" ry="23" fill="white"/>
-                    <circle cx="-20" cy="0" r="4" fill="#4A9B8C"/>
-                    <circle cx="-10" cy="0" r="4" fill="#4A9B8C"/>
-                    <circle cx="0" cy="0" r="4" fill="#4A9B8C"/>
-                    <text x="0" y="60" text-anchor="middle" fill="#4A9B8C" font-size="16" font-weight="bold">소통</text>
+                <!-- 소통 (연결된 원 네트워크) -->
+                <g transform="translate(300, 140)">
+                    <!-- 중앙 원 -->
+                    <circle cx="0" cy="0" r="18" fill="#4A9B8C"/>
+                    
+                    <!-- 주변 작은 원들 -->
+                    <circle cx="-25" cy="-25" r="10" fill="#6BC4B4"/>
+                    <circle cx="25" cy="-25" r="10" fill="#6BC4B4"/>
+                    <circle cx="-25" cy="25" r="10" fill="#6BC4B4"/>
+                    <circle cx="25" cy="25" r="10" fill="#6BC4B4"/>
+                    
+                    <!-- 연결선들 -->
+                    <line x1="0" y1="0" x2="-25" y2="-25" stroke="#4A9B8C" stroke-width="3" opacity="0.6"/>
+                    <line x1="0" y1="0" x2="25" y2="-25" stroke="#4A9B8C" stroke-width="3" opacity="0.6"/>
+                    <line x1="0" y1="0" x2="-25" y2="25" stroke="#4A9B8C" stroke-width="3" opacity="0.6"/>
+                    <line x1="0" y1="0" x2="25" y2="25" stroke="#4A9B8C" stroke-width="3" opacity="0.6"/>
+                    
+                    <!-- 중앙 원 안 하트 -->
+                    <path d="M 0 -4 C 0 -6 -2 -8 -4 -8 C -6 -8 -7 -6 -7 -4 C -7 0 0 4 0 4 C 0 4 7 0 7 -4 C 7 -6 6 -8 4 -8 C 2 -8 0 -6 0 -4 Z" fill="white"/>
+                    
+                    <text x="0" y="70" text-anchor="middle" fill="#4A9B8C" font-size="16" font-weight="bold">소통</text>
                 </g>
                 
-                <!-- 향기 (꽃) -->
-                <g transform="translate(450, 130)">
-                    <circle cx="0" cy="0" r="8" fill="#FFD54F"/>
-                    <ellipse cx="0" cy="-18" rx="10" ry="15" fill="#E67E5A" transform="rotate(0)"/>
-                    <ellipse cx="15" cy="-9" rx="10" ry="15" fill="#E67E5A" transform="rotate(72)"/>
-                    <ellipse cx="9" cy="14" rx="10" ry="15" fill="#E67E5A" transform="rotate(144)"/>
-                    <ellipse cx="-9" cy="14" rx="10" ry="15" fill="#E67E5A" transform="rotate(216)"/>
-                    <ellipse cx="-15" cy="-9" rx="10" ry="15" fill="#E67E5A" transform="rotate(288)"/>
-                    <rect x="-3" y="10" width="6" height="30" fill="#8BC34A" rx="3"/>
-                    <text x="0" y="65" text-anchor="middle" fill="#E67E5A" font-size="16" font-weight="bold">향기</text>
+                <!-- 행복 (크게 웃는 얼굴) -->
+                <g transform="translate(450, 140)">
+                    <!-- 배경 -->
+                    <circle cx="0" cy="0" r="28" fill="#F0B5A3" opacity="0.3"/>
+                    <!-- 얼굴 -->
+                    <circle cx="0" cy="0" r="25" fill="none" stroke="#D9745A" stroke-width="2"/>
+                    <!-- 왼쪽 눈 (눈웃음 - 초승달) -->
+                    <path d="M -13 -8 Q -9 -4 -5 -8" stroke="#D9745A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <!-- 오른쪽 눈 (눈웃음 - 초승달) -->
+                    <path d="M 5 -8 Q 9 -4 13 -8" stroke="#D9745A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                    <!-- 큰 웃음 입 (호 모양) -->
+                    <path d="M -12 5 Q 0 16 12 5" stroke="#D9745A" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <!-- 광대뼈 표시 (더 행복해 보이게) -->
+                    <ellipse cx="-16" cy="0" rx="3" ry="2.5" fill="#F0B5A3" opacity="0.7"/>
+                    <ellipse cx="16" cy="0" rx="3" ry="2.5" fill="#F0B5A3" opacity="0.7"/>
+                    <text x="0" y="70" text-anchor="middle" fill="#D9745A" font-size="16" font-weight="bold">행복</text>
                 </g>
                 
                 <!-- 연결선 -->
-                <line x1="180" y1="150" x2="270" y2="150" stroke="#4A9B8C" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
-                <line x1="330" y1="150" x2="420" y2="150" stroke="#E67E5A" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
+                <line x1="180" y1="140" x2="270" y2="140" stroke="#4A9B8C" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
+                <line x1="330" y1="140" x2="420" y2="140" stroke="#D9745A" stroke-width="2" stroke-dasharray="5,5" opacity="0.4"/>
             </svg>
         </div>
 

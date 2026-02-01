@@ -682,10 +682,10 @@ const orgData = {
                 <div class="staff-table-wrapper" style="max-height: 400px; overflow-y: auto;">
                     <table class="staff-detail-table">
                         <colgroup>
-                            <col style="width: 50%;">
-                            <col style="width: 15%;">
-                            <col style="width: 15%;">
                             <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col style="width: 20%;">
+                            <col>
                         <thead>
                             <tr>
                                 <th>성명</th>
@@ -750,9 +750,9 @@ const orgData = {
                                 <td>응급안전안심서비스</td>
                             </tr>
                             <tr>
-                                <td>생활지원사 50명<br>(강경순, 강미숙, 강임선, 강현경, 김경란, 김금숙, 김금순, 김미화, 김미화, 김병선, 김선희, 김양순, 김영주, 김은자, 김향분, 김호연, 박미규, 박영숙, 백은수, 백은영, 손명순, 송하윤, 안승희, 안진옥, 양순희, 양예진, 오세정, 오영애, 오현근, 윤경애, 윤경희, 윤귀자, 윤다연, 윤치옥, 이경희, 이종숙, 이해경, 임미라, 임미화, 장삼순, 전지현, 정경애, 정인혜, 정인호, 조연실, 조정민, 주예식, 지선영, 최윤희, 허윤만)</td>
+                                <td>강경순</td>
+                                <td>생활지원사</td>
                                 <td>-</td>
-                                <td></td>
                                 <td>맞춤돌봄서비스</td>
                             </tr>
                         </tbody>
