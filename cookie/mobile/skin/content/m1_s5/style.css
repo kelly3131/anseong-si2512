@@ -741,11 +741,14 @@ table.organ_table1 tbody tr:nth-child(3) td:last-child {
     box-shadow: 0 4px 12px rgba(247, 184, 37, 0.3);
 }
 
-.org-box.org-committee {
+.org-box.org-committee, .org-box.org-committee2 {
     background: #828282;
     border-color: #828282;
     color: #ffffff;
     min-width: 110px;
+    box-shadow: none;
+    transform: none;
+    cursor: default;
 }
 
 .org-box.org-committee:hover {

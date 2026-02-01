@@ -445,7 +445,7 @@
 /* =========================== atc04 */
 #inc04 .pl{white-space:pre-line}
 #inc04 .inner{width:100%;max-width:1500px;margin:0 auto}
-#inc04 .inner .tit{padding-bottom:70px;text-align:center}
+#inc04 .inner .tit{padding-top: 40px; padding-bottom:30px;text-align:center}
 #inc04 .inner .tit p{padding-bottom:20px;color:#111;font-weight:800;font-size:34px}
 #inc04 .inner .cont_box{display:grid;grid-template-columns:repeat(2, 1fr);gap:40px;padding:0 40px}
 #inc04 .inner .cont_box .box{padding:52px 60px;border:1px solid #e1e1e1;border-radius:20px;color:#777;font-weight:500}

@@ -40,36 +40,38 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 <div class="organ-chart-wrapper">
                     <div class="org-chart">
                         
-                        <!-- 1단계: 관장 (운영총괄) -->
+                        <!-- 1단계: 관장-->
                         <div class="org-row">
                             <div class="org-col">
                                 <div class="org-box org-ceo" onclick="showOrgInfo('ceo')">
-                                    <div class="org-name">운영총괄</div>
-                                    <div class="org-sub">관장 김도윤(가섭)</div>
+                                    <div class="org-name">관장</div>
+                                    <!-- <div class="org-sub">관장 김도윤(가섭)</div> -->
                                 </div>
                             </div>
                         </div>
 
-                        <!-- 2단계: 인사위원회, 운영위원회 (양쪽) + 실무총괄 (중앙 아래) -->
+                        <!-- 2단계: 인사위원회, 운영위원회 (양쪽) + 총괄부장 (중앙 아래) -->
                         <div class="org-level2-wrapper">
                             <!-- 위원회 행 (인사위원회 - 운영위원회) -->
                             <div class="org-committee-row">
                                 <div class="org-col">
-                                    <div class="org-box org-committee" onclick="showOrgInfo('personnel')">
+                                    <!-- <div class="org-box org-committee" onclick="showOrgInfo('personnel')"> -->
+                                    <div class="org-box org-committee2">
                                         <div class="org-name">인사위원회</div>
                                     </div>
                                 </div>
                                 <div class="org-col">
-                                    <div class="org-box org-committee" onclick="showOrgInfo('operation')">
+                                    <!-- <div class="org-box org-committee" onclick="showOrgInfo('operation')"> -->
+                                    <div class="org-box org-committee2">
                                         <div class="org-name">운영위원회</div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- 실무총괄 행 (중앙 아래) -->
+                            <!-- 총괄부장 행 (중앙 아래) -->
                             <div class="org-director-row">
                                 <div class="org-col">
                                     <div class="org-box org-director" onclick="showOrgInfo('director')">
-                                        <div class="org-name">실무총괄</div>
+                                        <div class="org-name">총괄부장</div>
                                     </div>
                                 </div>
                             </div>
@@ -302,7 +304,7 @@ const orgData = {
         `
     },
     'director': {
-        title: "실무총괄",
+        title: "총괄부장",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -318,7 +320,7 @@ const orgData = {
                         <tbody>
                             <tr>
                                 <td>권순호</td>
-                                <td>실무총괄</td>
+                                <td>총괄부장</td>
                                 <td>070-4352-8167</td>
                                 <td>사업 실무 총괄</td>
                             </tr>

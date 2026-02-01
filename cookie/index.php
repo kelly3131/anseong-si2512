@@ -324,8 +324,8 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                         <article id="inc04">
                             <div class="inner">
                                 <div class="tit">
-                                    <p>함께 하는 더 좋은 세상</p>
-                                    여러분의 작은 손길이 모여 만들어지는 큰 힘, 더 나은 미래를 함께 만들어주세요.
+                                    <p>나눔으로 함께·소통하는 우리·행복한 세상 </p>
+                                    <!-- 여러분의 작은 손길이 모여 만들어지는 큰 힘, 더 나은 미래를 함께 만들어주세요. -->
                                 </div>
                                 <div class="cont_box">
                                     <div class="left box">
