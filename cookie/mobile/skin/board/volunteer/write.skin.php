@@ -51,10 +51,10 @@ if (G5_IS_MOBILE) {
         
         <div class="new-field-group">
           <label class="new-field-label required">주소</label>
-          <div style="display: flex; gap: 10px; margin-bottom: 10px;">
-            <input name="member_post" id="member_post" class="new-field-input" style="width: 120px;" type="text" placeholder="우편번호" readonly onclick="findAddr()">
+          <!-- <div style="display: flex; gap: 10px; margin-bottom: 10px;">
             <button type="button" onclick="findAddr()" class="new-btn new-btn-outline" style="padding: 10px 20px; font-size: 14px;">주소찾기</button>
-          </div>
+          </div> -->
+          <input name="member_post" id="member_post" class="new-field-input" style="width: 120px;cursor: pointer" type="text" placeholder="우편번호" readonly onclick="findAddr()">
           <input name="member_addr" id="member_addr" class="new-field-input" type="text" placeholder="기본 주소" readonly onclick="findAddr()" style="margin-bottom: 10px;">
           <input name="member_detail" id="member_detail" class="new-field-input" type="text" placeholder="상세 주소" style="margin-bottom: 10px;">
           <input name="member_etc" id="member_etc" class="new-field-input" type="text" placeholder="참고항목 (선택사항)">

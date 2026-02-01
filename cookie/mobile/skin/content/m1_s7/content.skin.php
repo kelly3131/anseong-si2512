@@ -57,21 +57,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                         </thead>
                         <tbody>
                             <tr>
-                                <td>지하 1층</td>
-                                <td>&nbsp;</td>
-                                <td>기계공조실, 전기실</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td>1층</td>
-                                <td>746.91㎡</td>
-                                <td>사무실①, 사무실②, 나소향카페, 본관 경로식당</td>
-                                <td>외부 주차장 면적제외</td>
-                            </tr>
-                            <tr>
-                                <td>2층</td>
-                                <td>595.57㎡</td>
-                                <td>관장실, 회의실, 세미나실, 서고ㆍ물품보관실, 다목적실, 이ㆍ미용실,<br> 휴게실, 즐김터①, 즐김터②, 나소향노래연습실,<br>즐김터③, 물리치료실</td>
+                                <td>4층</td>
+                                <td>395.11㎡</td>
+                                <td>대강당, 탁구장</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
@@ -81,9 +69,21 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td>4층</td>
-                                <td>395.11㎡</td>
-                                <td>대강당, 탁구장</td>
+                                <td>2층</td>
+                                <td>595.57㎡</td>
+                                <td>관장실, 회의실, 세미나실, 서고ㆍ물품보관실, 다목적실, 이미용실,<br> 휴게실, 즐김터①, 즐김터②, 즐김터③, 노래연습실, 물리치료실</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>1층</td>
+                                <td>746.91㎡</td>
+                                <td>사무실①, 사무실②, 나소향카페, 본관 경로식당</td>
+                                <td>외부 주차장 면적제외</td>
+                            </tr>
+                            <tr>
+                                <td>지하 1층</td>
+                                <td>&nbsp;</td>
+                                <td>기계공조실, 전기실</td>
                                 <td>&nbsp;</td>
                             </tr>
                         </tbody>

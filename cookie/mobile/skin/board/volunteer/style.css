@@ -585,7 +585,6 @@ html, body {
 }
 
 .btn_submit {
-    padding: 10px 20px;
     background: var(--primary-color);
     color: #fff;
     border: none;
@@ -743,7 +742,6 @@ input[type="tel"][readonly] {
 /* 버튼 스타일 */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
     margin: 5px;
     background: #f5f5f5;
     border: 1px solid #ddd;
@@ -930,18 +928,13 @@ input[type="tel"][readonly] {
 }
 
 .new-field-label {
+    padding-left: 16px;
     font-weight: 600;
     color: var(--text-color);
     font-size: 1.1rem;
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-.new-field-label.required::after {
-    content: '*';
-    color: #e74c3c;
-    font-weight: bold;
 }
 
 .new-field-input {
@@ -1531,7 +1524,7 @@ input[type="tel"][readonly] {
     
     .btn_submit {
         width: 100%;
-        padding: 12px;
+        /* padding: 12px; */
         font-size: 15px;
     }
     
