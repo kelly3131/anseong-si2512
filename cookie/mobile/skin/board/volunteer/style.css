@@ -1340,7 +1340,6 @@ input[type="tel"][readonly] {
     }
     
     .btn {
-        padding: 8px 15px;
         font-size: 13px;
         margin: 3px;
     }
@@ -1438,7 +1437,6 @@ input[type="tel"][readonly] {
     .btn {
         width: 100%;
         text-align: center;
-        padding: 12px 15px;
         font-size: 15px;
         margin: 5px 0;
         box-sizing: border-box;

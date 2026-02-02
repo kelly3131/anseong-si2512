@@ -103,7 +103,8 @@ $dayoftheweek = date("w", mktime (0,0,0,$month,1,$year));
                 </tr>
             </table>			
         </td>
-        <td class="btn_bo_user_td" width="20%" align="right">
+		<td width="20%">&nbsp;</td>
+        <!--td class="btn_bo_user_td" width="20%" align="right">
             <?php if ($rss_href || $write_href) { ?>
             <ul class="btn_bo_user">
 				<?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn2">RSS</a></li><?php } ?>
@@ -111,7 +112,7 @@ $dayoftheweek = date("w", mktime (0,0,0,$month,1,$year));
 				<?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02 btn2"><font color="#ffffff">일정추가</font></a></li><?php } ?>
             </ul>
             <?php } ?>
-        </td>
+        </td-->
     </tr>
 </table>
 
@@ -311,13 +312,12 @@ $dayoftheweek = date("w", mktime (0,0,0,$month,1,$year));
 </table>
 </div>
 
-<section id="today_schedule">
+<!--section id="today_schedule">
 <h3>오늘 일정</h3>
 <div><?php echo $today_schedule; ?></div>
-</section>
+</section-->
 
 <script language="JavaScript">
-<!--
 // 미리보기 팝업 보이기
 function PopupShow(n) {
 	var position = $("#subject_"+n).position(); 
@@ -329,5 +329,4 @@ function PopupShow(n) {
 function PopupHide(n) {
 	$("#popup_"+n).hide();
 }
-//-->
 </script>

@@ -87,27 +87,27 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
         </select>
       </div>
     <?php } ?>
-    <!-- <h3 class="content-title ">후원자 신청등록</h3> -->
+    <h3 class="content-title ">후원자 신청등록</h3>
       <div class="step-body clearfix">
         <?php // if ($is_name) { 
         ?>
         <div class="row">
-          <div class="col w25"><span class="required">성명(단체명)</span></div>
+          <div class="col w25"><span>성명(단체명)</span></div>
           <div class="col w75">
             <label for="wr_name" class="sound_only">성명(단체명)<strong>필수</strong></label>
             <input type="text" name="wr_name" value="<?php echo $name ?>" id="wr_name" required
-              class="frm_input full_input" maxlength="20" placeholder="성명(단체명)">
+              class="frm_input full_input required" maxlength="20" placeholder="성명(단체명)">
           </div>
         </div>
         <?php //} 
         ?>
 
         <div class="row">
-          <div class="col w25"><span class="required">생년월일(사업자번호)</span></div>
+          <div class="col w25"><span>생년월일(사업자번호)</span></div>
           <div class="col w75">
             <label for="wr_1" class="sound_only">생년월일(사업자번호)<strong>필수</strong></label>
             <input type="text" name="wr_1" id="wr_1"
-              class="frm_input full_input" maxlength="14" placeholder="생년월일(사업자번호)">
+              class="frm_input full_input required" maxlength="14" placeholder="생년월일(사업자번호)">
           </div>
         </div>
 
@@ -124,9 +124,9 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
 
         <div class="row">
           <div class="col w25"><span>주소</span></div>
-          <div class="col w75 new-field-group">
-            <input name="member_post" id="member_post" class="frm_input full_input" style="width:120px;line-height: 1;cursor: pointer" type="text" placeholder="우편번호" readonly onclick="findAddr()">
-            <input name="member_addr" id="member_addr" class="frm_input full_input" type="text" placeholder="주소" readonly onclick="findAddr()">
+          <div class="col w75">
+            <input name="member_post" id="member_post" class="frm_input full_input" style="width: auto;min-width: 50px;line-height: 1;" type="text" placeholder="우편번호" readonly onclick="findAddr()">
+            <input name="member_addr" id="member_addr" class="frm_input full_input" type="text" placeholder="주소" readonly onclick="findAddr()"> <br>
             <input name="member_detail" id="member_detail" class="frm_input full_input" type="text" placeholder="나머지주소">
             <input name="member_etc" id="member_etc" class="frm_input full_input" type="text" placeholder="참고항목">
             <script>
@@ -191,7 +191,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
           </div>
         </div>
         <div class="row">
-          <div class="col w25"><span class="required">휴대폰</span></div>
+          <div class="col w25"><span>휴대폰</span></div>
           <div class="col w75">
             <label for="wr_link2" class="sound_only">휴대폰</label>
             <select class="col w25" name="hp_1" id="hp_1" required style="width: 80px;">
@@ -201,8 +201,8 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
               <option value="018">018</option>
               <option value="019">019</option>
             </select>-
-            <input type="text" name="hp_2" id="hp_2" class="frm_input" maxlength="4" style="width: 80px;" placeholder="휴대폰">-
-            <input type="text" name="hp_3" id="hp_3" class="frm_input" maxlength="4" style="width: 80px;" placeholder="휴대폰">
+            <input type="text" name="hp_2" id="hp_2" class="frm_input required" maxlength="4" style="width: 80px;" placeholder="휴대폰">-
+            <input type="text" name="hp_3" id="hp_3" class="frm_input required" maxlength="4" style="width: 80px;" placeholder="휴대폰">
             <input type="hidden" name="wr_link2" id="wr_link2" class="frm_input full_input" maxlength="14" placeholder="휴대폰">
           </div>
         </div>
@@ -300,15 +300,15 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
         </div>
       </div>
 
-      <!-- <div class="bo_w_tit write_div" style="display:none">
+      <div class="bo_w_tit write_div" style="display:none">
         <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
-        <input type="text" name="wr_subject" value="후원신청" id="wr_subject" required class="frm_input full_input"
+        <input type="text" name="wr_subject" value="후원신청" id="wr_subject" required class="frm_input full_input required"
           placeholder="제목">
       </div>
       <div class="write_div">
         <label for="wr_content" class="sound_only">내용<strong>필수</strong></label>
         <?php if ($write_min || $write_max) { ?>
-          최소/최대 글자 수 사용 시
+          <!-- 최소/최대 글자 수 사용 시 -->
           <p id="char_count_desc">이 게시판은 최소 <strong><?php echo $write_min; ?></strong>글자 이상, 최대
             <strong><?php echo $write_max; ?></strong>글자 이하까지 글을 쓰실 수 있습니다.
           </p>
@@ -316,9 +316,10 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
         <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 
         ?>
         <?php if ($write_min || $write_max) { ?>
+          <!-- 최소/최대 글자 수 사용 시 -->
           <div id="char_count_wrap"><span id="char_count"></span>글자</div>
         <?php } ?>
-      </div> -->
+      </div>
       <div class="step-body clearfix">
         <div class="panel-head">
            연말 소득공제영수증 발급을 위해 개인정보 수집 및 이용약관을 읽고 동의해주세요.
@@ -402,32 +403,30 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
         </div>
 
       </div>
-      
-        <div class="submit-body-wrap">
-          <!-- 자동등록방지 -->
-          <div class="b-row submit-body">
 
-            <?php //if ($is_use_captcha) { //자동등록방지 
-            ?>
-            <div class="write_div">
-              <span class="sound_only">자동등록방지</span>
-              <?php echo $captcha_html ?>
+      <!-- 자동등록방지 -->
+      <div class="b-row submit-body">
 
-            </div>
-            <?php //} 
-            ?>
+        <?php //if ($is_use_captcha) { //자동등록방지 
+        ?>
+        <div class="write_div">
+          <span class="sound_only">자동등록방지</span>
+          <?php echo $captcha_html ?>
 
-          </div>
-
-          <!-- 후원 신청 버튼 보이기 가리기 -->
-          <div class="write_div">
-            <? if ($is_admin) { ?>
-              <a href="<?php echo get_pretty_url($bo_table); ?>" class="btn_b01 btn">후원신청목록</a>
-            <? } ?>
-            <a href="/bbs/write.php?bo_table=support" class="btn_b01 btn" style="text-align:center">&nbsp;취&nbsp;&nbsp;&nbsp;소&nbsp;</a>
-            <input type="submit" value="후원신청완료" id="btn_submit" class="btn_submit btn" accesskey="s">
-          </div>
         </div>
+        <?php //} 
+        ?>
+
+      </div>
+
+      <!-- 후원 신청 버튼 보이기 가리기 -->
+      <div class="write_div">
+        <? if ($is_admin) { ?>
+          <a href="<?php echo get_pretty_url($bo_table); ?>" class="btn_b01 btn">후원신청목록</a>
+        <? } ?>
+        <a href="/bbs/write.php?bo_table=support" class="btn_b01 btn">&nbsp;취&nbsp;&nbsp;&nbsp;소&nbsp;</a>
+        <input type="submit" value="후원신청완료" id="btn_submit" class="btn_submit btn" accesskey="s">
+      </div>
       </div>
     </form>
   </div>

@@ -79,20 +79,20 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
           <?php //} ?>
 
           <div class="row">
-            <div class="col w25"><span>생년월일(사업자등록번호)</span></div>
+            <div class="col w25"><span>생년월일</span></div>
             <div class="col w75">
               <input type="text" name="wr_1" id="wr_1" required
                 class="frm_input full_input required" maxlength="14" value="<? echo $view['wr_1'] ?>" readonly>
             </div>
           </div>
-          <div class="row">
+          <!--div class="row">
             <div class="col w25"><span>이메일</span></div>
             <div class="col w75">
               <label for="wr_email" class="sound_only">이메일</label>
               <input type="email" name="wr_email" value="<?php echo $view['wr_email'] ?>" id="wr_email"
                 class="frm_input full_input  email" maxlength="100" placeholder="이메일" readonly>
             </div>
-          </div>
+          </div-->
           <div class="row">
             <div class="col w25"><span>주소</span></div>
             <div class="col w75">
@@ -103,26 +103,26 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
                 maxlength="255"  readonly>
             </div>
           </div>  
-          <div class="row">
+          <!--div class="row">
             <div class="col w25"><span>자택전화</span></div>
             <div class="col w75">
               <label for="wr_link1" class="sound_only">자택전화</label>    
               <input type="text" name="wr_link1"  id="wr_link1" value="<? echo $view['wr_link1'] ?>" class="frm_input full_input  required" maxlength="14" readonly>
             </div>
-          </div>
+          </div-->
           <div class="row">
             <div class="col w25"><span>휴대폰</span></div>
             <div class="col w75">    
               <input type="text" name="wr_link2"  id="wr_link2" value="<? echo $view['wr_link2'] ?>" class="frm_input full_input  required" maxlength="14" readonly>
             </div>
           </div>
-          <div class="row">
+          <!--div class="row">
             <div class="col w25"><span>직업</span></div>
             <div class="col w75">    
               <input type="text" name="wr_2"  id="wr_2" value="<? echo $view['wr_2'] ?>" class="frm_input full_input  required" maxlength="14" readonly>
             </div>
           </div>
-        </div>
+        </div-->
         <h3 class="content-title ">후원 정보</h3>
         <div class="step-body clearfix">
           <!-- 후원형태 -->
@@ -133,12 +133,12 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
             </div>
           </div>
           <!-- 희망기간 -->
-          <div class="row" style="padding: 10px 0;">
+          <!--div class="row" style="padding: 10px 0;">
             <div class="col w25"><span>희망기간</span></div>
             <div class="bo_w_select col w75">
               <label><input type="text" name="wr_4" id="wr_4" class="frm_input " value="<? echo $view['wr_4'] ?>" readonly></label>
             </div>
-          </div>
+          </div-->
           <!-- 후원분류 -->
           <div class="row" style="padding: 10px 0;">
             <div class="col w25"><span>후원분류</span></div>
@@ -176,12 +176,12 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
               </div>
             </div>
           <?php } ?>
-          <div class="row">
+          <!--div class="row">
             <div class="col w25"><span>메모</span></div>
             <div class="col w75">
               <?php echo get_view_thumbnail($view['content']); ?>
             </div>
-          </div>
+          </div-->
 
           <div class="bo_w_tit write_div" style="display:none">
             <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>

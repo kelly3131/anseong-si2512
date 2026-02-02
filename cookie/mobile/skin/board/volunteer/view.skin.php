@@ -80,20 +80,20 @@ if (G5_IS_MOBILE) {
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col w25"><span>생년월일(사업자등록번호)</span></div>
+                        <div class="col w25"><span>생년월일</span></div>
                         <div class="col w75">
                             <input type="text" name="wr_1" id="wr_1"
                                 class="frm_input full_input" value="<? echo $view['wr_1'] ?>" readonly>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--div class="row">
                         <div class="col w25"><span>이메일</span></div>
                         <div class="col w75">
                             <label for="wr_email" class="sound_only">이메일</label>
                             <input type="email" name="wr_email" value="<?php echo $view['wr_email'] ?>" id="wr_email"
                                 class="frm_input full_input  email" maxlength="100" readonly>
                         </div>
-                    </div>
+                    </div-->
                     <div class="row">
                         <div class="col w25"><span>주소</span></div>
                         <div class="col w75">
@@ -104,20 +104,20 @@ if (G5_IS_MOBILE) {
                                 maxlength="255" readonly>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--div class="row">
                         <div class="col w25"><span>자택전화</span></div>
                         <div class="col w75">
                             <label for="wr_link1" class="sound_only">자택전화</label>
                             <input type="text" name="wr_link1" id="wr_link1" value="<? echo $view['wr_link1'] ?>" class="frm_input full_input" readonly>
                         </div>
-                    </div>
+                    </div-->
                     <div class="row">
                         <div class="col w25"><span>휴대폰</span></div>
                         <div class="col w75">
                             <input type="text" name="wr_link2" id="wr_link2" value="<? echo $view['wr_link2'] ?>" class="frm_input full_input" readonly>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--div class="row">
                         <div class="col w25"><span>최종학력</span></div>
                         <div class="col w75">
                             <label for="wr_2" class="sound_only">최종학력</label>
@@ -129,7 +129,7 @@ if (G5_IS_MOBILE) {
                         <div class="col w75">
                             <input type="text" name="wr_3" id="wr_3" value="<? echo $view['wr_3'] ?>" class="frm_input full_input" readonly>
                         </div>
-                    </div>
+                    </div-->
                 </div>
                 <!--
                 <?php if ($is_password) { ?>
@@ -147,48 +147,42 @@ if (G5_IS_MOBILE) {
                 <div class="row">
                     <div class="col w25"><span>참여동기</span></div>
                     <div class="col w75">
-                        <label><input type="radio" name="wr_4" id="wr_40" value="<?php $view['wr_4'] ?>" class="frm_input" readonly>
+                        <label><input type="text" name="wr_4" id="wr_40" value="<?php $view['wr_4'] ?>" class="frm_input" readonly>
                     </div>
-
-                    <div class="row" style="padding: 10px 0;">
-                        <div class="col w25"><span>희망분야</span></div>
-                        <div class="col w75">
-                            <div class="row" style="padding-bottom: 10px;">
-                                <input type="text" id="wr_5" name="wr_5" value="<?php $view['wr_5'] ?>" readonly>
-                                (<input type="text" id="wr_6" name="wr_6" value="<?php $view['wr_6'] ?>" style="width: 100px;" readonly>)
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col w25"><span>활동시간</span></div>
-                        <div class="col w75">
-                            <label for="wr_9" class="sound_only">활동시간<strong>필수</strong></label>
-                            <input type="text" id="wr_7" name="wr_7" value="<?php $view['wr_7'] ?>" readonly>
-                        </div>
-                        <div class="col w75">
-                            <label for="wr_8" class="sound_only">활동시간<strong>필수</strong></label>
-                            <input type="text" id="wr_8" name="wr_8" value="<?php $view['wr_8'] ?>" readonly>
-                        </div>
-                        <div class="col w75">
-                            <label for="wr_9" class="sound_only">봉사시간<strong>필수</strong></label>
-                            <input type="text" name="wr_9" value="<?php echo $view['wr_9'] ?>" id="wr_9" class="frm_input full_input required" readonly>
-                        </div>
-                    </div>
-
-
-
-
-
-                    <div class="row">
-                        <div class="col w25"><span>메모</span></div>
-                        <div class="col w75">
-                            <label for="wr_content" class="sound_only">메모<strong>필수</strong></label>
-                            <? $w = explode('|', $view['content']);  ?>
-                            <div id="bo_v_con" name="content"><textarea class="frm_input full_input" style="height:200px" readonly><? echo $w[0] ?></textarea></div>
+                </div>
+                <div class="row" style="padding: 10px 0;">
+                    <div class="col w25"><span>희망분야</span></div>
+                    <div class="col w75">
+                        <div class="row" style="padding-bottom: 10px;">
+                            <input type="text" id="wr_5" name="wr_5" value="<?php $view['wr_5'] ?>" class="frm_input" readonly>
+                            (<input type="text" id="wr_6" name="wr_6" value="<?php $view['wr_6'] ?>" class="frm_input" readonly>)
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col w25"><span>활동시간</span></div>
+                    <div class="col w75">
+                        <label for="wr_9" class="sound_only">활동시간<strong>필수</strong></label>
+                        <input type="text" id="wr_7" name="wr_7" value="<?php $view['wr_7'] ?>" class="frm_input" readonly>
+                    </div>
+                    <div class="col w75">
+                        <label for="wr_8" class="sound_only">활동시간<strong>필수</strong></label>
+                        <input type="text" id="wr_8" name="wr_8" value="<?php $view['wr_8'] ?>" class="frm_input" readonly>
+                    </div>
+                    <div class="col w75">
+                        <label for="wr_9" class="sound_only">봉사시간<strong>필수</strong></label>
+                        <input type="text" name="wr_9" value="<?php echo $view['wr_9'] ?>" id="wr_9" class="frm_input" readonly>
+                    </div>
+                </div>
+                <!--div class="row">
+                    <div class="col w25"><span>메모</span></div>
+                    <div class="col w75">
+                        <label for="wr_content" class="sound_only">메모<strong>필수</strong></label>
+                        <? $w = explode('|', $view['content']);  ?>
+                        <div id="bo_v_con" name="content"><textarea class="frm_input full_input" style="height:200px" readonly><? echo $w[0] ?></textarea></div>
+                    </div>
+                </div-->
+            </section>
     </div> <!-- 신청서 끝 -->
     <!-- 신청내용 끝 -->
 

@@ -39,14 +39,14 @@ if (G5_IS_MOBILE) {
         </div>
         
         <div class="new-field-group">
-          <label for="wr_1" class="new-field-label required">생년월일(사업자번호)</label>
-          <input type="text" name="wr_1" value="<?php echo $wr_1 ?>" id="wr_1" required class="new-field-input" minlength="6" maxlength="12" placeholder="생년월일 또는 사업자번호를 입력해주세요">
+          <label for="wr_1" class="new-field-label required">생년월일</label>
+          <input type="text" name="wr_1" value="<?php echo $wr_1 ?>" id="wr_1" required class="new-field-input" maxlength="8" placeholder="생년월일를 입력해주세요">
         </div>
         <?php if ($is_email) { ?>
-        <div class="new-field-group">
+        <!--div class="new-field-group">
           <label for="wr_email" class="new-field-label">이메일</label>
           <input type="email" name="wr_email" value="<?php echo $email ?>" id="wr_email" class="new-field-input" maxlength="100" placeholder="이메일 주소를 입력해주세요">
-        </div>
+        </div-->
         <?php } ?>
         
         <div class="new-field-group">
@@ -88,7 +88,7 @@ if (G5_IS_MOBILE) {
           <input type="hidden" name="place" value="<?php echo $place ?>" id="place" maxlength="255">
         </div>
         
-        <div class="new-field-group">
+        <!--div class="new-field-group">
           <label class="new-field-label required">자택전화</label>
           <div style="display: flex; gap: 5px; align-items: center;">
             <select name="tel_1" id="tel_1" required class="new-field-input" style="width: 100px;">
@@ -118,13 +118,13 @@ if (G5_IS_MOBILE) {
             <input type="text" name="tel_3" id="tel_3" class="new-field-input" maxlength="4" style="width: 100px;" placeholder="0000">
             <input type="hidden" name="wr_link1" id="wr_link1" maxlength="14">
           </div>
-        </div>
+        </div-->
         
         <?php if ($is_password) { ?>
-        <div class="new-field-group">
+        <!--div class="new-field-group">
           <label for="wr_password" class="new-field-label required">비밀번호</label>
           <input type="password" name="wr_password" id="wr_password" <?php echo $password_required ?> class="new-field-input" maxlength="20" placeholder="비밀번호를 입력해주세요">
-        </div>
+        </div-->
         <?php } ?>
         
         <div class="new-field-group">
@@ -145,7 +145,7 @@ if (G5_IS_MOBILE) {
           </div>
         </div>
         
-        <div class="new-field-group">
+        <!--div class="new-field-group">
           <label for="wr_2" class="new-field-label">최종학력</label>
           <input type="text" name="wr_2" value="<?php echo $wr_2 ?>" id="wr_2" class="new-field-input" maxlength="50" placeholder="최종학력을 입력해주세요 (선택사항)">
         </div>
@@ -153,39 +153,39 @@ if (G5_IS_MOBILE) {
         <div class="new-field-group">
           <label for="wr_3" class="new-field-label">직업</label>
           <input type="text" name="wr_3" value="<?php echo $wr_3 ?>" id="wr_3" class="new-field-input" maxlength="100" placeholder="현재 직업을 입력해주세요">
-        </div>
+        </div-->
 
         <div class="new-field-group">
           <label class="new-field-label required">참여동기</label>
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px;">
-            <label style="display: flex; align-items: center; gap: 8px;">
+            <!--label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_40" value="0" checked style="margin: 0;">
               <span>이웃에 봉사</span>
-            </label>
+            </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_41" value="1" style="margin: 0;">
               <span>보람된 여가선용</span>
             </label>
-            <label style="display: flex; align-items: center; gap: 8px;">
+            <!--label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_42" value="2" style="margin: 0;">
               <span>자기발전</span>
-            </label>
+            </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_43" value="3" style="margin: 0;">
               <span>사회적 경험</span>
             </label>
-            <label style="display: flex; align-items: center; gap: 8px;">
+            <!--label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_44" value="4" style="margin: 0;">
               <span>종교적 신념</span>
-            </label>
+            </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_45" value="5" style="margin: 0;">
               <span>지역사회 발전</span>
             </label>
-            <label style="display: flex; align-items: center; gap: 8px;">
+            <!--label style="display: flex; align-items: center; gap: 8px;">
               <input type="radio" name="wr_4" id="wr_46" value="6" style="margin: 0;">
               <span>기타</span>
-            </label>
+            </label-->
           </div>
         </div>
         
@@ -194,11 +194,11 @@ if (G5_IS_MOBILE) {
           <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-top: 10px;">
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_50" value="경로식당 배식 및 조리" style="margin: 0;">
-              <span>경로식당 배식 및 조리</span>
+              <span>경로식당 배식</span>
             </label>
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_51" value="이·미용" style="margin: 0;">
-              <span>이·미용</span>
+              <span>이미용</span>
             </label>
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_52" value="밑반찬배달" style="margin: 0;">
@@ -206,11 +206,11 @@ if (G5_IS_MOBILE) {
             </label>
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_53" value="프로그램지원" style="margin: 0;">
-              <span>프로그램지원</span>
+              <span>진행보조</span>
             </label>
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_54" value="업무보조" style="margin: 0;">
-              <span>업무보조</span>
+              <span>행정업무보조</span>
             </label>
             <label style="display: flex; align-items: center; gap: 8px;">
               <input type="checkbox" name="cb_5" id="cb_55" value="재능나눔" style="margin: 0;">
@@ -259,8 +259,7 @@ if (G5_IS_MOBILE) {
                 <input type="text" name="wr_9" value="<?php echo $wr_9 ?>" id="wr_9" required class="frm_input full_input required" maxlength="50" placeholder="시간입력">
               </div>
             </div>
-
-            <div class="row">
+            <div class="row hidden">
               <div class="col w25"><span>메모</span></div>
               <div class="col w75">
                 <label for="wr_content" class="sound_only">메모</label>
@@ -277,12 +276,10 @@ if (G5_IS_MOBILE) {
               </div>
             </div>
           </div>
+
         </div> <!-- 신청서 끝 -->
 
         <div class="step-body clearfix">
-        <div class="panel-head">
-           연말 소득공제영수증 발급을 위해 개인정보 수집 및 이용약관을 읽고 동의해주세요.
-        </div>
         <div class="panel-body">
           <input type="checkbox" name="agrees" id="agrees" value="1"> 개인정보 수집 및 이용동의서의 내용을 숙지하고 동의합니다. <button type="button" class="btn btn-primary btn-xs" onclick="view_consent();return false;">자세히보기</button>
           <div id="provision" style="display: none;">
@@ -400,9 +397,8 @@ if (G5_IS_MOBILE) {
           <input type="submit" value="자원봉사신청완료" id="btn_submit" class="btn_submit btn" accesskey="s">
         <?php } ?>
       </div>
-    </div>
-
-    </div>
+    </div> <!-- form_01 write_div 끝 -->
+  </div> <!-- new-form-container 끝 -->
   </form>
 
 </section>
@@ -464,18 +460,18 @@ if (G5_IS_MOBILE) {
 
   function fwrite_submit(f) {
 
-    if (f.wr_1.value.length < 14) {
-      alert("생년월일(사업자번호)를 입력해주세요");
+    if (f.wr_1.value.length < 8) {
+      alert("생년월일을 입력해주세요");
       return false;
     }
 
     f.place.value = $("#member_post").val() + "|" + $("#member_addr").val() + "|" + $("#member_detail").val() + $("#member_etc").val();
-    f.wr_link1.value = $("#tel_1").val() + "-" + $("#tel_2").val() + "-" + $("#tel_3").val();
+    //f.wr_link1.value = $("#tel_1").val() + "-" + $("#tel_2").val() + "-" + $("#tel_3").val();
     f.wr_link2.value = $("#hp_1").val() + "-" + $("#hp_2").val() + "-" + $("#hp_3").val();
 
     if(f.wr_link2.value === "---") {
       alert("휴대폰 번호를 입력해 주세요.");
-      return fasle;
+      return false;
     }
 
     const cb56 = document.getElementById("cb_56");
@@ -505,7 +501,7 @@ if (G5_IS_MOBILE) {
     var subject = "";
     var content = "";
 
-    f.wr_subject.value = f.wr_name.vaule + '님이 후원신청하였습니다.';
+    f.wr_subject.value = f.wr_name.value + '님이 후원신청하였습니다.';
 
     if(f.wr_content.value == "") {
       f.wr_content.value = "내용없음";

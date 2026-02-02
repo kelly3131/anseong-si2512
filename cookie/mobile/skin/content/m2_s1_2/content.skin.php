@@ -99,6 +99,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <div class="image-item">
                 <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s1_2_img2.png" alt="">
             </div>
+            <!--  -->
         </div>
     </div>
 </div>

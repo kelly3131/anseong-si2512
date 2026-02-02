@@ -118,39 +118,6 @@ box-shadow:inset 0 2px 5px rgb(33, 135, 202)}
 .td_subject img {margin-left:5px}
 
 /* 게시판 목록 공통 */
-.list_01{position:relative;padding:0 10px;}
-.list_01 li{display: flex;align-items:center;background:#fff;border-radius:3px;padding:10px 20px;border-bottom:1px solid #eee;}
-.list_01 .all_chk{position:absolute;top:10px;left:30px;}
-@media (max-width: 969px){
-    .list_01 li {
-        display: block;
-    }
- }
-.list_01 .list_01_head > ul{
-    display: flex;
-    width: 100%;
-    border-top: 1px solid #393939;
-}
-.list_01 .list_01_head > ul > li{
-    justify-content: center;
-    font-weight: bold;
-    text-align: center;
-    word-break: keep-all;
-}
-.list_01_head > ul > li:nth-child(1) { /* 제목 */
-    flex: 12; 
-}
-
-.list_01_head > ul > li:nth-child(2) { /* 글쓴이 */
-    flex: 0.5; 
-}
-
-.list_01_head > ul > li:nth-child(3) { /* 날짜 */
-    flex: 0.5; 
-}
-.list_01_head > ul > li:nth-child(4) { /* 날짜 */
-    flex: 0.5; 
-}
 .selec_chk {position:absolute;top:0;left:0;width:0;height:0;opacity:0;outline:0;z-index:-1;overflow:hidden}
 .chk_box {position:relative}
 .chk_box input[type="checkbox"] + label {position:relative;color:#676e70}
@@ -460,38 +427,3 @@ box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.1)}
 
 /* pdf.js로 pdf파일 출력 */
 #bo_v .bo_v_pdf_viewer {margin-top:20px; border:1px solid #f9f9f9; width:100%; height:800px;}
-
-/* 게시판 헤더 스타일 */
-.bo_header_simple {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: #f8f9fa;
-    border: 1px solid #e9ecef;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #333;
-}
-
-.bo_header_simple span {
-    flex: 1;
-    text-align: center;
-    font-size: 16px;
-}
-
-.bo_header_simple .header_title {
-    flex: 2;
-}
-
-@media (max-width: 768px) {
-    .bo_header_simple {
-        padding: 10px 15px;
-        font-size: 14px;
-    }
-    
-    .bo_header_simple span {
-        font-size: 14px;
-    }
-}

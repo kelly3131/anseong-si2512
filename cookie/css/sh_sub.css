@@ -1307,6 +1307,9 @@
     vertical-align: middle;
 }
 
+.hidden {
+    display: none;
+}
 /* 모바일 반응형 */
 @media (max-width: 768px) {
     .boho h2 {

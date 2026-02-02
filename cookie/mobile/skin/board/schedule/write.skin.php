@@ -121,7 +121,7 @@ include_once(G5_PLUGIN_PATH.'/jquery-ui/datepicker.php');
             <th scope="row"><label for="wr_subject">제목<strong class="sound_only">필수</strong></label></th>
             <td>
                 <div id="autosave_wrapper">
-                    <input type="text" name="wr_subject" value="<?php echo $subject ?>" id="wr_subject" required class="frm_input required" size="50" maxlength="255">
+                    <input type="text" name="wr_subject" value="<?php if($subject == '') {  echo $write['wr_1'].'의 행사'; } else { echo $subject; } ?>" id="wr_subject" required class="frm_input required" size="50" maxlength="255">
                     <?php if ($is_member) { // 임시 저장된 글 기능 ?>
                     <script src="<?php echo G5_JS_URL; ?>/autosave.js"></script>
                     <button type="button" id="btn_autosave" class="btn_frmline">임시 저장된 글 (<span id="autosave_count"><?php echo $autosave_count; ?></span>)</button>
