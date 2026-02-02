@@ -259,7 +259,7 @@ if (G5_IS_MOBILE) {
                 <input type="text" name="wr_9" value="<?php echo $wr_9 ?>" id="wr_9" required class="frm_input full_input required" maxlength="50" placeholder="시간입력">
               </div>
             </div>
-            <div class="row hidden">
+            <div class="row">
               <div class="col w25"><span>메모</span></div>
               <div class="col w75">
                 <label for="wr_content" class="sound_only">메모</label>

@@ -10,7 +10,7 @@
     --text-color: #333;
     --bg-light: #f8f9fa;
     --bg-white: #fff;
-    --success-color: #5cb85c;
+    --success-color: #eee;
     --info-color: #337ab7;
     --transition: all 0.3s ease;
     --border-radius: 4px;
@@ -757,13 +757,14 @@ input[type="tel"][readonly] {
 }
 
 .btn_b01 {
-    background: #5cb85c;
-    color: #fff;
-    border-color: #4cae4c;
+    background: #eee;
+    color: #6b6b6b;
+    border-color: #eee;
+    
 }
 
 .btn_b01:hover {
-    background: #449d44;
+    background: #b5b5b5;
 }
 
 .btn_b02 {
@@ -861,7 +862,6 @@ input[type="tel"][readonly] {
 }
 
 .pg a {
-    padding: 8px 12px;
     margin: 0 2px;
     border: 1px solid #ddd;
     text-decoration: none;
@@ -2129,6 +2129,9 @@ a:hover {
 
 .board_list li {
     padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #e6e6e6;
     position: relative;
     transition: var(--transition);
@@ -2145,9 +2148,10 @@ a:hover {
 }
 
 .board_list .bo_subject {
+    display: flex;
+    align-items: center;
     font-size: 1.077em;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .board_list .notice_icon {
@@ -2412,6 +2416,7 @@ a:hover {
 
 .write_div a {
     vertical-align: top;
+    border: 1px solid #ddd;
 }
 
 .write_div .btn_submit {

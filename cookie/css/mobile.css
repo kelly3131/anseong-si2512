@@ -468,7 +468,7 @@ box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.2);}
 /* 페이징 */
 .pg_wrap {clear:both;margin:30px 0;text-align:center}
 .pg {display:inline-block }
-.pg_page, .pg_current {display:inline-block;padding:0 13px;height:35px;color:#959595;line-height:35px;vertical-align:middle}
+.pg_page, .pg_current {display:inline-block;padding:0 13px;height:35px;color:#959595;border-radius: 4px;line-height:35px;vertical-align:middle}
 .pg a:focus, .pg a:hover {text-decoration:none;background-color:#f8f8f8; }
 .pg_page {background:#eee;}
 .pg_start {background:url(../img/btn_first.gif) no-repeat 50% 50% #eee;width:35px;height:35px ;text-indent:-999px;overflow:hidden}
