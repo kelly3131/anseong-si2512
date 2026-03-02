@@ -13,6 +13,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m1_s1" class="main-tab">법인소개</a>
         <a href="/bbs/content.php?co_id=m1_s2" class="main-tab">인사말</a>
         <a href="/bbs/content.php?co_id=m1_s3" class="main-tab active">미션 및 비전</a>
+        <a href="/bbs/content.php?co_id=m1_s9" class="main-tab">CI소개</a>
         <a href="/bbs/content.php?co_id=m1_s4" class="main-tab">연혁</a>
         <a href="/bbs/content.php?co_id=m1_s5" class="main-tab">조직도</a>
         <a href="/bbs/content.php?co_id=m1_s6" class="main-tab">이용안내</a>
@@ -38,7 +39,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <div class="core-values">
                 <div class="core-value-item">나눔으로 함께</div>
                 <div class="core-value-item">소통하는 우리</div>
-                <div class="core-value-item">행복한 세상</div>
+                <div class="core-value-item">향기로운 세상</div>
             </div>
         </div>
 
@@ -79,22 +80,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                     <text x="0" y="70" text-anchor="middle" fill="#4A9B8C" font-size="16" font-weight="bold">소통</text>
                 </g>
                 
-                <!-- 행복 (크게 웃는 얼굴) -->
-                <g transform="translate(450, 140)">
-                    <!-- 배경 -->
-                    <circle cx="0" cy="0" r="28" fill="#F0B5A3" opacity="0.3"/>
-                    <!-- 얼굴 -->
-                    <circle cx="0" cy="0" r="25" fill="none" stroke="#D9745A" stroke-width="2"/>
-                    <!-- 왼쪽 눈 (눈웃음 - 초승달) -->
-                    <path d="M -13 -8 Q -9 -4 -5 -8" stroke="#D9745A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <!-- 오른쪽 눈 (눈웃음 - 초승달) -->
-                    <path d="M 5 -8 Q 9 -4 13 -8" stroke="#D9745A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-                    <!-- 큰 웃음 입 (호 모양) -->
-                    <path d="M -12 5 Q 0 16 12 5" stroke="#D9745A" stroke-width="3" fill="none" stroke-linecap="round"/>
-                    <!-- 광대뼈 표시 (더 행복해 보이게) -->
-                    <ellipse cx="-16" cy="0" rx="3" ry="2.5" fill="#F0B5A3" opacity="0.7"/>
-                    <ellipse cx="16" cy="0" rx="3" ry="2.5" fill="#F0B5A3" opacity="0.7"/>
-                    <text x="0" y="70" text-anchor="middle" fill="#D9745A" font-size="16" font-weight="bold">행복</text>
+                <!-- 향기 (꽃) -->
+                <g transform="translate(450, 130)">
+                    <circle cx="0" cy="0" r="8" fill="#FFD54F"/>
+                    <ellipse cx="0" cy="-18" rx="10" ry="15" fill="#F7B825" transform="rotate(0)"/>
+                    <ellipse cx="15" cy="-9" rx="10" ry="15" fill="#F7B825" transform="rotate(72)"/>
+                    <ellipse cx="9" cy="14" rx="10" ry="15" fill="#F7B825" transform="rotate(144)"/>
+                    <ellipse cx="-9" cy="14" rx="10" ry="15" fill="#F7B825" transform="rotate(216)"/>
+                    <ellipse cx="-15" cy="-9" rx="10" ry="15" fill="#F7B825" transform="rotate(288)"/>
+                    <rect x="-3" y="10" width="6" height="30" fill="#8BC34A" rx="3"/>
+                    <text x="0" y="80" text-anchor="middle" fill="#F7B825" font-size="18" font-weight="bold">향기</text>
                 </g>
                 
                 <!-- 연결선 -->
@@ -145,7 +140,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="vision-item">
-                <div class="vision-title">행복한 세상을 여는 복지관</div>
+                <div class="vision-title">향기로운 세상을 여는 복지관</div>
                 <ul class="vision-content">
                     <li>대상자 안성맞춤 복지프로그램 제공 및 당사자 통합 사례관리</li>
                     <li>안성맞춤 돌봄 생태계 구현을 통한 지역사회 안전망 구축</li>

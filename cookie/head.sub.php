@@ -50,7 +50,14 @@ if (G5_IS_MOBILE) {
 if($config['cf_add_meta'])
     echo $config['cf_add_meta'].PHP_EOL;
 ?>
-<title><?php echo $g5_head_title; ?></title>
+<!-- <title><?php echo $g5_head_title; ?></title> 페이지명 안뜨도록 주석처리-->
+<title>안성시노인복지관</title>
+<!-- 파비콘 -->
+<link rel="icon" href="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/icon_sub_title.png" type="image/png">
+<link rel="shortcut icon" href="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/icon_sub_title.png" type="image/png">
+<link rel="apple-touch-icon" href="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/icon_sub_title.png">
+
+<link rel="stylesheet" href="<?php echo run_replace('head_css_url', G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE ? 'mobile' : 'default').'.css?ver='.G5_CSS_VER, G5_THEME_URL); ?>">
 <link rel="stylesheet" href="<?php echo run_replace('head_css_url', G5_THEME_CSS_URL.'/'.(G5_IS_MOBILE ? 'mobile' : 'default').'.css?ver='.G5_CSS_VER, G5_THEME_URL); ?>">
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/sh_common.css?ver=<?php echo G5_CSS_VER; ?>">
 <link rel="stylesheet" href="<?php echo G5_THEME_CSS_URL; ?>/sh_main.css?ver=<?php echo G5_CSS_VER; ?>">

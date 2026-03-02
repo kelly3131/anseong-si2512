@@ -61,7 +61,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                 <!-- 관련사이트 슬라이드 -->
                 <div class="related-sites-slider">
                     <div class="slider-track">
-                        <a href="https://www.buddhism.or.kr/m/edu/main/index.php" target="_blank" class="slider-item">
+                        <a href="https://www.jabinanum.or.kr/jabinanum" target="_blank" class="slider-item">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo1.png" alt="대한불교조계종사회복지재단">
                         </a>
                         <a href="https://ggwf.gg.go.kr/" target="_blank" class="slider-item">
@@ -69,6 +69,18 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
                         </a>
                         <a href="https://www.anseong.go.kr/intro.jsp" target="_blank" class="slider-item">
                             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo3.png" alt="안성시청">
+                        </a>
+                        <a href="http://www.kaswcs.or.kr/" target="_blank" class="slider-item">
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo4.png" alt="한국노인종합복지관 협회">
+                        </a>
+                        <a href="http://www.gaswc.or.kr/" target="_blank" class="slider-item">
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo5.png" alt="경기도노인종합복지관협회">
+                        </a>
+                        <a href="https://gg.pass.or.kr/" target="_blank" class="slider-item">
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo6.png" alt="경기도사회서비스원">
+                        </a>
+                        <a href="https://gg1389.or.kr/" target="_blank" class="slider-item">
+                            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/logo7.png" alt="경기도사회서비스원 노인보호전문기관">
                         </a>
                     </div>
                 </div>

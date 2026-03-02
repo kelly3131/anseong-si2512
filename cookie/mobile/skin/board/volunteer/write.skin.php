@@ -6,10 +6,14 @@ add_stylesheet('<link rel="stylesheet" href="' . $board_skin_url . '/style.css">
 ?>
 
 <?php // 게시판 관리의 상단 내용
-if (G5_IS_MOBILE) {
+if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
   echo '<div class="bo_top_img">';
-  // 모바일의 경우 설정을 따르지 않는다.
-  echo html_purifier(stripslashes($board['bo_mobile_content_head']));
+  // 반응형: PC와 모바일 모두 지원
+  if (G5_IS_MOBILE && $board['bo_mobile_content_head']) {
+    echo html_purifier(stripslashes($board['bo_mobile_content_head']));
+  } else if ($board['bo_content_head']) {
+    echo html_purifier(stripslashes($board['bo_content_head']));
+  }
   echo '</div>';
 }
 ?>
@@ -20,7 +24,8 @@ if (G5_IS_MOBILE) {
 
 <section id="bo_w" class="new-main-container">
   <div class="new-form-container">
-    <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+    <form name="fwrite" id="fwrite" action="<?php echo $action_url ?>" onsubmit="return fwrite_submit(this);" 
+      method="post" enctype="multipart/form-data" autocomplete="off">
       <input type="hidden" name="w" value="<?php echo $w ?>">
       <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
       <input type="hidden" name="wr_id" value="<?php echo $wr_id ?>">
@@ -31,7 +36,7 @@ if (G5_IS_MOBILE) {
       <input type="hidden" name="sst" value="<?php echo $sst ?>">
       <input type="hidden" name="sod" value="<?php echo $sod ?>">
       <input type="hidden" name="page" value="<?php echo $page ?>">
-
+      <input type="hidden" name="token" value="<?php echo get_write_token($bo_table); ?>">
       <div class="new-grid new-grid-1">
         <div class="new-field-group">
           <label for="wr_name" class="new-field-label required">성명</label>
@@ -163,7 +168,7 @@ if (G5_IS_MOBILE) {
               <span>이웃에 봉사</span>
             </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
-              <input type="radio" name="wr_4" id="wr_41" value="1" style="margin: 0;">
+              <input type="radio" name="wr_4" id="wr_41" value="보람된 여가선용" style="margin: 0;">
               <span>보람된 여가선용</span>
             </label>
             <!--label style="display: flex; align-items: center; gap: 8px;">
@@ -171,7 +176,7 @@ if (G5_IS_MOBILE) {
               <span>자기발전</span>
             </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
-              <input type="radio" name="wr_4" id="wr_43" value="3" style="margin: 0;">
+              <input type="radio" name="wr_4" id="wr_43" value="사회적 경험" style="margin: 0;">
               <span>사회적 경험</span>
             </label>
             <!--label style="display: flex; align-items: center; gap: 8px;">
@@ -179,7 +184,7 @@ if (G5_IS_MOBILE) {
               <span>종교적 신념</span>
             </label-->
             <label style="display: flex; align-items: center; gap: 8px;">
-              <input type="radio" name="wr_4" id="wr_45" value="5" style="margin: 0;">
+              <input type="radio" name="wr_4" id="wr_45" value="지역사회 발전" style="margin: 0;">
               <span>지역사회 발전</span>
             </label>
             <!--label style="display: flex; align-items: center; gap: 8px;">
@@ -260,15 +265,17 @@ if (G5_IS_MOBILE) {
               </div>
             </div>
             <div class="row">
-              <div class="col w25"><span>메모</span></div>
+              <div class="col w25" hidden><span>메모</span></div>
               <div class="col w75">
                 <label for="wr_content" class="sound_only">메모</label>
                 <?php if ($write_min || $write_max) { ?>
-                  <!-- 최소/최대 글자 수 사용 시 -->
-                  <!--<p id="char_count_desc">이 게시판은 최소 <strong><?php echo $write_min; ?></strong>글자 이상, 최대 <strong><?php echo $write_max; ?></strong>글자 이하까지 글을 쓰실 수 있습니다.</p>-->
+                  최소/최대 글자 수 사용 시
+                  <p id="char_count_desc">이 게시판은 최소 <strong><?php echo $write_min; ?></strong>글자 이상, 최대 
+                   <strong><?php echo $write_max; ?></strong>글자 이하까지 글을 쓰실 수 있습니다.</p>
                 <?php } ?>
-                <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 
+                <?php //echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 
                 ?>
+                <input type="hidden" name="wr_content">
                 <?php if ($write_min || $write_max) { ?>
                   <!-- 최소/최대 글자 수 사용 시 -->
                   <div id="char_count_wrap"><span id="char_count"></span>글자</div>
@@ -281,7 +288,9 @@ if (G5_IS_MOBILE) {
 
         <div class="step-body clearfix">
         <div class="panel-body">
-          <input type="checkbox" name="agrees" id="agrees" value="1"> 개인정보 수집 및 이용동의서의 내용을 숙지하고 동의합니다. <button type="button" class="btn btn-primary btn-xs" onclick="view_consent();return false;">자세히보기</button>
+          <input type="checkbox" name="agrees" id="agrees" value="1"> 개인정보 수집 및 이용동의서의 내용을 숙지하고 동의합니다. 
+          <!-- <button type="button" class="btn btn-primary btn-xs" onclick="view_consent();return false;">자세히보기</button> -->
+           <a class="btn btn-primary btn-xs" href="<?php echo G5_BBS_URL ?>/content.php?co_id=m4_s3" target="_blank">자세히보기</a>
           <div id="provision" style="display: none;">
             <div id="provision2">
               <h2>개인정보 수집 및 이용약관</h2>
@@ -374,7 +383,7 @@ if (G5_IS_MOBILE) {
 
         <div class="bo_w_tit write_div" style="display:none">
           <label for="wr_subject" class="sound_only">제목<strong>필수</strong></label>
-          <input type="text" name="wr_subject" value="자원봉사 신청" id="wr_subject" required class="frm_input full_input required" placeholder="제목">
+          <input type="hidden" name="wr_subject" value="자원봉사 신청" id="wr_subject" required class="frm_input full_input required" placeholder="제목">
         </div>
 
         <?php if ($is_use_captcha) { //자동등록방지 
@@ -415,10 +424,10 @@ if (G5_IS_MOBILE) {
   } 
 
   document.addEventListener("DOMContentLoaded", function () {
-    const cb56 = document.getElementById("wrcb_56");
+    const cb56 = document.getElementById("cb_56");
     const wr6 = document.getElementById("wr_6");
-
-    wr56.addEventListener("change", function () {
+    
+    wr6.addEventListener("change", function () {
       if (cb56.checked) {
         wr6.disabled = false;
         wr6.focus(); // 선택되면 바로 입력 가능
@@ -465,7 +474,7 @@ if (G5_IS_MOBILE) {
       return false;
     }
 
-    f.place.value = $("#member_post").val() + "|" + $("#member_addr").val() + "|" + $("#member_detail").val() + $("#member_etc").val();
+    f.place.value = $("#member_post").val() + "|" + $("#member_addr").val() + "|" + $("#member_detail").val() + "|"+ $("#member_etc").val();
     //f.wr_link1.value = $("#tel_1").val() + "-" + $("#tel_2").val() + "-" + $("#tel_3").val();
     f.wr_link2.value = $("#hp_1").val() + "-" + $("#hp_2").val() + "-" + $("#hp_3").val();
 
@@ -477,25 +486,33 @@ if (G5_IS_MOBILE) {
     const cb56 = document.getElementById("cb_56");
     const wr6 = document.getElementById("wr_6");
     
-    // 체크된 값들만 배열로 수집
-    let selectedValues = Array.from(checkboxes)
-      .filter(cb => cb.checked)
-      .map(cb => cb.value);
-
-  if (cb56.checked && wr6.value.trim() == "") {
+    
+    if (cb56.checked && wr6.value.trim() == "") {
       alert("기타 내용을 입력해 주세요.");
       return false;
     }
+
+    const checkboxes = document.querySelectorAll('input[name="cb_5"]:checked');
+  
+    // 2. 체크박스 값들을 배열로 변환
+    const selectedValues = Array.from(checkboxes).map(cb => cb.value);
+    
+    // 3. 배열을 콤마(,)로 연결하여 hidden input(wr_5)에 저장
+    document.getElementById('wr_5').value = selectedValues.join(', ');
+
+    // 참고: wr_6는 일반 text input이므로 폼 제출 시 자동으로 전달됩니다.
+    // 만약 '기타' 체크박스가 선택되지 않았을 때 wr_6를 비우고 싶다면 아래 로직을 추가하세요.
+    const etcCheckbox = document.getElementById('cb_56'); // 기타 체크박스
+    if (!etcCheckbox.checked) {
+      document.getElementById('wr_6').value = ''; 
+  }
 
     if (selectedValues.length === 0) {
       alert("희망 분야를 하나 이상 선택해주세요.");
       return false;
     }
 
-    // , 로 연결된 문자열 생성
-    f.wr_5.value = selectedValues.join(",");
-    
-    <?php echo $editor_js; // 에디터 사용시 자바스크립트에서 내용을 폼필드로 넣어주며 내용이 입력되었는지 검사함   
+    <?php //echo $editor_js; // 에디터 사용시 자바스크립트에서 내용을 폼필드로 넣어주며 내용이 입력되었는지 검사함   
     ?>
 
     var subject = "";
@@ -550,8 +567,6 @@ if (G5_IS_MOBILE) {
       }
     }
 
-    
-    
     <?php echo $captcha_js; // 캡챠 사용시 자바스크립트에서 입력된 캡챠를 검사함  
     ?>
 

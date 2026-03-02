@@ -31,20 +31,14 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                                         안성시노인복지관 홈페이지에 방문해 주신 여러분을 진심으로 환영합니다.
                                     </div> -->
                                 </li>
-                                <li class="swiper-slide">
+                                <!--li class="swiper-slide">
                                     <div class="bg bg02"></div>
-                                    <!-- <div class="main_txt">
-                                        <p>세상을 마주하며<br>사랑으로 함께 가는 공동체</p>
-                                        방문해주신 모든분들에게 희망의 빛이 되는 복지관을 소개합니다.
-                                    </div> -->
+                                    
                                 </li>
                                 <li class="swiper-slide">
                                     <div class="bg bg03"></div>
-                                    <!-- <div class="main_txt">
-                                        <p>함께 만드는 행복한 세상,<br>안성시노인복지관</p>
-                                        특별한 나눔을 함께 만들어 갈 여러분들을 기다립니다.
-                                    </div> -->
-                                </li>
+                                    
+                                </li-->
                                 <li class="swiper-slide">
                                     <div class="bg bg04"></div>
                                 </li>

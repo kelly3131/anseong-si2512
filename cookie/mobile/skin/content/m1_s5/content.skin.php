@@ -13,6 +13,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m1_s1" class="main-tab">법인소개</a>
         <a href="/bbs/content.php?co_id=m1_s2" class="main-tab">인사말</a>
         <a href="/bbs/content.php?co_id=m1_s3" class="main-tab">미션 및 비전</a>
+        <a href="/bbs/content.php?co_id=m1_s9" class="main-tab">CI소개</a>
         <a href="/bbs/content.php?co_id=m1_s4" class="main-tab">연혁</a>
         <a href="/bbs/content.php?co_id=m1_s5" class="main-tab active">조직도</a>
         <a href="/bbs/content.php?co_id=m1_s6" class="main-tab">이용안내</a>
@@ -56,13 +57,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                             <div class="org-committee-row">
                                 <div class="org-col">
                                     <!-- <div class="org-box org-committee" onclick="showOrgInfo('personnel')"> -->
-                                    <div class="org-box org-committee2">
+                                    <div class="org-box org-committee ">
                                         <div class="org-name">인사위원회</div>
                                     </div>
                                 </div>
                                 <div class="org-col">
                                     <!-- <div class="org-box org-committee" onclick="showOrgInfo('operation')"> -->
-                                    <div class="org-box org-committee2">
+                                    <div class="org-box org-committee2" onclick="showOrgInfo('operation')">
                                         <div class="org-name">운영위원회</div>
                                     </div>
                                 </div>
@@ -239,7 +240,7 @@ const orgData = {
                         <tbody>
                             <tr>
                                 <td>관장</td>
-                                <td>김도윤</td>
+                                <td>김도윤(가섭)</td>
                                 <td>031-674-0791</td>
                                 <td>복지관 운영 및 사업 총괄</td>
                             </tr>
@@ -284,18 +285,36 @@ const orgData = {
                     <table class="staff-detail-table">
                         <thead>
                             <tr>
-                                <th>직위</th>
+                                <th>구성</th>
                                 <th>성명</th>
-                                <th>전화</th>
-                                <th>담당업무</th>
+                                <th>구성</th>
+                                <th>성명</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>위원장</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>운영 방침 결정 및 심의</td>
+                                <td>전문가(운영위원장)</td>
+                                <td>이서영</td>
+                                <td>후원자 대표</td>
+                                <td>김정애</td>
+                            </tr>
+                            <tr>
+                                <td>공익단체 추천</td>
+                                <td>탄하스님</td>
+                                <td>지역주민 대표</td>
+                                <td>정성숙</td>
+                            </tr>
+                            <tr>
+                                <td>담당 공무원</td>
+                                <td>박서인</td>
+                                <td>기관장</td>
+                                <td>김도윤(가섭)</td>
+                            </tr>
+                            <tr>
+                                <td>이용자 대표</td>
+                                <td>오명자</td>
+                                <td>종사자 대표</td>
+                                <td>권순호</td>
                             </tr>
                         </tbody>
                     </table>
@@ -385,7 +404,7 @@ const orgData = {
         `
     },
     'operations-team': {
-        title: "총무과 - 운영지원팀",
+        title: "운영지원팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -430,7 +449,7 @@ const orgData = {
         `
     },
     'policy-team': {
-        title: "총무과 - 정책지원팀",
+        title: "정책지원팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -475,13 +494,13 @@ const orgData = {
                                 <td>본관 경로식당 </td>
                             </tr>
                             <tr>
-                                <td>양연미</td>
+                                <td>조경아</td>
                                 <td>조리원</td>
                                 <td>-</td>
                                 <td>본관 경로식당 </td>
                             </tr>
                             <tr>
-                                <td>정정옥</td>
+                                <td>박연희</td>
                                 <td>조리원</td>
                                 <td>-</td>
                                 <td>본관 경로식당 </td>
@@ -541,7 +560,7 @@ const orgData = {
         `
     },
     'planning-team': {
-        title: "총무과 - 기획홍보팀",
+        title: "기획홍보팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -574,7 +593,7 @@ const orgData = {
         `
     },
     'culture-team': {
-        title: "복지과 - 문화건강팀",
+        title: "문화건강팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -591,31 +610,31 @@ const orgData = {
                             <tr>
                                 <td>박효진</td>
                                 <td>팀장</td>
-                                <td></td>
+                                <td>070-5143-0160</td>
                                 <td>평생교육, 동아리</td>
                             </tr>
                             <tr>
                                 <td>김경자</td>
                                 <td>실장/간호사</td>
-                                <td></td>
+                                <td>070-5143-0167</td>
                                 <td>건강증진지원</td>
                             </tr>
                             <tr>
                                 <td>김규림</td>
                                 <td>대리</td>
-                                <td></td>
+                                <td>070-4352-8175</td>
                                 <td>회원관리, 평생교육, 일반상담, 노인권익증진</td>
                             </tr>
                             <tr>
                                 <td>안수진</td>
                                 <td>물리치료사</td>
-                                <td></td>
+                                <td>070-5143-2499 </td>
                                 <td>기능회복증진</td>
                             </tr>
                             <tr>
                                 <td>박도영</td>
                                 <td>상담사</td>
-                                <td></td>
+                                <td>031-673-5590</td>
                                 <td>노인전문상담센터 전문상담</td>
                             </tr>
                         </tbody>
@@ -625,7 +644,7 @@ const orgData = {
         `
     },
     'participation-team': {
-        title: "복지과 - 사회참여팀",
+        title: "사회참여팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper">
@@ -664,8 +683,8 @@ const orgData = {
                                 <td>노인일자리 노노케어</td>
                             </tr>
                             <tr>
-                                <td>공석</td>
-                                <td>-</td>
+                                <td>윤한진</td>
+                                <td>전담사회복지사</td>
                                 <td>070-5143-0173</td>
                                 <td>노인일자리 학교도우미, 아동교통안전지원</td>
                             </tr>
@@ -676,7 +695,7 @@ const orgData = {
         `
     },
     'care-team': {
-        title: "복지과 - 맞춤돌봄팀",
+        title: "맞춤돌봄팀",
         content: `
             <div class="staff-info-section">
                 <div class="staff-table-wrapper" style="max-height: 400px; overflow-y: auto;">
@@ -699,31 +718,31 @@ const orgData = {
                                 <td>최주현</td>
                                 <td>전담사회복지사</td>
                                 <td>070-5143-2039</td>
-                                <td>맞춤돌봄서비스</td>
+                                <td>노인맞춤돌봄서비스</td>
                             </tr>
                             <tr>
                                 <td>유정우</td>
                                 <td>전담사회복지사</td>
                                 <td>070-5143-0168</td>
-                                <td>맞춤돌봄서비스</td>
+                                <td>노인맞춤돌봄서비스</td>
                             </tr>
                             <tr>
                                 <td>박근순</td>
                                 <td>전담사회복지사</td>
                                 <td>070-5143-0170</td>
-                                <td>맞춤돌봄서비스</td>
+                                <td>노인맞춤돌봄서비스</td>
                             </tr>
                             <tr>
                                 <td>오미경</td>
                                 <td>전담사회복지사</td>
                                 <td>070-5143-0164</td>
-                                <td>맞춤돌봄서비스</td>
+                                <td>노인맞춤돌봄서비스</td>
                             </tr>
                             <tr>
                                 <td>이은옥</td>
                                 <td>전담사회복지사</td>
                                 <td>070-5143-0165</td>
-                                <td>맞춤돌봄서비스</td>
+                                <td>노인맞춤돌봄서비스</td>
                             </tr>
                             <tr>
                                 <td>박경수</td>

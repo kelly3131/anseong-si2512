@@ -133,7 +133,7 @@ img{vertical-align:top;max-width:100%;height:auto}
 #wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 #container {position:relative;min-height:300px}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
-#container_title {position:relative;font-weight:bold;background:#fff;color:#333; text-align:center;z-index:9;background:rgba(0,0,0,0.4);line-height:300px;font-size:1.5em}
+#container_title {position:relative;font-weight:bold;background:#fff;color:#333; text-align:center;z-index:9;background:rgba(0,0,0,0.4);line-height:300px;font-size:34px}
 
 #container>p{display:none;}
 
@@ -468,7 +468,7 @@ box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.2);}
 /* 페이징 */
 .pg_wrap {clear:both;margin:30px 0;text-align:center}
 .pg {display:inline-block }
-.pg_page, .pg_current {display:inline-block;padding:0 13px;height:35px;color:#959595;border-radius: 4px;line-height:35px;vertical-align:middle}
+.pg_page, .pg_current {display:inline-block;padding:0 13px;height:35px;color:#959595;line-height:35px;vertical-align:middle}
 .pg a:focus, .pg a:hover {text-decoration:none;background-color:#f8f8f8; }
 .pg_page {background:#eee;}
 .pg_start {background:url(../img/btn_first.gif) no-repeat 50% 50% #eee;width:35px;height:35px ;text-indent:-999px;overflow:hidden}

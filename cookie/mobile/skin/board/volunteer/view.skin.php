@@ -24,7 +24,7 @@ if (G5_IS_MOBILE) {
     <div class="inner">
         <? include_once(G5_PATH . '/skin/nav/mysubmenu.php'); ?>
         <article id="bo_v">
-            <header>
+            <header class="hidden">
                 <h2 id="bo_v_title" style="border-bottom: 1px solid #222">
                     <?php if ($category_name) { ?>
                         <span class="bo_v_cate"><?php echo $view['ca_name']; // 분류 출력 끝 
@@ -39,7 +39,7 @@ if (G5_IS_MOBILE) {
             </header>
 
             <section id="bo_v_info">
-                <h2>페이지 정보</h2>
+                <h2 class="hidden">페이지 정보</h2>
                 <!--
                 <span class="sound_only">작성자 </span><?php echo $view['name'] ?><span class="ip"><?php if ($is_ip_view) {
                                                                                                     echo "&nbsp;($ip)";
@@ -53,7 +53,7 @@ if (G5_IS_MOBILE) {
             </section>
 
             <section id="bo_v_atc">
-                <h2 id="bo_v_atc_title">본문</h2>
+                <h2 id="bo_v_atc_title" class="hidden">본문</h2>
 
                 <?php
                 // 파일 출력
@@ -96,7 +96,7 @@ if (G5_IS_MOBILE) {
                     </div-->
                     <div class="row">
                         <div class="col w25"><span>주소</span></div>
-                        <div class="col w75">
+                        <div class="col w75 flex-col10">
                             <label for="place" class="sound_only">주소</label>
                             <input type="text" name="place" id="place" class="frm_input full_input"
                                 maxlength="255" readonly>
@@ -147,15 +147,15 @@ if (G5_IS_MOBILE) {
                 <div class="row">
                     <div class="col w25"><span>참여동기</span></div>
                     <div class="col w75">
-                        <label><input type="text" name="wr_4" id="wr_40" value="<?php $view['wr_4'] ?>" class="frm_input" readonly>
+                        <label><input type="text" name="wr_4" id="wr_40" value="<?php echo $view['wr_4'] ?>" class="frm_input" readonly>
                     </div>
                 </div>
                 <div class="row" style="padding: 10px 0;">
                     <div class="col w25"><span>희망분야</span></div>
                     <div class="col w75">
                         <div class="row" style="padding-bottom: 10px;">
-                            <input type="text" id="wr_5" name="wr_5" value="<?php $view['wr_5'] ?>" class="frm_input" readonly>
-                            (<input type="text" id="wr_6" name="wr_6" value="<?php $view['wr_6'] ?>" class="frm_input" readonly>)
+                            <input type="text" id="wr_5" name="wr_5" value="<?php echo $view['wr_5'] ?>" class="frm_input" readonly>
+                            (<input type="text" id="wr_6" name="wr_6" value="<?php echo $view['wr_6'] ?>" class="frm_input" readonly>)
                         </div>
                     </div>
                 </div>
@@ -163,15 +163,15 @@ if (G5_IS_MOBILE) {
                     <div class="col w25"><span>활동시간</span></div>
                     <div class="col w75">
                         <label for="wr_9" class="sound_only">활동시간<strong>필수</strong></label>
-                        <input type="text" id="wr_7" name="wr_7" value="<?php $view['wr_7'] ?>" class="frm_input" readonly>
+                        <input type="text" id="wr_7" name="wr_7" value="<?php echo $view['wr_7'] ?>" class="frm_input" readonly>
                     </div>
                     <div class="col w75">
                         <label for="wr_8" class="sound_only">활동시간<strong>필수</strong></label>
-                        <input type="text" id="wr_8" name="wr_8" value="<?php $view['wr_8'] ?>" class="frm_input" readonly>
+                        <input type="text" id="wr_8" name="wr_8" value="<?php echo $view['wr_8'] ?>" class="frm_input" readonly>
                     </div>
                     <div class="col w75">
                         <label for="wr_9" class="sound_only">봉사시간<strong>필수</strong></label>
-                        <input type="text" name="wr_9" value="<?php echo $view['wr_9'] ?>" id="wr_9" class="frm_input" readonly>
+                        <input type="text" name="wr_9" value="<?php echo $view['wr_9']|$view[wr_10] ?>" id="wr_9" class="frm_input" readonly>
                     </div>
                 </div>
                 <!--div class="row">
@@ -311,7 +311,7 @@ if (G5_IS_MOBILE) {
             <!--
                         <?php if ($reply_href) { ?><a href="<?php echo $reply_href ?>" class="btn_b01 btn">답변</a><?php } ?>
                         -->
-            <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_b02 btn">자원봉사안내</a><?php } ?>
+            <?php if ($write_href) { ?><a href="<?php echo $write_href ?>" class="btn_b02 btn">자원봉사신청</a><?php } ?>
 
         </div>
     </div>
@@ -325,10 +325,6 @@ if (G5_IS_MOBILE) {
 </div>
 </div>
 <script>
-    $('input:radio[name=wr_7]:input[value="<? echo $view['wr_7'] ?>"]').attr("checked", true);
-    $('input:radio[name=wr_8]:input[value="<? echo $view['wr_8'] ?>"]').attr("checked", true);
-    $('input:radio[name=wr_11]:input[value="<? echo $w[1] ?>"]').attr("checked", true);
-
     <?php if ($board['bo_download_point'] < 0) { ?>
         $(function() {
             $("a.view_file_download").click(function() {
@@ -359,6 +355,12 @@ if (G5_IS_MOBILE) {
 <!-- 게시글 보기 끝 -->
 
 <script>
+    var ad_info = "<? echo $view['place'] ?>".split('|');
+    if (ad_info.length === 4) {
+        document.getElementById('place').value = ad_info[0] + " " + ad_info[1] + " " + ad_info[2];
+        document.getElementById('etc').value = ad_info[3];
+    }
+
     $(function() {
         $("a.view_image").click(function() {
             window.open(this.href, "large_image", "location=yes,links=no,toolbar=no,top=10,left=10,width=10,height=10,resizable=yes,scrollbars=no,status=no");

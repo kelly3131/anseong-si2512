@@ -17,7 +17,7 @@ body {
     font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.8;
     color: var(--text-dark);
-    background: linear-gradient(135deg, #fff9e6 0%, #ffffff 100%);
+    background: #fff;
 }
 
 .container {

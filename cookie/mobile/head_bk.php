@@ -73,11 +73,6 @@ if(!empty($menu_group)) {
 
  <!-- sh_hd [s] -->
     <header id="sh_hd">
-        <?php
-            if(defined('_INDEX_')) { // index에서만 실행
-                include G5_BBS_PATH.'/newwin.inc.php'; // 팝업레이어
-            }
-        ?>
     	<div id="sh_hd_wrapper">
             
             <nav id="shGnb">
@@ -94,7 +89,6 @@ if(!empty($menu_group)) {
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s1">법인소개</a> </li>
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s2">인사말</a> </li>
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s3">미션 및 비전</a> </li>
-                            <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s9">CI소개</a> </li>
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s4">연혁</a> </li>
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s5">조직도</a> </li>
                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s6">이용안내</a> </li>
@@ -226,7 +220,6 @@ if(!empty($menu_group)) {
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s2">법인소개</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s3">인사말</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s4">미션 및 비전</a></li>
-                                    <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s9">CI소개</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s5">연혁</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s6">조직도</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m1_s7">이용안내</a></li>

@@ -300,3 +300,17 @@ footer .links ul li:after{right:-11px}
 footer .ft_inner .ft_adress{padding:25px 0 35px;font-size:13px}
 }
 /* 반응형 [e] */
+
+
+.flex-col10 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.flex-row10 {
+    display: flex;
+    gap: 10px;
+}
+.hidden {
+    display: none !important;
+}

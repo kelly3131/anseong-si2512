@@ -12,44 +12,27 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
 
                 <!-- sh_section [s] -->
                 <section id="sh_section">
-                    <!-- <div>
-                        <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/main/main01.jpg" alt="">
-                        <div class="main_txt">
-                            <p>함께하며 희망의 빛이 되는 복지관<br>안성시노인복지관</p>
-                            안성시노인복지관 홈페이지에 방문해 주신 여러분을 진심으로 환영합니다.
-                        </div>
-                    </div> -->
-                    <!-- main_banner [s] -->
                 <section id="mainbanner">
                     <div id="mainVisual">
                         <div class="swiper main_slide">
                             <ul class="swiper-wrapper">
-                                <li class="swiper-slide">
+                                <!--li class="swiper-slide">
                                     <div class="bg bg01"></div>
-                                    <!-- <div class="main_txt">
-                                        <p>함께하며 희망의 빛이 되는 복지관<br>안성시노인복지관</p>
-                                        안성시노인복지관 홈페이지에 방문해 주신 여러분을 진심으로 환영합니다.
-                                    </div> -->
-                                </li>
-                                <li class="swiper-slide">
+                                </li-->
+                                <!--li class="swiper-slide">
                                     <div class="bg bg02"></div>
-                                    <!-- <div class="main_txt">
-                                        <p>세상을 마주하며<br>사랑으로 함께 가는 공동체</p>
-                                        방문해주신 모든분들에게 희망의 빛이 되는 복지관을 소개합니다.
-                                    </div> -->
                                 </li>
                                 <li class="swiper-slide">
                                     <div class="bg bg03"></div>
-                                    <!-- <div class="main_txt">
-                                        <p>함께 만드는 행복한 세상,<br>안성시노인복지관</p>
-                                        특별한 나눔을 함께 만들어 갈 여러분들을 기다립니다.
-                                    </div> -->
-                                </li>
+                                </li-->
                                 <li class="swiper-slide">
                                     <div class="bg bg04"></div>
                                 </li>
                                 <li class="swiper-slide">
                                     <div class="bg bg05"></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="bg bg06"></div>
                                 </li>
                             </ul>
                         </div>
@@ -325,8 +308,7 @@ include_once(G5_THEME_MOBILE_PATH.'/head.php');
                         <article id="inc04">
                             <div class="inner">
                                 <div class="tit">
-                                    <p>나눔으로 함께·소통하는 우리·행복한 세상 </p>
-                                    <!-- 여러분의 작은 손길이 모여 만들어지는 큰 힘, 더 나은 미래를 함께 만들어주세요. -->
+                                    <p>나눔으로 함께·소통하는 우리·향기로운 세상 </p>
                                 </div>
                                 <div class="cont_box">
                                     <div class="left box">

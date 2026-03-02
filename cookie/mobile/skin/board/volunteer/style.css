@@ -1825,7 +1825,7 @@ input[type="checkbox"] {
 /* 버튼 세로 정렬 스타일 */
 .bo_v_top {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 15px;
     margin-top: 30px;
     padding-top: 20px;
@@ -1847,8 +1847,6 @@ input[type="checkbox"] {
 
 .bo_v_right {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
 }
 
 /* 글쓰기 폼 버튼 영역 */

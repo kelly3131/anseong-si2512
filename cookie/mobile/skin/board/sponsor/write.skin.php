@@ -326,7 +326,9 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
            연말 소득공제영수증 발급을 위해 개인정보 수집 및 이용약관을 읽고 동의해주세요.
         </div>
         <div class="panel-body">
-          <input type="checkbox" name="agrees" id="agrees" value="1"> 개인정보 수집 및 이용동의서의 내용을 숙지하고 동의합니다. <button type="button" class="btn btn-primary btn-xs" onclick="view_consent();return false;">자세히보기</button>
+          <input type="checkbox" name="agrees" id="agrees" value="1"> 개인정보 수집 및 이용동의서의 내용을 숙지하고 동의합니다. 
+          <!-- <button type="button" class="btn btn-primary btn-xs" onclick="view_consent();return false;">자세히보기</button> -->
+           <a class="btn btn-primary btn-xs" href="<?php echo G5_BBS_URL ?>/content.php?co_id=m3_s2" target="_blank">자세히보기</a>
           <div id="provision" style="display: none;">
             <div id="provision2">
               <h2>개인정보 수집 및 이용약관</h2>
@@ -427,7 +429,9 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
               <a href="<?php echo get_pretty_url($bo_table); ?>" class="btn_b01 btn">후원신청목록</a>
             <? } ?>
             <a href="/bbs/write.php?bo_table=support" class="btn_b01 btn" style="text-align:center">&nbsp;취&nbsp;&nbsp;&nbsp;소&nbsp;</a>
-            <input type="submit" value="후원신청완료" id="btn_submit" class="btn_submit btn" accesskey="s">
+            <? if (!$is_admin) { ?>
+              <input type="submit" value="후원신청완료" id="btn_submit" class="btn_submit btn" accesskey="s">
+            <? } ?>
           </div>
         </div>
       
@@ -533,7 +537,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
       return false;
     }
 
-    f.place.value = $("#member_post").val() + "|" + $("#member_addr").val() + "|" + $("#member_detail").val() + $("#member_etc").val();
+    f.place.value = $("#member_post").val() + "|" + $("#member_addr").val() + "|" + $("#member_detail").val() +"|"+ $("#member_etc").val();
     //f.wr_link1.value = $("#tel_1").val() + "-" + $("#tel_2").val() + "-" + $("#tel_3").val();
     f.wr_link2.value = $("#hp_1").val() + "-" + $("#hp_2").val() + "-" + $("#hp_3").val();
 

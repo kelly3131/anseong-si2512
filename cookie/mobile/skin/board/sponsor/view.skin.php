@@ -30,7 +30,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
 
 <div class="inner container">
   <article id="bo_v" class="bo_v_<?php echo $bo_table; ?>">
-    <header>
+    <header class="hidden">
         <h1><?php echo $board['bo_subject']; ?></h1>
         <h2 id="bo_v_title">
             <?php if ($category_name) { ?>
@@ -41,7 +41,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
     </header>
 
      <section id="bo_v_info">
-        <h2>페이지 정보</h2>
+        <h2 class="hidden">페이지 정보</h2>
         <span class="sound_only">작성일</span><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo date("y-m-d H:i", strtotime($view['wr_datetime'])) ?>
         <!--
         <span class="sound_only">작성자 </span><?php echo $view['name'] ?><span class="ip"><?php if ($is_ip_view) { echo "&nbsp;($ip)"; } ?></span>
@@ -52,7 +52,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
     </section>   
 
     <section id="bo_v_atc">
-      <h2 id="bo_v_atc_title">본문</h2>
+      <h2 id="bo_v_atc_title" class="hidden">본문</h2>
       <div id="bo_v_con">
         <h2 class="sound_only"><?php echo $g5['title'] ?></h2>
 
@@ -65,7 +65,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
           </select>
         </div>
         <?php } ?>
-        <h3 class="content-title ">후원자 정보</h3>
+        <h3 class="content-title hidden">후원자 정보</h3>
         <div class="step-body clearfix">
           <?php // if ($is_name) { ?>
           <div class="row">
@@ -95,7 +95,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
           </div-->
           <div class="row">
             <div class="col w25"><span>주소</span></div>
-            <div class="col w75">
+            <div class="col w75 flex-col10">
               <label for="place" class="sound_only">주소</label>
               <input type="text" name="place"  id="place" class="frm_input full_input"
                 maxlength="255"  readonly>
@@ -113,7 +113,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
           <div class="row">
             <div class="col w25"><span>휴대폰</span></div>
             <div class="col w75">    
-              <input type="text" name="wr_link2"  id="wr_link2" value="<? echo $view['wr_link2'] ?>" class="frm_input full_input  required" maxlength="14" readonly>
+              <input type="text" name="wr_link2"  id="wr_link2" value="<? echo $view['wr_link2'] ?>" class="frm_input full_input" maxlength="14" readonly>
             </div>
           </div>
           <!--div class="row">
@@ -123,7 +123,7 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
             </div>
           </div>
         </div-->
-        <h3 class="content-title ">후원 정보</h3>
+        <h3 class="content-title hidden">후원 정보</h3>
         <div class="step-body clearfix">
           <!-- 후원형태 -->
           <div class="row" style="padding: 10px 0;">
@@ -280,11 +280,11 @@ if ($board['bo_content_head'] || $board['bo_mobile_content_head']) {
             }
         }
         ?>
-        <div id="bo_v_top">
-          <ul class="bo_v_left">
-              <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" class="btn_b01 btn" onclick="del(this.href); return false;"> 삭제</a></li><?php } ?>
-          </ul>
-          <div class="bo_v_right"> 
+        <div id="bo_v_top flex-row10">
+          <div class="bo_v_left">
+              <?php if ($delete_href) { ?><div><a href="<?php echo $delete_href ?>" class="btn_b01 btn" onclick="del(this.href); return false;"> 삭제</a></div><?php } ?>
+          </div>
+          <div class="bo_v_right flex-row10"> 
               <? if($is_admin) { ?>
               <a href="<?php echo $list_href ?>" class="btn_b01 btn">후원신청목록</a>
               <? } ?>
