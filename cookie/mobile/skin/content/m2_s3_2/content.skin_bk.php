@@ -41,7 +41,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <p>지역사회의 재능 있는 자원봉사자를 발굴·연계하여 지역사회자원으로 재창출하는 선순환 구조를 확립하고 어르신 복지향상과 나눔문화 확산에 기여합니다.</p>
     </div>
 
-    <h3 class="title-middle">일반자원봉사사업</h3>
+    <h3 class="title-with-icon2">일반자원봉사사업</h3>
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
@@ -87,7 +87,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         </div>
 
     </div>
-    <h3 class="title-middle">노인자원봉사사업</h3>
+
+
+    <h3 class="title-with-icon2">노인자원봉사사업</h3>
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
@@ -100,64 +102,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 <ul>
                     <li><strong>사 업 명 :</strong>노인자원봉사사업 「노인자원봉사단」</li>
                     <li><strong>사업 대상 :</strong>안성시에 거주하고 자원봉사활동을 희망하는 60세 이상 어르신</li>
-                    <li><strong>사업 기간 :</strong>봉사단별 활동기간 상이하므로 하단 사업내용 참고. </li>
+                    <li><strong>사업 기간 :</strong>봉사단별 활동기간 상이하므로 하단 사업내용 참고.</li>
                 </ul>
             </div>
 
             <div class="info-section">
                 <h3 class="section-title-with-icon2">사업내용</h3>
-                <table class="service-table">
-                    <thead>
-                        <tr>
-                            <th>봉사유형</th>
-                            <th>봉사단명</th>
-                            <th>활동내용</th>
-                            <th>활동장소</th>
-                            <th>봉사시기</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th rowspan="2">시설</th>
-                            <td>백합</td>
-                            <td>복지관 경로식당 업무보조 봉사</td>
-                            <td>경로식당</td>
-                            <td>연중</td>
-                        </tr>
-                        <tr>
-                            <td>작은자리</td>
-                            <td>복지관 경로식당 식사 줄 관리 봉사</td>
-                            <td>1층 로비</td>
-                            <td>연중</td>
-                        </tr>
-                        <tr>
-                            <th rowspan="3">재능나눔</th>
-                            <td>뜨담</td>
-                            <td>뜨개질 재능 물품 제작 및 나눔</td>
-                            <td>관내 프로그램실</td>
-                            <td>3월~11월</td>
-                        </tr>
-                        <tr>
-                            <td>은빛소리</td>
-                            <td>노인주간보호센터, 요양원 등 복지시설 방문 공연 봉사<br>(레크리에이션, 하모니카, 민요, 무용 등)</td>
-                            <td>지역 복지시설</td>
-                            <td>3월~11월</td>
-                        </tr>
-                        <tr>
-                            <td>안성맞춤<br>기억지킴이</td>
-                            <td>치매안심교육 참여자 대상<br>치매 예방교육, 봉사활동 진행</td>
-                            <td>치매안심센터 지정<br>치매안심구역</td>
-                            <td>3월~11월</td>
-                        </tr>
-                        <tr>
-                            <th>지역사회<br>공헌</th>
-                            <td>슬기로운<br>원예환경</td>
-                            <td>지역사회 환경보호 봉사, 텃밭 가꾸기 및<br>원예봉사, 물품 제작 및 전달</td>
-                            <td>지역사회 일대<br>관내 프로그램실</td>
-                            <td>2월~11월</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="business-detail">
+                   
+                </div>
             </div>
 
         </div>
@@ -166,20 +119,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 
 
 
-
-
     <div class="image-grid">
         <div class="image-item">
-            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img1.jpg" alt="">
+            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img1.png" alt="">
         </div>
         <div class="image-item">
-            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img2.jpg" alt="">
+            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img2.png" alt="">
         </div>
         <div class="image-item">
             <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img3.png" alt="">
-        </div>
-        <div class="image-item">
-            <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m2/m2_s3_2_img4.png" alt="">
         </div>
     </div>
 </div>

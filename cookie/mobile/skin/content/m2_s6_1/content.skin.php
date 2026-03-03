@@ -13,7 +13,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
         <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s6_1" class="main-tab active">사회참여팀</a>
     </div>
@@ -25,6 +25,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s6_1" class="sub-tab active">노인자원봉사사업</a>
             <span class="chevron">|</span>
             <a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s6_2" class="sub-tab">노인 일자리 및 사회활동 지원사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a>
         </div>
     </div>
 </div>
@@ -40,12 +42,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>노인의 경륜을 사회에 재투자할 수 있도록 노인자원봉사를 활성화하여 노인의 적극적 사회참여를 도모하여 행복한 노년의 삶을 영위할 수 있도록 함</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>사업명 :</strong> 노인자원봉사사업 「노인자원봉사단」</li>
                     <li><strong>사업대상 :</strong> 안성시에 거주, 사회참여를 희망하는 60세 이상 어르신</li>
@@ -53,7 +55,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 </ul>
             </div>
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <table class="service-table">
                         <thead>

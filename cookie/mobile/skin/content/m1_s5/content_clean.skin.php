@@ -37,7 +37,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">조직도</h3>
+                <h3 class="section-title-with-icon2">조직도</h3>
                 <div class="organ s_style">
                     <div class="organ_tree_wrap">	
                         <div class="organ_tree_img">
@@ -71,7 +71,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">종사자 현황</h3>
+                <h3 class="section-title-with-icon2">종사자 현황</h3>
                 <div class="staff-statistics">
                     <div class="table-scroll-wrapper">
                         <table class="organ_table1">

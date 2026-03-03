@@ -52,6 +52,9 @@
 #greeting .cont{padding:0}
 #greeting .cont .sign{margin-top:20px}
 #greeting .cont .sign span{margin-left:0;font-size:15px}
+.sub-tabs-container.m2 .sub-tabs {
+        justify-content: flex-start;
+    }
 }
 @media(max-width:768px){
 #greeting .cont .pl{white-space:normal}
@@ -186,10 +189,13 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-    
+    .sub-tabs-container.m2 {
+        max-width: initial;
+    }
     .sub-tabs {
         justify-content: center;
     }
+    
 }
 
 .sub-tabs {
@@ -396,6 +402,14 @@
     padding-bottom: 0.5rem;
     border-bottom: 1px solid #fff0c9;
 }
+h3.title-middle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #1f2937;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #fff0c9;
+}
 
 .info-section p {
     font-size: 1.3rem;
@@ -593,6 +607,7 @@
     text-align: center;
     font-weight: bold;
     background-color: #f5f5f5;
+    vertical-align: middle;
 }
 
 .service-table td {

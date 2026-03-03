@@ -13,16 +13,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab active">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
 <div class="sub-tabs-wrapper">
-    <div class="sub-tabs-container">
+    <div class="sub-tabs-container m2">
         <div class="sub-tabs">
-            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">상담사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">회원관리사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_2" class="sub-tab">평생교육사업</a>
             <span class="chevron">|</span>
@@ -32,7 +32,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab active">기능회복지원사업</a>
             <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab">모바일헬스케어사업</a>
+            <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
         </div>
     </div>
 </div>
@@ -42,18 +46,13 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="title-bar">
             <h2 class="title-with-icon">기능회복지원사업</h2>
         </div>
-        <p>어르신의 신체·정신 기능 회복을 통해 자립적이고 건강한 노후를 지원합니다.</p>
+        <p>어르신의 신체·정신 기능 저하를 예방하고, 현재의 기능을 유지·증진하여 일상생활의 자립 능력과 건강한 노후생활을 지원합니다.</p>
     </div>
 
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
-                <p>어르신의 신체·정신 기능 회복을 통해 자립적이고 건강한 노후를 지원.</p>
-            </div>
-
-            <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성시</li>
                     <li><strong>서비스 대상 :</strong> 복지관 이용자</li>
@@ -62,7 +61,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>물리치료</h4>
                     <p>온열, 마사지 등을 통한 기능 회복 지원</p>
@@ -79,7 +78,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="procedure-flow">
                     <span class="step">이용접수 (참여 신청 및 기초상담)</span>
                     <span class="arrow">→</span>

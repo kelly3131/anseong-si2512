@@ -13,16 +13,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab active">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
 <div class="sub-tabs-wrapper">
-    <div class="sub-tabs-container">
+    <div class="sub-tabs-container m2">
         <div class="sub-tabs">
-            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">상담사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">회원관리사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_2" class="sub-tab">평생교육사업</a>
             <span class="chevron">|</span>
@@ -32,7 +32,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab">기능회복지원사업</a>
             <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab">모바일헬스케어사업</a>
+            <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
         </div>
     </div>
 </div>
@@ -48,12 +52,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>조기검진·건강교육·의료연계로 어르신의 건강한 노후를 지원.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성시</li>
                     <li><strong>서비스 대상 :</strong> 안성시노인복지관 이용 어르신</li>
@@ -62,7 +66,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>의료사업</h4>
                     <p>무료이동진료, 만성질환관리(혈압,혈당체크) 병원연계, 응급처치, 비상약 지급</p>
@@ -92,7 +96,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="business-detail">
                     <h4>일회성교육</h4>
                     <div class="procedure-flow">

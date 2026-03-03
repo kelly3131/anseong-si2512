@@ -24,29 +24,28 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="sub-tabs">
             <a href="/bbs/content.php?co_id=m2_s5_1" class="sub-tab">노인맞춤돌봄서비스</a>
             <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s5_2" class="sub-tab">노인맞춤돌봄 특화서비스</a>
+            <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s5_3" class="sub-tab">응급안전안심서비스</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s4_5" class="sub-tab">이동세탁서비스사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s5_2" class="sub-tab active">세탁서비스</a>
+            <a href="/bbs/content.php?co_id=m2_s4_5" class="sub-tab active">이동세탁서비스사업</a>
         </div>
     </div>
 </div>
 
-
 <div class="content-wrapper">
     <div class="content-title">
         <div class="title-bar">
-            <h2 class="title-with-icon">세탁서비스</h2>
+            <h2 class="title-with-icon">노인맞춤돌봄 특화서비스</h2>
         </div>
-        <p></p>
+        <p>사회적 고립·우울 위험 취약노인에 대한 맞춤형 사례관리로 고독사·자살을 예방합니다.</p>
     </div>
 
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
                 <h3 class="section-title-with-icon2">사업목적</h3>
-                <p></p>
+                <p>사회적 고립·우울 위험 취약노인에 대한 맞춤형 사례관리로 고독사·자살 예방</p>
             </div>
 
             <div class="info-section">

@@ -32,65 +32,59 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab">기능회복지원사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab">모바일헬스케어사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab active">모바일헬스케어사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab active">노인상담사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
         </div>
     </div>
 </div>
+
 <div class="content-wrapper">
     <div class="content-title">
         <div class="title-bar">
-            <h2 class="title-with-icon">노인상담사업</h2>
+            <h2 class="title-with-icon">모바일헬스케어사업</h2>
         </div>
-        <p>노인자살·우울·학대 등 다양한 노인문제 예방을 위한 상담중심 지원사업을 추진합니다.</p>
+        <p></p>
     </div>
 
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
                 <h3 class="section-title-with-icon2">사업목적</h3>
-                <p>노인자살·우울·학대 등 다양한 노인문제 예방을 위한 상담중심 지원사업 추진.</p>
+                <p>간호사·물리치료사·상담사의 전문적 협업을 통해 모바일 기반 건강 모니터링과 맞춤형 건강관리를 제공하여 어르신들의 자가 건강관리 능력 향상과 건강한 생활 유지를 지원하는 것을 목적으로 합니다.</p>
             </div>
 
             <div class="info-section">
                 <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
-                    <li><strong>서비스 지역 :</strong> 안성시 관내</li>
-                    <li><strong>서비스 대상 :</strong> 복지관 만 65세 이상 어르신</li>
-                    <li><strong>서비스 기간 :</strong> 1월~12월</li>
+                    <li><strong>건강이음</strong> :<br>
+                        서비스 대상 : 복지관 이용어르신 중 만성질환을 가지고 있는 어르신<br>
+                        서비스 기간 : 3월~11월<br>
+                        서비스 내용 : 건강교육, 재활운동, 집단상담<br>
+                        서비스 시간 : 주1회(월) 10:00~11:00<br>
+                        서비스 장소 : 2층 즐김터 및 다목적실<br>
+                        참여자 관리 : 사전,사후 검사(인바디,혈액검사,노인우울척도검사) 등을 통한 개별 상담 및 관리를 통해 올바른 생활습관을 하도록 지원
+                    </li>
+                    <li><strong>디지털트레이닝</strong> :<br>
+                        서비스 대상 : 복지관 이용어르신 중 고령자<br>
+                        서비스 기간 : 3월~9월<br>
+                        서비스 내용 : 동영상을 통한 근육 및 치매예방 운동 (무료 수업)<br>
+                        서비스 시간 : 주2회(화,목) 14:00~15:00<br>
+                        서비스 장소 : 4층 강당<br>
+                        참여자 관리 : 사전,사후 체력검진을 통하여 신체(근육량 등) 변화를 통하여 만족감을 얻어 자가관리역량 지원
+                    </li>
                 </ul>
             </div>
 
             <div class="info-section">
                 <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
-                    <h4>① 상담이 필요한 지역 내 거주 어르신</h4>
-                    <p>노인심리상담, 노인성(性)상담, 노인우울, 사별(애도)상담, 치매 및 치매 가족 상담, 위기상담 (자살, 학대, 재해 등)</p>
-                    
-                    <h4>② 집단상담</h4>
-                    <p>웰-다잉(죽음준비), 대인관계 향상(IPT), 자아 통합 집단, 미술 심리치료 집단, 사별(애도)집단 등 지역 내 어르신 대상</p>
-                </div>
-            </div>
-
-            <div class="info-section procedure">
-                <h3 class="section-title-with-icon2">사업절차</h3>
-                <div class="procedure-flow">
-                    <span class="step">① 초기상담면담접수 (자발적/연개 및 의뢰)</span>
-                    <span class="arrow">→</span>
-                    <span class="step">② 위험성 평가 및 분류 (면담평가)</span>
-                    <span class="arrow">→</span>
-                    <span class="step">③ 위기 개입 (긴급구조)</span>
-                    <span class="arrow">→</span>
-                    <span class="step">④ 심리상담 (대인관계향상, 우울등)</span>
-                    <span class="arrow">→</span>
-                    <span class="step">⑤ 서비스연계 (생활지원 및 경제지원)</span>
-                    <span class="arrow">→</span>
-                    <span class="step">⑥ 사후평가 및 상담종결</span>
-                    <span class="arrow">→</span>
-                    <span class="step">⑦ 추수상담</span>
+                    <ul>
+                        <li><strong>건강이음</strong> : 전문직(간호사, 물리치료사, 상담사) 협업을 통한 맞춤형 건강관리로 건강한 노후를 지원</li>
+                        <li><strong>디지털트레이닝</strong> : 근력 향상과 치매 예방을 위한 맞춤형 운동 프로그램을 제공하고, 교육 중 활용한 유튜브 동영상을 가정에서도 혼자 지속적으로 활용할 수 있도록 지원하여 자가 건강관리를 지원</li>
+                    </ul>
                 </div>
             </div>
         </div>

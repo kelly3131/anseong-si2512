@@ -11,28 +11,32 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
 <div class="main-tabs-wrapper">
     <div class="main-tabs">
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
-        <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
-        <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab active">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab active">문화건강팀</a>
+        <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
 <div class="sub-tabs-wrapper">
-    <div class="sub-tabs-container">
+    <div class="sub-tabs-container m2">
         <div class="sub-tabs">
-            <a href="/bbs/content.php?co_id=m2_s3_1" class="sub-tab">홍보사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">회원관리사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">일반자원봉사사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_2" class="sub-tab">평생교육사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_3" class="sub-tab">동아리활동지원사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_4" class="sub-tab">건강생활지원사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab">기능회복지원사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab ">모바일헬스케어사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab active">노인권익증진사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_4" class="sub-tab">지역복지연계사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_5" class="sub-tab">지역사회자원개발사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a>
         </div>
     </div>
 </div>
@@ -48,12 +52,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>노인의 권리 보장과 인권 감수성 제고를 통해 존엄한 삶을 지원하고 지역사회 긍정적 인식 확산</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성시 및 인근 지역</li>
                     <li><strong>서비스 대상 :</strong> 지역사회 어르신 및 지역주민</li>
@@ -62,7 +66,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>노인인권 교육</h4>
                     <p>어르신 대상 인권 교육 실시</p>

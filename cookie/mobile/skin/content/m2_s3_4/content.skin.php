@@ -13,9 +13,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab active">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
@@ -24,15 +24,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="sub-tabs">
             <a href="/bbs/content.php?co_id=m2_s3_1" class="sub-tab">홍보사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">일반자원봉사사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
+            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">자원봉사센터사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_4" class="sub-tab active">지역복지연계사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_5" class="sub-tab">지역사회자원개발사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a>
         </div>
     </div>
 </div>
@@ -48,12 +44,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>지역사회 주체와 연계하여 파트너십을 강화하고 시너지를 창출하는 지역복지 거점 구축.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성시노인복지관</li>
                     <li><strong>서비스 대상 :</strong> 만 60세 이상 안성시 거주 어르신</li>
@@ -62,7 +58,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <ol>
                         <li><strong>지역사회 특별 행사</strong></li>

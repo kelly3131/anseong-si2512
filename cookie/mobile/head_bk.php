@@ -127,7 +127,7 @@ if(!empty($menu_group)) {
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s3_6">복리후생사업</a></li>
                                 </ul>
                             </li>
-                            <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">사례관리팀</a>
+                            <li class="has-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">정책지원팀</a>
                                 <ul class="sh_lnb_3d">
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">사례관리</a></li>
                                     <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_2">재가복지사업</a></li>
@@ -256,7 +256,7 @@ if(!empty($menu_group)) {
                                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s3_6">복리후생사업</a></li>
                                         </ul>
                                     </li>
-                                    <li class="has-mobile-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">사례관리팀</a>
+                                    <li class="has-mobile-submenu"><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">정책지원팀</a>
                                         <ul class="m_3dmenu">
                                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_1">사례관리</a></li>
                                             <li><a href="<?php echo G5_BBS_URL ?>/content.php?co_id=m2_s4_2">재가복지사업</a></li>

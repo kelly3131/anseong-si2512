@@ -13,9 +13,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab active">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
@@ -44,12 +44,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>복지관의 재정을 효율적으로 운영하기 위해 예산 편성, 집행, 회계관리 등 전반적인 재정업무를 수행함으로써 기관 운영의 안정성과 투명성을 확보</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 복지관 관할 지역</li>
                     <li><strong>서비스 대상 :</strong> 복지관 직원 및 어르신 등</li>
@@ -58,7 +58,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <ul>
                         <li>연간 예산수립 및 집행</li>
@@ -70,7 +70,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="procedure-flow">
                     <span class="step">예산수립</span>
                     <span class="arrow">→</span>

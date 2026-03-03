@@ -13,9 +13,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab active">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab active">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
@@ -29,8 +29,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <a href="/bbs/content.php?co_id=m2_s4_3" class="sub-tab active">경로식당 무료급식사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s4_4" class="sub-tab">식사배달지원사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s4_5" class="sub-tab">이동세탁서비스사업</a>
         </div>
     </div>
 </div>
@@ -46,12 +44,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>기초·차상위, 국가유공자, 90세 이상 어르신들에게 균형 잡힌 무료 식사를 제공해 경제적 부담을 줄이고 건강과 사회적·심리적 안녕을 증진.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong><br>
                         ① 안성시노인복지관 경로식당<br>
@@ -63,14 +61,14 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <p>주 5회 식사제공을 통해 균형적인 영양섭취 및 영양결핍 방지</p>
                 </div>
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="procedure-flow">
                     <span class="step">STEP 01 서류 지참</span>
                     <span class="arrow">→</span>

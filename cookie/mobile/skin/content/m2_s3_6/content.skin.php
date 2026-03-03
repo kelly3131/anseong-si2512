@@ -13,24 +13,18 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab active">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
 <div class="sub-tabs-wrapper">
     <div class="sub-tabs-container">
         <div class="sub-tabs">
-            <a href="/bbs/content.php?co_id=m2_s3_1" class="sub-tab">홍보사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">일반자원봉사사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_4" class="sub-tab">지역복지연계사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_5" class="sub-tab">지역사회자원개발사업</a>
+            <!-- <a href="/bbs/content.php?co_id=m2_s6_1" class="sub-tab">노인자원봉사사업</a>
+            <span class="chevron">|</span> -->
+            <a href="/bbs/content.php?co_id=m2_s6_2" class="sub-tab">노인 일자리 및 사회활동 지원사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab active">복리후생사업</a>
         </div>
@@ -48,12 +42,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>경제·정신 지원과 문화·소통 서비스를 통해 어르신의 안정되고 만족스러운 노후를 지원.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>1. 이미용 서비스</h4>
                     <p><strong>서비스 내용 :</strong> 대상 어르신에게 이발, 염색, 파마 서비스 무료 제공</p>

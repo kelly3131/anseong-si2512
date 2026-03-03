@@ -13,9 +13,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab active">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
@@ -24,15 +24,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <div class="sub-tabs">
             <a href="/bbs/content.php?co_id=m2_s3_1" class="sub-tab">홍보사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">일반자원봉사사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
+            <a href="/bbs/content.php?co_id=m2_s3_2" class="sub-tab">자원봉사센터사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_4" class="sub-tab">지역복지연계사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s3_5" class="sub-tab active">지역사회자원개발사업</a>
-            <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a>
         </div>
     </div>
 </div>
@@ -48,12 +44,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>지역사회의 잠재적 나눔 자원을 발굴하고 후원자 신뢰를 바탕으로 선순환적 자원 개발을 통해 복지관 재정 안정과 어르신 삶의 질 향상을 지속적으로 지원합니다.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성시</li>
                     <li><strong>서비스 대상 :</strong> 복지관 이용자</li>
@@ -62,7 +58,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>1. 기금후원 (정기, 일시)</h4>
                     <ul>
@@ -91,7 +87,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="procedure-flow">
                     <span class="step">복지관에 방문하여 후원신청서 작성</span>
                     <span class="arrow">→</span>

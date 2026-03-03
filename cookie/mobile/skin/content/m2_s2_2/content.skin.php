@@ -13,26 +13,30 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <a href="/bbs/content.php?co_id=m2_s1_1" class="main-tab">운영지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s2_1" class="main-tab active">문화건강팀</a>
         <a href="/bbs/content.php?co_id=m2_s3_1" class="main-tab">기획홍보팀</a>
-        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">사례관리팀</a>
+        <a href="/bbs/content.php?co_id=m2_s4_1" class="main-tab">정책지원팀</a>
         <a href="/bbs/content.php?co_id=m2_s5_1" class="main-tab">맞춤돌봄팀</a>
-        <a href="/bbs/content.php?co_id=m2_s6_1" class="main-tab">사회참여팀</a>
+        <a href="/bbs/content.php?co_id=m2_s6_2" class="main-tab">사회참여팀</a>
     </div>
 </div>
 
 <div class="sub-tabs-wrapper">
-    <div class="sub-tabs-container">
+    <div class="sub-tabs-container m2">
         <div class="sub-tabs">
-            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">상담사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_1" class="sub-tab">회원관리사업</a>
             <span class="chevron">|</span>
             <a href="/bbs/content.php?co_id=m2_s2_2" class="sub-tab active">평생교육사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_3" class="sub-tab">동아리활동지원사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_3" class="sub-tab">동아리활동지원사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_4" class="sub-tab">건강생활지원사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_4" class="sub-tab">건강생활지원사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab">기능회복지원사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_5" class="sub-tab">기능회복지원사업</a>
             <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
+            <a href="/bbs/content.php?co_id=m2_s2_7" class="sub-tab">모바일헬스케어사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s2_6" class="sub-tab">노인상담사업</a>
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s3_3" class="sub-tab">노인권익증진사업</a>
         </div>
     </div>
 </div>
@@ -48,12 +52,12 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
     <div class="content-card">
         <div class="business-content">
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업목적</h3>
+                <h3 class="section-title-with-icon2">사업목적</h3>
                 <p>자기개발·사회참여·여가활동 지원으로 어르신의 활기찬 노후와 삶의 질 향상 도모.</p>
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업개요</h3>
+                <h3 class="section-title-with-icon2">사업개요</h3>
                 <ul>
                     <li><strong>서비스 지역 :</strong> 안성관내</li>
                     <li><strong>서비스 대상 :</strong> 복지관 회원</li>
@@ -62,7 +66,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">사업내용</h3>
+                <h3 class="section-title-with-icon2">사업내용</h3>
                 <div class="business-detail">
                     <h4>취미여가 프로그램(23과목)</h4>
                     <p>가요교실(오전,오후), 실버난타(초급,중급), 사진반, 매듭공예, 우쿨렐레(초급,중급), 오카리나(초급,중급), 하모니카(초급,중급), 통기타(초급,중급,고급), 사물놀이(A,B,중급), 민요장고(초급,중급,고급), 전통무용, 색연필 및 수채화</p>
@@ -79,7 +83,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon">사업절차</h3>
+                <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="business-detail">
                     <h4>이용안내</h4>
                     <div class="procedure-flow">
@@ -104,7 +108,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section">
-                <h3 class="section-title-with-icon">회원준수사항</h3>
+                <h3 class="section-title-with-icon2">회원준수사항</h3>
                 <ul>
                     <li>모든 프로그램 접수는 선착순으로 진행됩니다.</li>
                     <li>본인 방문접수(회원증 지참)만 가능합니다.</li>
