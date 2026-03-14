@@ -88,7 +88,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             </div>
 
             <div class="info-section procedure">
-                <h3 class="section-title-with-icon2">-이용절차</h3>
+                <h3 class="section-title-with-icon2">이용절차</h3>
                 <div class="procedure-flow">
                     <span class="step">이용상담</span>
                     <span class="arrow">→</span>

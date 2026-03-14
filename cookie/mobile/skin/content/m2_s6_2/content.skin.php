@@ -194,7 +194,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                         <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
                             <strong>참여자 선발/확정</strong><br>
-                            <span class="step-organization">신청자의 사업참여 적격성 확인 후 선발점수 부여 선발기준표 점수에 따라 고득점 순으로 선발</span>
+                            <span class="step-organization">신청자의 사업참여 적격성 확인 후 선발점수 부여
+선발기준표 점수에 따라 고득점 순으로 선발</span>
                         </div>
                         <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">

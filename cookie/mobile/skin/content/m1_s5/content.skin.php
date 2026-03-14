@@ -186,7 +186,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                         <th>응급관리요원</th>
                         <th>노인 일자리<br>담당자</th>
                         <th>생활<br>지원사</th>
-                        <th>전체</th>
+                        <th>안전<br>전담인력</th>
                     </tr>
                     <tr>
                         <td>인원(명)</td>
@@ -200,7 +200,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                         <td>3</td>
                         <td>4</td>
                         <td>50</td>
-                        <td class="total">94</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <th>전체</th>
+                        <td colspan="12" class="total">95</td>
                     </tr>
                 </tbody>
             </table>
@@ -476,7 +480,7 @@ const orgData = {
                                 <td>재가복지, 본관 경로식당, 식사배달</td>
                             </tr>
                             <tr>
-                                <td>손수빈</td>
+                                <td>-</td>
                                 <td>사회복지사</td>
                                 <td>070-5143-0162</td>
                                 <td>사례관리, 공도 경로식당, 식사배달</td>
@@ -687,6 +691,12 @@ const orgData = {
                                 <td>전담사회복지사</td>
                                 <td>070-5143-0173</td>
                                 <td>노인일자리 학교도우미, 아동교통안전지원</td>
+                            </tr>
+                            <tr>
+                                <td>박은정</td>
+                                <td>전담사회복지사</td>
+                                <td>070-5143-2270</td>
+                                <td>안전사고 예방 관리 및 현장 관리·지도</td>
                             </tr>
                         </tbody>
                     </table>
