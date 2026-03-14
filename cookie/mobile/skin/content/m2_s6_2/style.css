@@ -6,3 +6,25 @@
 #ctt header h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #ctt_con {padding:10px 0}
 .ctt_img {text-align:center}
+
+/* 사업절차(프로세스) */
+.procedure-container.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.procedure-step {
+    width: 100%;
+    text-align: center;
+    /* margin: 0.5em 0; */
+    box-sizing: border-box;
+    max-width: initial !important;
+}
+.procedure-arrow {
+    font-size: 2em;
+    color: #aaa;
+    /* margin: 0.2em 0; */
+    text-align: center;
+    width: 100%;
+}

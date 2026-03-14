@@ -121,33 +121,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
         <!-- 비전 -->
         <div class="section">
             <h2 class="section-title">비전</h2>
-            
-            <div class="vision-item">
-                <div class="vision-title">나눔으로 함께하는 복지관</div>
-                <ul class="vision-content">
-                    <li>지역사회 다양한 복지 자원연계를 통한 나눔문화 확산</li>
-                    <li>나눔 활동을 통한 지역사회 기부문화 형성과 참여 실천</li>
-                </ul>
-            </div>
-
-            <div class="vision-item">
-                <div class="vision-title">소통하는 우리들의 복지관</div>
-                <ul class="vision-content">
-                    <li>지역복지 네트워크 형성을 통한 함께 성장하는 복지공동체 구현</li>
-                    <li>세대통합을 실현할 수 있는 문화복지 구현</li>
-                    <li>안정적인 노인일자리 제공으로 세대 소통 기회 확대</li>
-                </ul>
-            </div>
-
-            <div class="vision-item">
-                <div class="vision-title">향기로운 세상을 여는 복지관</div>
-                <ul class="vision-content">
-                    <li>대상자 안성맞춤 복지프로그램 제공 및 당사자 통합 사례관리</li>
-                    <li>안성맞춤 돌봄 생태계 구현을 통한 지역사회 안전망 구축</li>
-                    <li>이용자와 종사자의 인권과 권익증진으로 윤리경영 실천</li>
-                    <li>어르신들의 활기찬 신체 및 정신적 건강생활 지원</li>
-                    <li>종사자의 역량 강화로 노인복지 인재 양성</li>
-                </ul>
+            <div class="vision-image">
+                <img src="<?php echo G5_THEME_IMG_URL ?>/mobile/sub/m1/vision.png" alt="">
             </div>
         </div>
 

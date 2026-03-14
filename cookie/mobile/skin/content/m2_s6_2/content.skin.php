@@ -25,8 +25,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <!-- <a href="/bbs/content.php?co_id=m2_s6_1" class="sub-tab">노인자원봉사사업</a>
             <span class="chevron">|</span> -->
             <a href="/bbs/content.php?co_id=m2_s6_2" class="sub-tab active">노인 일자리 및 사회활동 지원사업</a>
-            <!-- <span class="chevron">|</span>
-            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a> -->
+            <span class="chevron">|</span>
+            <a href="/bbs/content.php?co_id=m2_s3_6" class="sub-tab">복리후생사업</a>
         </div>
     </div>
 </div>
@@ -51,9 +51,32 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
                 <ul>
                     <li><strong>사업 지역 :</strong> 안성시 지역사회</li>
                     <li><strong>사업 대상 및 기간 :</strong></li>
+                </ul>
+                <table class="service-table">
+                    
+                    <thead>
+                        <tr>
+                            <th>사업유형</th>
+                            <th>사업대상</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align:center;">노인공익활동사업</td>
+                            <td>만 65세 이상 기초연금수급자<br/>
+직역연금수급자(배우자 포함, 일정소득 기준 이하일 경우)</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center;">노인역량활용사업</td>
+                            <td>만 65세 이상 ※일부사업 만 60세 이상 가능</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <ul>
                     <li>참여 기간 : 2026년 1월~12월 ※사업마다 진행 시기 상이<br>
                     (노인공익활동사업 11개월, 노인역량활용사업 10개월)</li>
                 </ul>
+
                 <p>※ 신청 제외자 :</p>
                 <ul>
                     <li>국민기초생활보장법에 의한 생계급여 수급자(의료급여, 교육급여, 주거급여 수급자는 신청 가능)</li>
@@ -148,41 +171,50 @@ add_stylesheet('<link rel="stylesheet" href="'.$content_skin_url.'/style.css">',
             <div class="info-section procedure">
                 <h3 class="section-title-with-icon2">사업절차</h3>
                 <div class="business-detail">
-                    <div class="procedure-container">
+                    <div class="procedure-container column">
                         <div class="procedure-step">
-                            <strong>서비스 신청접수</strong><br>
-                            <span class="step-organization">《읍·면·동》</span>
+                            <strong>모집확인</strong><br>
+                            <span class="step-organization">홈페이지, 언론, 현수막 등을 통해 모집공고 확인</span>
                         </div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>대상자 선정조사 및 서비스상담</strong><br>
-                            <span class="step-organization">《수행기관》</span>
+                            <strong>구비서류 준비</strong><br>
+                            <span class="step-organization">신분증, 주민등록등본(3개월 이내 발급), 기초연금수급확인서(해당자만), 직역연금 관련 서류(해당자만)</span>
                         </div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>서비스제공계획 수립 및 승인요청</strong><br>
-                            <span class="step-organization">《수행기관》</span>
+                            <strong>신청서 제출</strong><br>
+                            <span class="step-organization">구비서류 지참하여 수행기관 방문</span>
                         </div>
-                        <div class="procedure-break"></div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>심의 및 결정</strong><br>
-                            <span class="step-organization">《시·군·구》</span>
+                            <strong>상담/면접</strong><br>
+                            <span class="step-organization">신청자 희망활동, 사업 적합성, 활동역량 등 확인</span>
                         </div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>서비스제공</strong><br>
-                            <span class="step-organization">《수행기관》</span>
+                            <strong>참여자 선발/확정</strong><br>
+                            <span class="step-organization">신청자의 사업참여 적격성 확인 후 선발점수 부여 선발기준표 점수에 따라 고득점 순으로 선발</span>
                         </div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>재사정</strong><br>
-                            <span class="step-organization">《수행기관》</span>
+                            <strong>수요처 연계</strong><br>
+                            <span class="step-organization">희망 활동지역, 세부 분야 등을 고려하여 수요처 결정/연계</span>
                         </div>
-                        <div class="procedure-arrow">→</div>
+                        <div class="procedure-arrow">↓</div>
                         <div class="procedure-step">
-                            <strong>종결 및 사후관리</strong><br>
-                            <span class="step-organization">《수행기관》</span>
+                            <strong>협약서/근로계약서 작성</strong><br>
+                            <span class="step-organization">활동내용 및 조건 등을 기재한 협약서 또는 근로계약서 작성</span>
+                        </div>
+                        <div class="procedure-arrow">↓</div>
+                        <div class="procedure-step">
+                            <strong>참여자 교육</strong><br>
+                            <span class="step-organization">참여자 대상 필수교육 진행</span>
+                        </div>
+                        <div class="procedure-arrow">↓</div>
+                        <div class="procedure-step">
+                            <strong>참여자 활동</strong><br>
+                            <span class="step-organization">노인 일자리 및 사회활동 지원사업 참여</span>
                         </div>
                     </div>
                 </div>
